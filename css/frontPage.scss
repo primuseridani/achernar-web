@@ -1,0 +1,43 @@
+#frontPage {
+	align-items:                center;
+	border-bottom-left-radius:  1rem;
+	border-bottom-right-radius: 1rem;
+	display:                    flex;
+	justify-content:            center;
+	height:                     calc(100vh + 1rem);
+	padding-bottom:             1rem;
+	width:                      100vw;
+
+	body.about & {
+		background-color: $achernarColour;	}
+
+	body.benoit & {
+		background-image: url("/svg/benoit-background.svg");
+		background-size:  cover;
+	}
+
+	body.bzipper & {
+		background-color: #FFFFFF;
+	}
+
+	body.eas & {
+		background-color: #01CD93;
+	}
+
+	body.luma & {
+		background-color: #6051B2;
+	}
+
+	body.pollex & {
+		background-color: #4D4084;
+	}
+
+	#glyph {
+		display:     block;
+		font-size:   4rem;
+		font-weight: bold;
+		height:      fit-content;
+		width:       calc(100vmin / 2);
+		text-align:  center;
+	}
+}

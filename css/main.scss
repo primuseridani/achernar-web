@@ -1,0 +1,26 @@
+@import "fonts";
+
+$backgroundColour: oklch(20% 0.032625 270);
+$foregroundColour: oklch(25% 0.041075 270);
+$textColour:       oklch(100% 0 0);
+$highlightColour:  oklch(75% 0.292700 149.34);
+
+$achernarColour: #007B34;
+
+:root {
+	font-family: "Raleway", "sans-serif";
+
+	background-color: $backgroundColour;
+	color:            $textColour;
+}
+
+* {
+	margin:  0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+@import "navigationBar.scss";
+@import "frontPage.scss";
+@import "content.scss";

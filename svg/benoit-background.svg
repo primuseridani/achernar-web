@@ -1,0 +1,10 @@
+<svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
+	<polygon fill="#BA0035" points="0,0 96,0 96,96 0,96" />        <!-- oklch(50% 0.199 17.860) "red" -->
+	<polygon fill="#CD0325" points="0,0 96,0 96,96 19.096,96" />
+	<polygon fill="#DC1D02" points="0,0 96,0 96,96 39.765,96" />
+	<polygon fill="#E04400" points="0,0 96,0 96,96 64.145,96" />
+	<polygon fill="#E55C04" points="0,0 96,0 96,96 96,96" />
+	<polygon fill="#EB6F02" points="0,0 96,0       143.674,96" />
+	<polygon fill="#F18103" points="0,0 96,0       231.766,96" />
+	<polygon fill="#F79204" points="0,0 96,0       482.625,96" /> <!-- oklch(75% 0.170 63.220) "yellow" -->
+</svg>

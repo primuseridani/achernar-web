@@ -1,0 +1,15 @@
+<svg height="72" width="72" xmlns="http://www.w3.org/2000/svg">
+	<mask id="strike">
+		<circle cx="36" cy="36" fill="white" r="30" />
+		<polygon fill="black" points="72,0 72,72 0,72" />
+	</mask>
+
+	<mask id="glyph">
+		<circle cx="36" cy="36" fill="white" r="36" />
+		<circle cx="36" cy="36" fill="black" r="24" />
+		<polygon fill="black" points="72,0 72,36 36,36" />
+		<polyline mask="url(#strike)" points="72,0 0,72" stroke="white" stroke-width="24" />
+	</mask>
+
+	<rect fill="#00291B" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
+</svg>

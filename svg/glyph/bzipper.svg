@@ -1,0 +1,8 @@
+<svg height="72" width="72" xmlns="http://www.w3.org/2000/svg">
+	<mask id="glyph">
+		<polyline fill="none" points="4,12 4,4 62,4 18.970562748,60" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
+		<polyline fill="none" points="60,52 60,60 4,60 43.029437252,4" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
+	</mask>
+
+	<rect fill="#B4202D" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
+</svg>

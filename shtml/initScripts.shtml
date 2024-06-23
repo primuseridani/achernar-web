@@ -1,0 +1,5 @@
+<script src="/js/initImages.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	initImages();
+</script>
