@@ -1,15 +1,10 @@
 <div id="navigationBar">
 	<a href="/html/about.html">ABOUT</a>
-	<div class="groupSeparator"></div>
+	<div class="separator"></div>
 	<a href="/html/benoit.html">BENOIT</a>
-	<div class="elementSeparator"></div>
 	<a href="/html/bowshock.html">BOWSHOCK</a>
-	<div class="elementSeparator"></div>
 	<a href="/html/bzipper.html">BZIPPER</a>
-	<div class="elementSeparator"></div>
 	<a href="/html/eas.html">eAS</a>
-	<div class="elementSeparator"></div>
 	<a href="/html/luma.html">LUMA</a>
-	<div class="elementSeparator"></div>
 	<a href="/html/pollex.html">POLLEX</a>
 </div>

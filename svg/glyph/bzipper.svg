@@ -1,6 +1,6 @@
-<svg height="72" width="72" xmlns="http://www.w3.org/2000/svg">
+<svg height="64" width="64" xmlns="http://www.w3.org/2000/svg">
 	<mask id="glyph">
-		<polyline fill="none" points="4,12 4,4 62,4 18.970562748,60" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
+		<polyline fill="none" points="4,12 4,4 60,4 20.970562748,60" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
 		<polyline fill="none" points="60,52 60,60 4,60 43.029437252,4" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
 	</mask>
 

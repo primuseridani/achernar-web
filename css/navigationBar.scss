@@ -1,52 +1,66 @@
 #navigationBar {
-	align-items:             center;
-	backdrop-filter:         blur(1rem);
-	background-color:        $textColour;
-	background-color:        color-mix(in srgb, $textColour, transparent 75%);
-	border-top-left-radius:  1rem;
-	border-top-right-radius: 1rem;
-	color:                   $backgroundColour;
-	display:                 flex;
-	gap:                     0.25rem;
-	justify-content:         center;
-	left:                    50vw;
-	padding:                 1rem;
-	position:                fixed;
-	top:                     100vh;
-	transform:               translate(-50%, -1rem);
-	transition:              0.25s;
-	z-index:                 1;
+	align-items:      center;
+	background-color: #00000000;
+	display:          flex;
+	gap:              1rem;
+	justify-content:  center;
+	left:             50vw;
+	padding:          1rem;
+	position:         absolute;
+	top:              0;
+	transform:        translateX(-50%);
+	user-select:      none;
+	width:            100vw;
+	z-index:          1;
 
-	&:hover {
-		background-color: $textColour;
-		transition:       0.25s;
-		transform:        translate(-50%, -100%);
+	body.about & {
+		--foregroundColour: #FFFFFF;
+	}
+
+	body.benoit & {
+		--foregroundColour: #FFFFFF;
+	}
+
+	body.bowshock & {
+		--foregroundColour: #FFFFFF;
+	}
+
+	body.bzipper & {
+		--foregroundColour: #B4202D;
+	}
+
+	body.eas & {
+		--foregroundColour: #00291B;
+	}
+
+	body.luma & {
+		--foregroundColour: #FFFFFF;
+	}
+
+	body.pollex & {
+		--foregroundColour: #FFFFFF;
 	}
 
 	a {
-		font-weight:     bold;
-		text-decoration: none;
+		color:                 var(--foregroundColour);
+		font-weight:           bold;
+		text-decoration-color: #00000000;
+		transition:            text-decoration-color 0.125s;
 
-		&, &:visited {
-			color: $backgroundColour;
+		&:hover {
+			cursor: pointer;
+		}
 
-			&:first-of-type {
-				color: $achernarColour;
-			}
+		&:hover {
+			text-decoration-color: var(--foregroundColour);
+			transition:            text-decoration-color 0.125s;
 		}
 	}
 
-	.groupSeparator {
-		background-color: $backgroundColour;
+	.separator {
+		background-color: var(--foregroundColour);
 		border-radius:    0.25rem;
 		height:           0.25rem;
-		width:            0.75rem;
-	}
-
-	.elementSeparator {
-		background-color: $backgroundColour;
-		border-radius:    100%;
-		height:           0.25rem;
-		width:            0.25rem;
+		width:            1rem;
 	}
 }
