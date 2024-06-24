@@ -17,23 +17,31 @@
 		</div>
 
 		<div id="content">
-			<p id="contentHeading">BENOIT</p>
+			<p id="contentHeading">Benoit</p>
 
 			<section>
-				<p><span class="fancy">Benoit</span> is a Rust-written programme for visualising complex functions, e.g. <em>the Mandelbrot Set</em> and similar fractals.</p>
+				<p><em>Benoit</em> is a Rust-written programme for visualising complex functions, e.g. <em>the Mandelbrot Set</em> and similar fractals.</p>
+				<br>
+				<x-image data-file="benoit_screenshot0"></x-image>
 				<br>
 				<p>The project consists of the core <a href="https://crates.io/crates/benoit/"><span class="code">benoit</span></a> crate, from which the frontends <span class="code">benoit-cli</span> and (in the future) <span class="code">benoit-gui</span> derive.</p>
 			</section>
 
 			<section>
 				<p class="heading">benoit-cli</p>
-				<br>
+
 				<p>The <span class="code">benoit-cli</span> executable can render and animate using <a href="https://en.wikipedia.org/wiki/TOML/">TOML</a> files right from the commandline.</p>
-				<br>
-				<x-image data-file="benoit_screenshot0"></x-image>
 				<br>
 				<x-image data-file="benoit_screenshot1"></x-image>
 			</section>
+
+			<section>
+				<p class="heading">Docs</p>
+
+				<p>Documentation for the main library can be found on <a href="https://docs.rs/benoit/latest/benoit/"><span class="code">docs.rs</span></a>.</p>
+			</section>
+
+			<!--#include virtual="/shtml/cloneNotice.shtml"-->
 		</div>
 
 		<!--#include virtual="/shtml/initScripts.shtml"-->

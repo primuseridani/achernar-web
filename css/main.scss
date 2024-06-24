@@ -21,6 +21,14 @@ $achernarColour: #007B34;
 	box-sizing: border-box;
 }
 
+ol, ul {
+	list-style-type: none;
+}
+
+li p::before {
+	content: "\2014\0020";
+}
+
 @import "navigationBar.scss";
 @import "frontPage.scss";
 @import "content.scss";

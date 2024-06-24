@@ -1,10 +1,15 @@
 <div id="navigationBar">
 	<a href="/html/about.html">ABOUT</a>
 	<div class="separator"></div>
+	<a href="/html/ax.html">AX</a>
+	<a href="/html/backspace.html">BACKSPACE</a>
 	<a href="/html/benoit.html">BENOIT</a>
 	<a href="/html/bowshock.html">BOWSHOCK</a>
 	<a href="/html/bzipper.html">BZIPPER</a>
+	<a href="/html/deltaWorld.html">DELTA&middot;WORLD</a>
 	<a href="/html/eas.html">eAS</a>
 	<a href="/html/luma.html">LUMA</a>
 	<a href="/html/pollex.html">POLLEX</a>
+	<div class="separator"></div>
+	<a href="https://mandelbrot.dk/">SOURCE</a>
 </div>

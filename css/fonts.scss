@@ -1,4 +1,15 @@
 @font-face {
+	font-family: "Fira Mono";
+	src:         url("/ttf/FiraMono-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Fira Mono";
+	font-weight: bold;
+	src:         url("/ttf/FiraMono-Bold.ttf");
+}
+
+@font-face {
 	font-family: "Martian Mono";
 	src:         url("/ttf/MartianMono-Regular.ttf");
 }

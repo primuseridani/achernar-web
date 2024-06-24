@@ -1,16 +1,19 @@
 #content {
-	background-color: $backgroundColour;
-	margin:           auto;
-	min-height:       100vh;
-	max-width:        72rem;
-	padding:          2rem;
+	margin:     auto;
+	min-height: 100vh;
+	max-width:  72rem;
+	padding:    2rem;
 
-	p:not(.heading, #contentHeading) {
+	p:not(.heading, #contentHeading, #cloneNotice p) {
 		line-height: 2rem;
 	}
 
 	a, a:visited {
-		color:       $highlightColour;
+		color: $textColour;
+	}
+
+	em {
+		font-style:  normal;
 		font-weight: bold;
 	}
 
@@ -18,16 +21,12 @@
 		&.code {
 			background-color: $foregroundColour;
 			border-radius:    calc(1rem / 4);
-			font-family:      "Martian Mono", "monospace";
+			font-family:      "Fira Mono", "monospace";
 			padding:          calc(1rem / 4);
 
 			a {
 				font-weight: normal;
 			}
-		}
-
-		&.fancy {
-			font-weight: bold;
 		}
 
 		&.small {
@@ -39,6 +38,7 @@
 		background-color: $foregroundColour;
 		border-radius:    1rem;
 		display:          block;
+		font-family:      "Martian Mono", "monospace";
 		font-size:        4rem;
 		font-weight:      bold;
 		margin:           auto;
@@ -69,8 +69,11 @@
 	}
 
 	x-image {
-		display: block;
-		width: fit-content;
+		background-position: center;
+		background-repeat:   no-repeat;
+		display:             block;
+		position:            relative;
+		width:               100%;
 
 		&:nth-of-type(odd) {
 			margin-right: auto;
@@ -80,13 +83,28 @@
 			margin-left: auto;
 		}
 
+		img.blur {
+			filter:   blur(1rem);
+			position: absolute;
+			z-index:  -1;
+			width:           100%;
+		}
+
 		a {
 			img {
 				border-radius:   1rem;
 				display:         block;
-				height:          16rem;
 				image-rendering: pixelated;
+				width:           100%;
 			}
 		}
+	}
+
+	#cloneNotice {
+		background-color: $foregroundColour;
+		border-radius:    1rem;
+		font-weight:      bold;
+		padding:          1rem;
+		text-align:       center;
 	}
 }

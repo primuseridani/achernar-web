@@ -9,15 +9,32 @@
 	width:                      100vw;
 
 	body.about & {
-		background-color: $achernarColour;	}
+		background-color: $achernarColour;
+	}
+
+	body.ax & {
+		background-color: #422984;
+	}
+
+	body.backspace & {
+		background-color: $backgroundColour;
+	}
 
 	body.benoit & {
 		background-image: url("/svg/benoit-background.svg");
 		background-size:  cover;
 	}
 
+	body.bowshock & {
+		background-color: #B61833;
+	}
+
 	body.bzipper & {
 		background-color: #FFFFFF;
+	}
+
+	body.deltaWorld & {
+		background-color: $backgroundColour;
 	}
 
 	body.eas & {

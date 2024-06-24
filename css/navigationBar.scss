@@ -17,16 +17,28 @@
 		--foregroundColour: #FFFFFF;
 	}
 
+	body.ax & {
+		--foregroundColour: #FFFFFF;
+	}
+
+	body.backspace & {
+		--foregroundColour: #FFFFFF;
+	}
+
 	body.benoit & {
 		--foregroundColour: #FFFFFF;
 	}
 
 	body.bowshock & {
-		--foregroundColour: #FFFFFF;
+		--foregroundColour: #FFEEE0;
 	}
 
 	body.bzipper & {
 		--foregroundColour: #B4202D;
+	}
+
+	body.deltaWorld & {
+		--foregroundColour: #FFFFFF;
 	}
 
 	body.eas & {
@@ -46,10 +58,6 @@
 		font-weight:           bold;
 		text-decoration-color: #00000000;
 		transition:            text-decoration-color 0.125s;
-
-		&:hover {
-			cursor: pointer;
-		}
 
 		&:hover {
 			text-decoration-color: var(--foregroundColour);

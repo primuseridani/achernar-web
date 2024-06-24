@@ -7,11 +7,22 @@ function initImages() {
 		let file = image.getAttribute("data-file")!;
 		console.log("initialising image that links to \"" + file + "\"");
 
+		let source_url    = "/webp/source/" + file + ".webp";
+		let thumbnail_url = "/webp/thumbnail/" + file + ".webp";
+
+		let blur_element = document.createElement("img");
+		blur_element.setAttribute("class", "blur");
+		blur_element.setAttribute("src", thumbnail_url);
+
+		image.appendChild(blur_element);
+
 		let image_element = document.createElement("img");
-		image_element.setAttribute("src", "/webp/thumbnail/" + file + ".webp");
+		image_element.setAttribute("src", thumbnail_url);
 
 		let hyperlink_element = document.createElement("a");
-		hyperlink_element.setAttribute("href", "/webp/source/" + file + ".webp");
+		hyperlink_element.setAttribute("href", source_url);
+		hyperlink_element.setAttribute("rel", "noopener noreferrer");
+		hyperlink_element.setAttribute("target", "_blank");
 		hyperlink_element.appendChild(image_element);
 
 		image.appendChild(hyperlink_element);
