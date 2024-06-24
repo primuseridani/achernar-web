@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3
+
+* Fix typos
+
 ## 2.2
 
 * Fix clone notice on *Delta World* page
