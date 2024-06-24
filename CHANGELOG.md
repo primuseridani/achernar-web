@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4
+
+* Misc. style changes
+
 ## 2.3
 
 * Fix typos

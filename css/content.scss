@@ -1,6 +1,5 @@
 #content {
 	margin:     auto;
-	min-height: 100vh;
 	max-width:  72rem;
 	padding:    2rem;
 
@@ -20,9 +19,9 @@
 	span {
 		&.code {
 			background-color: $foregroundColour;
-			border-radius:    calc(1rem / 4);
+			border-radius:    0.25rem;
 			font-family:      "Fira Mono", "monospace";
-			padding:          calc(1rem / 4);
+			padding:          0.25rem;
 
 			a {
 				font-weight: normal;
@@ -34,11 +33,14 @@
 		}
 	}
 
+	p.heading, #contentHeading {
+		font-family: "Martian Mono", "monospace";
+	}
+
 	#contentHeading {
 		background-color: $foregroundColour;
 		border-radius:    1rem;
 		display:          block;
-		font-family:      "Martian Mono", "monospace";
 		font-size:        4rem;
 		font-weight:      bold;
 		margin:           auto;
@@ -60,12 +62,20 @@
 	}
 
 	p.heading {
-		border-bottom-style: solid;
-		border-bottom-width: calc(1rem / 4);
 		font-size:           2rem;
 		font-weight:         bold;
 		margin-bottom:       1rem;
 		width:               100%;
+
+		&::after {
+			background-color: $textColour;
+			border-radius:    0.125rem;
+			content:          "";
+			display:          block;
+			height:           0.25rem;
+			margin-top:       0.25rem;
+			width:            100%;
+		}
 	}
 
 	x-image {

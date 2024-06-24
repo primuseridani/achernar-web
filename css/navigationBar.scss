@@ -4,13 +4,11 @@
 	display:          flex;
 	gap:              1rem;
 	justify-content:  center;
-	left:             50vw;
-	padding:          1rem;
+	padding:          1rem 0;
 	position:         absolute;
 	top:              0;
-	transform:        translateX(-50%);
 	user-select:      none;
-	width:            100vw;
+	width:            100%;
 	z-index:          1;
 
 	body.about & {
