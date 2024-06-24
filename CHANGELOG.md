@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1
+
+* Add installation script
+
 ## 2.0
 
 * Elaborate pages
@@ -12,7 +16,7 @@
 * Add new project *Backspace*
 * Add glow to images
 * Add sources link to navigation bar
-* Add clone notices
+* Add clone notices2
 
 ## 1.0
 
