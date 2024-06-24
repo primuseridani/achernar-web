@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2
+
+* Fix clone notice on *Delta World* page
+
 ## 2.1
 
 * Add installation script
