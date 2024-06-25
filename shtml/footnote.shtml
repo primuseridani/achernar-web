@@ -1,0 +1,22 @@
+<section id="footnote">
+	<p id="footnoteHeading">Achernar</p>
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<th>CVR</th>
+				<td>(TBA)</td>
+			</tr>
+			<tr>
+				<th>E-mail</th>
+				<td>Gabriel Bjørnager Jensen, see obfuscated address below.</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<p>This webservice can be cloned from <a href="https://mandelbrot.dk/achernar/"><span class="code">mandelbrot.dk</span></a>.</p>
+
+	<div class="separator"></div>
+
+	<img alt="\"Obfuscated e-mail address.\"" class="obfuscatedText" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAAICAYAAAC78m4/AAAA/UlEQVRYw+1XQQ7EIAiExv9/2T01IQQJDNZ0rdyEFmEcBJmIqPfe6ciRzYRvYjMzS4Mk/Mim9RXbbY/YkGLM5BDdI4PZKAe5zuJi+fDWmTPK5F3hS2RPNPdLK/RHnk1ulLFJnbWWOsuGEhuNJetT27I5eP95WFskqJ5fJM4oX1Cso3FqXUNvrZHTWSNO5Zb+i5bpkGhmh/rMCGJwsEWJ6oEmq4mZefRftkpXEmq1T3Q0QPGMFNNul8kVBRYdD9CW94TMGHFW+ETx9OLw4nzTGVVw0cXa5INlxq2APEisNow8cN8EtMYzE2clP+9humIUqHKpwjOd+9Zz7ZFvyw87v+eHE6E5DAAAAABJRU5ErkJggg" />
+</section>

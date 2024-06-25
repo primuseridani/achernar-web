@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0
+
+* Add contact information
+
 ## 2.5
 
 * Add Dark Reader lock
