@@ -4,71 +4,35 @@
 	display:          flex;
 	gap:              1rem;
 	justify-content:  center;
-	padding:          1rem 0;
 	position:         absolute;
-	top:              0;
+	top:              1rem;
 	user-select:      none;
 	width:            100%;
 	z-index:          1;
 
-	body.about & {
-		--foregroundColour: #FFFFFF;
-	}
-
-	body.ax & {
-		--foregroundColour: #FFFFFF;
-	}
-
-	body.backspace & {
-		--foregroundColour: #FFFFFF;
-	}
-
-	body.benoit & {
-		--foregroundColour: #FFFFFF;
-	}
-
-	body.bowshock & {
-		--foregroundColour: #FFEEE0;
-	}
-
-	body.bzipper & {
-		--foregroundColour: #B4202D;
-	}
-
-	body.deltaWorld & {
-		--foregroundColour: #FFFFFF;
-	}
-
-	body.eas & {
-		--foregroundColour: #00291B;
-	}
-
-	body.luma & {
-		--foregroundColour: #FFFFFF;
-	}
-
-	body.pollex & {
-		--foregroundColour: #FFFFFF;
-	}
-
-	body.u8c & {
-		--foregroundColour: #A9E13D;
-	}
-
-	a {
-		color:                 var(--foregroundColour);
+	a, p {
+		color:                 var(--pageHighlightColour);
+		cursor:                pointer;
 		font-weight:           bold;
+		text-decoration:       underline;
 		text-decoration-color: #00000000;
 		transition:            text-decoration-color 0.125s;
+		width:                 fit-content;
 
 		&:hover {
-			text-decoration-color: var(--foregroundColour);
+			text-decoration-color: var(--pageHighlightColour);
 			transition:            text-decoration-color 0.125s;
 		}
 	}
 
+	#themeToggler {
+		display:  block;
+		left:     1rem;
+		position: absolute;
+	}
+
 	.separator {
-		background-color: var(--foregroundColour);
+		background-color: var(--pageHighlightColour);
 		border-radius:    0.125rem;
 		height:           0.25rem;
 		width:            1rem;

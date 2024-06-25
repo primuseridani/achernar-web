@@ -9,48 +9,48 @@
 	pointer-events:             none;
 	width:                      100%;
 
-	body.about & {
+	body[data-page = "about"] & {
 		background-color: $achernarColour;
 	}
 
-	body.ax & {
+	body[data-page = "ax"] & {
 		background-color: #422984;
 	}
 
-	body.backspace & {
-		background-color: $backgroundColour;
+	body[data-page = "backspace"] & {
+		background-color: var(--backgroundColour);
 	}
 
-	body.benoit & {
+	body[data-page = "benoit"] & {
 		background-image: url("/svg/benoit-background.svg");
 		background-size:  cover;
 	}
 
-	body.bowshock & {
+	body[data-page = "bowshock"] & {
 		background-color: #B61833;
 	}
 
-	body.bzipper & {
+	body[data-page = "bzipper"] & {
 		background-color: #FFFFFF;
 	}
 
-	body.deltaWorld & {
-		background-color: $backgroundColour;
+	body[data-page = "deltaWorld"] & {
+		background-color: var(--backgroundColour);
 	}
 
-	body.eas & {
+	body[data-page = "eas"] & {
 		background-color: #01CD93;
 	}
 
-	body.luma & {
+	body[data-page = "luma"] & {
 		background-color: #6051B2;
 	}
 
-	body.pollex & {
+	body[data-page = "pollex"] & {
 		background-color: #4D4084;
 	}
 
-	body.u8c & {
+	body[data-page = "u8c"] & {
 		background-color: #444747;
 	}
 

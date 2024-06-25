@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0
+
+* Add light theme (and toggler button)
+* Update titles
+* Adjust styles
+
 ## 3.3
 
 * Make and install icons

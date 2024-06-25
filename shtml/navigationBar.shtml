@@ -1,6 +1,10 @@
 <div id="navigationBar">
+	<p id="themeToggler" onclick="toggleTheme();">TOGGLE THEME</p>
+
 	<a href="/html/about.html">ABOUT</a>
+
 	<div class="separator"></div>
+
 	<a href="/html/ax.html">AX</a>
 	<a href="/html/backspace.html">BACKSPACE</a>
 	<a href="/html/benoit.html">BENOIT</a>

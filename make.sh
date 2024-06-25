@@ -24,7 +24,7 @@ make_icon() {
 	render_icon "${input}" 192 "${directory}/192x192.png"
 	render_icon "${input}" 256 "${directory}/256x256.png"
 
-	echo combining renders in \"${directory}\" into \"${output}\"
+	echo combining renders in \"${directory}\" to \"${output}\"
 	icotool -co "favicon.ico" "${directory}/"*".png"
 
 	render_icon "${input}" 180 "apple-touch-icon.png"
@@ -49,5 +49,8 @@ make_script() {
 make_icon "svg/achernar-icon.svg"
 
 make_stylesheet "main"
+make_stylesheet "noScript"
 
 make_script "initImages"
+make_script "setTheme"
+make_script "toggleTheme"

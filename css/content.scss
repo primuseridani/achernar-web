@@ -8,7 +8,7 @@
 	}
 
 	a, a:visited {
-		color: $textColour;
+		color: var(--textColour);
 	}
 
 	em {
@@ -18,7 +18,7 @@
 
 	span {
 		&.code {
-			background-color: $foregroundColour;
+			background-color: var(--foregroundColour);
 			border-radius:    0.25rem;
 			font-family:      "Fira Mono", "monospace";
 			padding:          0.25rem;
@@ -38,7 +38,7 @@
 	}
 
 	#contentHeading {
-		background-color: $foregroundColour;
+		background-color: var(--foregroundColour);
 		border-radius:    1rem;
 		display:          block;
 		font-size:        4em;
@@ -68,7 +68,7 @@
 		width:               100%;
 
 		&::after {
-			background-color: $textColour;
+			background-color: var(--textColour);
 			border-radius:    0.125rem;
 			content:          "";
 			display:          block;
@@ -96,11 +96,14 @@
 		img.blur {
 			filter:   blur(1rem);
 			position: absolute;
-			z-index:  -1;
-			width:           100%;
+			z-index:  1;
+			width:    100%;
 		}
 
 		a {
+			position: relative;
+			z-index:  1;
+
 			img {
 				border-radius:   1rem;
 				display:         block;
@@ -111,7 +114,7 @@
 	}
 
 	#footnote {
-		background-color: $foregroundColour;
+		background-color: var(--foregroundColour);
 		border-radius:    1rem;
 		font-family:      "Martian Mono", "monospace";
 		font-size:        0.75em;
@@ -119,8 +122,9 @@
 		padding:          1rem;
 
 		.separator {
-			background-color: $textColour;
-			height:           0.125rem;
+			background-color: var(--textColour);
+			border-radius:    0.125rem;
+			height:           0.25rem;
 			margin:           1rem auto;
 			width:            100%;
 		}
@@ -130,13 +134,18 @@
 			font-weight: bold;
 		}
 
+		.obfuscatedText {
+			background-color: var(--textColour);
+			height:           1rem;
+			mask-position:    center;
+			mask-repeat:      no-repeat;
+			mask-size:        contain;
+			width:            100%;
+		}
+
 		img {
 			display: block;
 			margin:  auto;
-
-			&.obfuscatedText {
-				height: 1rem;
-			}
 		}
 
 		table {

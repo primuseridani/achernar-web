@@ -1,17 +1,9 @@
 @import "fonts";
 
-$backgroundColour: oklch(20% 0.041075 270);
-$foregroundColour: oklch(25% 0.041075 270);
-$textColour:       oklch(100% 0 0);
-$highlightColour:  oklch(75% 0.292700 149.34);
-
 $achernarColour: #007B34;
 
 :root {
 	font-family: "Raleway", "sans-serif";
-
-	background-color: $backgroundColour;
-	color:            $textColour;
 }
 
 * {
@@ -19,6 +11,68 @@ $achernarColour: #007B34;
 	padding: 0;
 
 	box-sizing: border-box;
+}
+
+#body {
+	background-color: var(--backgroundColour);
+	color:            var(--textColour);
+	z-index:          -1;
+
+	&[data-theme = "light"] {
+		--backgroundColour: oklch(100%     0 0);
+		--foregroundColour: oklch( 96.875% 0 0);
+		--textColour:       oklch( 25%     0 0);
+	}
+
+	&[data-theme = "dark"] {
+		--backgroundColour: oklch( 20% 0.041075 270);
+		--foregroundColour: oklch( 25% 0.041075 270);
+		--textColour:       oklch(100% 0          0);
+	}
+
+	&[data-page = "about"] {
+		--pageHighlightColour: #FFFFFF;
+	}
+
+	&[data-page = "ax"] {
+		--pageHighlightColour: #FFFFFF;
+	}
+
+	&[data-page = "backspace"] {
+		--pageHighlightColour: #FFFFFF;
+	}
+
+	&[data-page = "benoit"] {
+		--pageHighlightColour: #FFFFFF;
+	}
+
+	&[data-page = "bowshock"] {
+		--pageHighlightColour: #FFEEE0;
+	}
+
+	&[data-page = "bzipper"] {
+		--pageHighlightColour: #B4202D;
+	}
+
+	&[data-page = "deltaWorld"] {
+		--pageHighlightColour: #FFFFFF;
+	}
+
+	&[data-page = "eas"] {
+		--pageHighlightColour: #00291B;
+	}
+
+	&[data-page = "luma"] {
+		--pageHighlightColour: #FFFFFF;
+	}
+
+	&[data-page = "pollex"] {
+		--pageHighlightColour: #FFFFFF;
+	}
+
+	&[data-page = "u8c"] {
+		--pageHighlightColour: #A9E13D;
+	}
 }
 
 ol, ul {
