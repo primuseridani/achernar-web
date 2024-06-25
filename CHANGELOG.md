@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2
+
+* Fix titles
+
 ## 3.1
 
 * Fix u8c glyph
