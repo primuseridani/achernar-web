@@ -1,4 +1,4 @@
-<svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
+<svg height="88" width="88" xmlns="http://www.w3.org/2000/svg">
 	<clipPath id="clip0">
 		<rect height="100%" width="50%" x="0" y="0" />
 	</clipPath>
@@ -8,30 +8,30 @@
 	</clipPath>
 
 	<mask id="background">
-		<circle cx="48" cy="48" fill="white" r="42" />
+		<circle cx="44" cy="44" fill="white" r="42" />
 
-		<circle cx="48" cy="48" fill="none" r="42" stroke="black" stroke-width="12" />
+		<circle cx="44" cy="44" fill="none" r="42" stroke="black" stroke-width="12" />
 
-		<circle cx="48" cy="29" fill="none" r="23" stroke="black" stroke-width="12" />
-		<circle cx="48" cy="67" fill="none" r="23" stroke="black" stroke-width="12" />
+		<circle cx="44" cy="25" fill="none" r="23" stroke="black" stroke-width="12" />
+		<circle cx="44" cy="63" fill="none" r="23" stroke="black" stroke-width="12" />
 	</mask>
 
 	<mask id="glyph">
-		<circle clip-path="url(#clip0)" cx="48" cy="67" fill="none" r="23" stroke="white" stroke-width="4" />
+		<circle clip-path="url(#clip0)" cx="44" cy="63" fill="none" r="23" stroke="white" stroke-width="4" />
 
-		<circle clip-path="url(#clip0)" cx="48" cy="29" fill="none" r="23" stroke="black" stroke-width="12" />
-		<circle clip-path="url(#clip0)" cx="48" cy="29" fill="none" r="23" stroke="white" stroke-width="4" />
+		<circle clip-path="url(#clip0)" cx="44" cy="25" fill="none" r="23" stroke="black" stroke-width="12" />
+		<circle clip-path="url(#clip0)" cx="44" cy="25" fill="none" r="23" stroke="white" stroke-width="4" />
 
-		<circle clip-path="url(#clip1)" cx="48" cy="29" fill="none" r="23" stroke="white" stroke-width="4" />
+		<circle clip-path="url(#clip1)" cx="44" cy="25" fill="none" r="23" stroke="white" stroke-width="4" />
 
-		<circle clip-path="url(#clip1)" cx="48" cy="67" fill="none" r="23" stroke="black" stroke-width="12" />
-		<circle clip-path="url(#clip1)" cx="48" cy="67" fill="none" r="23" stroke="white" stroke-width="4" />
+		<circle clip-path="url(#clip1)" cx="44" cy="63" fill="none" r="23" stroke="black" stroke-width="12" />
+		<circle clip-path="url(#clip1)" cx="44" cy="63" fill="none" r="23" stroke="white" stroke-width="4" />
 
-		<circle cx="48" cy="48" fill="none" r="42" stroke="white" stroke-width="4" />
+		<circle cx="44" cy="44" fill="none" r="42" stroke="white" stroke-width="4" />
 
 		<!-- Joints: -->
-		<circle cx="48" cy="44" fill="white" r="2" />
-		<circle cx="48" cy="52" fill="white" r="2" />
+		<circle cx="44" cy="40" fill="white" r="2" />
+		<circle cx="44" cy="48" fill="white" r="2" />
 	</mask>
 
 	<rect fill="#FFFFFF" height="100%" mask="url(#background)" width="100%" x="0" y="0" />

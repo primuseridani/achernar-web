@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1
+
+* Fix u8c glyph
+
 ## 3.0
 
 * Add contact information
