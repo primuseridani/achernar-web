@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.5
+
+* Add Dark Reader lock
+* Add project *u8c*
+
 ## 2.4
 
 * Misc. style changes

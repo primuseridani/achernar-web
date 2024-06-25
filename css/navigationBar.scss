@@ -51,6 +51,10 @@
 		--foregroundColour: #FFFFFF;
 	}
 
+	body.u8c & {
+		--foregroundColour: #A9E13D;
+	}
+
 	a {
 		color:                 var(--foregroundColour);
 		font-weight:           bold;
