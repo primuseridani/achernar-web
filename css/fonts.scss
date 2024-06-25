@@ -21,20 +21,38 @@
 }
 
 @font-face {
-	font-family: "Oswald";
-	src:         url("/ttf/Oswald-Regular.ttf");
+	font-family: "Montserrat";
+	src:         url("/ttf/Montserrat-Regular.ttf");
 }
 
 @font-face {
-	font-family: "Oswald";
-	font-weight: bold;
-	src:         url("/ttf/Oswald-Bold.ttf");
+	font-family: "Montserrat";
+	font-style:  italic;
+	src:         url("/ttf/Montserrat-Italic.ttf");
 }
 
 @font-face {
-	font-family: "Oswald";
+	font-family: "Montserrat";
 	font-weight: bold;
-	src:         url("/ttf/Oswald-Bold.ttf");
+	src:         url("/ttf/Montserrat-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style:  italic;
+	font-weight: bold;
+	src:         url("/ttf/Montserrat-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family: "Play";
+	src:         url("/ttf/Play-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Play";
+	font-weight: bold;
+	src:         url("/ttf/Play-Bold.ttf");
 }
 
 @font-face {

@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.2
+
+* Remove and add some fonts
+* Update font attribution
+
 ## 4.1
 
 * Fix *coming soon* pages
