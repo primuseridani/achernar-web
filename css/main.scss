@@ -39,7 +39,7 @@ $achernarColour: #007B34;
 	}
 
 	&[data-page = "backspace"] {
-		--pageHighlightColour: #FFFFFF;
+		--pageHighlightColour: var(--textColour);
 	}
 
 	&[data-page = "benoit"] {
@@ -55,7 +55,7 @@ $achernarColour: #007B34;
 	}
 
 	&[data-page = "deltaWorld"] {
-		--pageHighlightColour: #FFFFFF;
+		--pageHighlightColour: var(--textColour);
 	}
 
 	&[data-page = "eas"] {

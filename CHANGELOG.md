@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1
+
+* Fix *coming soon* pages
+
 ## 4.0
 
 * Add light theme (and toggler button)
