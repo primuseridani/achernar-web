@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.3
+
+* Make and install icons
+* Update gitignore
+
 ## 3.2
 
 * Fix titles

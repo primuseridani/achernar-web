@@ -1,13 +1,7 @@
 <svg height="112" width="336" xmlns="http://www.w3.org/2000/svg">
-	<!-- gradients: -->
-
-	<!-- clips: -->
-
 	<clipPath id="clip0">
 		<polygon points="68,64 80,64 80,96 68,96" />
 	</clipPath>
-
-	<!-- masks: -->
 
 	<mask id="wordmark">
 		<polygon fill="white" points="24,16 72,16 80,24 80,48 64,48 64,40 32,40 32,48 16,48 16,24" />
@@ -39,8 +33,6 @@
 		<circle cx="312" cy="80" fill="white" r="8" />
 		<polygon fill="black" points="272,72 304,72 304,80 272,80" />
 	</mask>
-
-	<!-- fills: -->
 
 	<rect fill="#007B34" height="100%" width="100%" x="0" y="0" /> <!-- 356 C -->
 	<rect fill="#FFFFFF" mask="url(#wordmark)" height="100%" width="100%" x="0" y="0" />
