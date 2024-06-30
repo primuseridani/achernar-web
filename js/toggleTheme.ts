@@ -1,7 +1,8 @@
+/// <reference path="getTheme.ts" />
 /// <reference path="setTheme.ts" />
 
 function toggleTheme() {
-	let theme: Theme = JSON.parse(localStorage.getItem("theme")!);
+	let theme = getTheme();
 
 	if (theme == Theme.Light) {
 		theme = Theme.Dark;

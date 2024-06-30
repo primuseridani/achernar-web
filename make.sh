@@ -51,6 +51,7 @@ make_script() {
 make_stylesheet "main"
 make_stylesheet "noScript"
 
+make_script "getTheme"
 make_script "initImages"
 make_script "loadPage"
 make_script "setNavBarState"

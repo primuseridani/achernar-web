@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.1
+
+* Fix fonts
+* Fix themes not working with invalid local storage
+
 ## 5.0
 
 * Elaborate pages
