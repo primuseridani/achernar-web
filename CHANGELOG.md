@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.2
+
+* Open source link in new tab
+
 ## 5.1
 
 * Fix fonts
