@@ -1,0 +1,7 @@
+<div id="frontPage">
+	<div id="hamburger" onclick="toggleNavBar();"></div>
+
+	<p id="glyph">COMING SOON</p>
+</div>
+
+<div id="content"></div>

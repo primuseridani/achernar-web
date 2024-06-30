@@ -1,0 +1,37 @@
+<div id="frontPage">
+	<div id="hamburger" onclick="toggleNavBar();"></div>
+
+	<div data-state="Hidden" id="navBar">
+		<section>
+			<p class="heading">ACHERNAR</p>
+
+			<p class="clickable" onclick="loadPage('about');">ABOUT</p>
+			<a href="https://mandelbrot.dk" rel="noopener noreferrer" target="_blank">SOURCES</a>
+		</section>
+
+		<section>
+			<p class="heading">PRODUCTS</p>
+
+			<p class="clickable" onclick="loadPage('bowshock');">BOWSHOCK</p>
+			<p class="clickable" onclick="loadPage('deltaWorld');">DELTA&middot;WORLD</p>
+		</section>
+
+		<section>
+			<p class="heading">PROJECTS</p>
+
+			<p class="clickable" onclick="loadPage('agbsum');">AGBSUM</p>
+			<p class="clickable" onclick="loadPage('ax');">AX</p>
+			<p class="clickable" onclick="loadPage('backspace');">BACKSPACE</p>
+			<p class="clickable" onclick="loadPage('benoit');">BENOIT</p>
+			<p class="clickable" onclick="loadPage('bzipper');">BZIPPER</p>
+			<p class="clickable" onclick="loadPage('eas');">eAS</p>
+			<p class="clickable" onclick="loadPage('luma');">LUMA</p>
+			<p class="clickable" onclick="loadPage('pollex');">POLLEX</p>
+			<p class="clickable" onclick="loadPage('u8c');">U8C</p>
+		</section>
+
+		<p class="clickable" id="themeToggler" onclick="toggleTheme();">TOGGLE THEME</p>
+	</div>
+
+	<div id="glyph"></div>
+</div>

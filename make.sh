@@ -35,7 +35,7 @@ make_stylesheet() {
 	output="css/${1}.css"
 
 	echo making stylesheet at \"${output}\"...
-	sassc --style compressed "${input}" > "${output}"
+	sass --no-source-map --style=compressed "${input}" "${output}"
 }
 
 make_script() {
@@ -46,11 +46,14 @@ make_script() {
 	tsc --outFile "${output}" --target ES2022 "${input}"
 }
 
-make_icon "svg/achernar-icon.svg"
+#make_icon "svg/achernar-icon.svg"
 
 make_stylesheet "main"
 make_stylesheet "noScript"
 
 make_script "initImages"
+make_script "loadPage"
+make_script "setNavBarState"
 make_script "setTheme"
+make_script "toggleNavBar"
 make_script "toggleTheme"

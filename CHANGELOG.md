@@ -1,5 +1,17 @@
 # Changelog
 
+## 5.0
+
+* Elaborate pages
+* Rework navigation bar and theme toggler
+* Use Dart Sass instead of SassC
+* Rework front pages
+* Add new page *agbsum*
+* Specify language
+* Load pages with scripts
+* Use AVIF thumbnails instead of WebP
+* Update gitignore
+
 ## 4.2
 
 * Remove and add some fonts

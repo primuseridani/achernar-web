@@ -2,6 +2,11 @@
 
 $achernarColour: #007B34;
 
+$frontPageHeight:     calc(100vh + 1rem);
+$navBarSlideDuration: 0.5s;
+
+$shadow: 0 0 1rem color-mix(in srgb, black, transparent 75%);;
+
 :root {
 	font-family: "Raleway", "sans-serif";
 }
@@ -18,60 +23,16 @@ $achernarColour: #007B34;
 	color:            var(--textColour);
 	z-index:          -1;
 
-	&[data-theme = "light"] {
+	&[data-theme = "Light"] {
 		--backgroundColour: oklch(100%     0 0);
 		--foregroundColour: oklch( 96.875% 0 0);
 		--textColour:       oklch( 25%     0 0);
 	}
 
-	&[data-theme = "dark"] {
+	&[data-theme = "Dark"] {
 		--backgroundColour: oklch( 20% 0.041075 270);
 		--foregroundColour: oklch( 25% 0.041075 270);
 		--textColour:       oklch(100% 0          0);
-	}
-
-	&[data-page = "about"] {
-		--pageHighlightColour: #FFFFFF;
-	}
-
-	&[data-page = "ax"] {
-		--pageHighlightColour: #FFFFFF;
-	}
-
-	&[data-page = "backspace"] {
-		--pageHighlightColour: var(--textColour);
-	}
-
-	&[data-page = "benoit"] {
-		--pageHighlightColour: #FFFFFF;
-	}
-
-	&[data-page = "bowshock"] {
-		--pageHighlightColour: #FFEEE0;
-	}
-
-	&[data-page = "bzipper"] {
-		--pageHighlightColour: #B4202D;
-	}
-
-	&[data-page = "deltaWorld"] {
-		--pageHighlightColour: var(--textColour);
-	}
-
-	&[data-page = "eas"] {
-		--pageHighlightColour: #00291B;
-	}
-
-	&[data-page = "luma"] {
-		--pageHighlightColour: #FFFFFF;
-	}
-
-	&[data-page = "pollex"] {
-		--pageHighlightColour: #FFFFFF;
-	}
-
-	&[data-page = "u8c"] {
-		--pageHighlightColour: #A9E13D;
 	}
 }
 
@@ -83,6 +44,5 @@ li p::before {
 	content: "\2014\0020";
 }
 
-@import "navigationBar.scss";
 @import "frontPage.scss";
 @import "content.scss";

@@ -1,65 +1,176 @@
 #frontPage {
-	align-items:                center;
 	border-bottom-left-radius:  1rem;
 	border-bottom-right-radius: 1rem;
-	display:                    flex;
-	justify-content:            center;
+	box-shadow:                 $shadow;
+	color:                      var(--pageHighlightColour);
 	height:                     calc(100vh + 1rem);
 	padding-bottom:             1rem;
-	pointer-events:             none;
+	position:                   absolute;
+	top:                        0;
+	user-select:                none;
 	width:                      100%;
 
 	body[data-page = "about"] & {
+		--pageHighlightColour: #FFFFFF;
+
 		background-color: $achernarColour;
+
+		div#glyph {
+			background-image: url("/svg/glyph/achernar.svg");
+		}
+	}
+
+	body[data-page = "agbsum"] & {
+		--pageHighlightColour: #FFFFFF;
+
+		background-color: #422984;
+
+		div#glyph {
+			background-image: url("/svg/glyph/ax.svg");
+		}
 	}
 
 	body[data-page = "ax"] & {
+		--pageHighlightColour: #FFFFFF;
+
 		background-color: #422984;
+
+		div#glyph {
+			background-image: url("/svg/glyph/ax.svg");
+		}
 	}
 
 	body[data-page = "backspace"] & {
+		--pageHighlightColour: var(--textColour);
+
 		background-color: var(--backgroundColour);
+
+		div#glyph {
+			background-image: url("/svg/glyph/backspace.svg");
+		}
 	}
 
 	body[data-page = "benoit"] & {
+		--pageHighlightColour: #FFFFFF;
+
 		background-image: url("/svg/benoit-background.svg");
 		background-size:  cover;
+
+		div#glyph {
+			background-image: url("/svg/glyph/benoit.svg");
+		}
 	}
 
 	body[data-page = "bowshock"] & {
+		--pageHighlightColour: #FFEEE0;
+
 		background-color: #B61833;
+
+		div#glyph {
+			background-image: url("/svg/glyph/bowshock.svg");
+		}
 	}
 
 	body[data-page = "bzipper"] & {
+		--pageHighlightColour: #B4202D;
+
 		background-color: #FFFFFF;
+
+		div#glyph {
+			background-image: url("/svg/glyph/bzipper.svg");
+		}
 	}
 
 	body[data-page = "deltaWorld"] & {
+		--pageHighlightColour: var(--textColour);
+
 		background-color: var(--backgroundColour);
+
+		div#glyph {
+			background-image: url("/svg/glyph/deltaWorld.svg");
+		}
 	}
 
 	body[data-page = "eas"] & {
+		--pageHighlightColour: #00291B;
+
 		background-color: #01CD93;
+
+		div#glyph {
+			background-image: url("/svg/glyph/eas.svg");
+		}
 	}
 
 	body[data-page = "luma"] & {
+		--pageHighlightColour: #FFFFFF;
+
 		background-color: #6051B2;
+
+		div#glyph {
+			background-image: url("/svg/glyph/luma.svg");
+		}
 	}
 
 	body[data-page = "pollex"] & {
+		--pageHighlightColour: #FFFFFF;
+
 		background-color: #4D4084;
+
+		div#glyph {
+			background-image: url("/svg/glyph/pollex.svg");
+		}
 	}
 
 	body[data-page = "u8c"] & {
+		--pageHighlightColour: #A9E13D;
+
 		background-color: #444747;
+
+		div#glyph {
+			background-image: url("/svg/glyph/u8c.svg");
+		}
 	}
 
+	#hamburger {
+		aspect-ratio:     1;
+		background-color: var(--pageHighlightColour);
+		cursor:           pointer;
+		left:             1rem;
+		mask-image:       url("/svg/hamburger.svg");
+		mask-position:    center;
+		mask-repeat:      no-repeat;
+		mask-size:        cover;
+		position:         absolute;
+		top:              1rem;
+		transition:       background-color $navBarSlideDuration;
+		width:            2rem;
+		z-index:          255;
+
+		&[data-navBarState = "Visible"] {
+			background-color: var(--textColour);
+		}
+	}
+
+	@import "navBar";
+
 	#glyph {
-		display:     block;
-		font-size:   4rem;
+		display:   block;
+		left:      50vw;
+		position:  absolute;
+		top:       50vh;
+		transform: translate(-50%, -50%);
+	}
+
+	div#glyph {
+		aspect-ratio:        1;
+		background-position: center;
+		background-repeat:   no-repeat;
+		background-size:     contain;
+		width:               calc(100vmin / 2);
+	}
+
+	p#glyph {
+		font-size:   4em;
 		font-weight: bold;
-		height:      fit-content;
-		width:       calc(100vmin / 2);
-		text-align:  center;
 	}
 }

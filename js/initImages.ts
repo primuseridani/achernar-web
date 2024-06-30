@@ -1,14 +1,13 @@
 function initImages() {
 	let content = document.getElementById("content")!;
 
-	let image_count = 0x0;
 	let image_list  = Array.from(content.getElementsByTagName("x-image"));
 	for (let image of image_list) {
 		let file = image.getAttribute("data-file")!;
 		console.log("initialising image that links to \"" + file + "\"");
 
-		let source_url    = "/webp/source/" + file + ".webp";
-		let thumbnail_url = "/webp/thumbnail/" + file + ".webp";
+		let source_url    = "/image/source/" + file + ".webp";
+		let thumbnail_url = "/image/thumbnail/" + file + ".avif";
 
 		let blur_element = document.createElement("img");
 		blur_element.setAttribute("class", "blur");
@@ -26,9 +25,5 @@ function initImages() {
 		hyperlink_element.appendChild(image_element);
 
 		image.appendChild(hyperlink_element);
-
-		++image_count;
 	}
-
-	console.log("initialised (" + image_count + ") image(s)");
 }

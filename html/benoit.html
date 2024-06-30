@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="darkreader-lock">
@@ -14,12 +14,8 @@
 		</noscript>
 	</head>
 
-	<body data-page="benoit" data-theme="dark" id="body">
-		<!--#include virtual="/shtml/navigationBar.shtml"-->
-
-		<div id="frontPage">
-			<img id="glyph" src="/svg/glyph/benoit.svg">
-		</div>
+	<body data-page="benoit" data-theme="Dark" id="body">
+		<!--#include virtual="/include/frontPage.shtml"-->
 
 		<div id="content">
 			<p id="contentHeading">Benoit</p>
@@ -41,14 +37,22 @@
 			</section>
 
 			<section>
+				<p class="heading">benoit-gui</p>
+
+				<p>The <span class="code">benoit-gui</span> executable, on the other hand, allows viewing fractals in realtime. Do note, however, that this frontend is currently unimplemented.</p>
+				<br>
+				<x-image data-file="benoit_screenshot2"></x-image>
+			</section>
+
+			<section>
 				<p class="heading">Docs</p>
 
 				<p>Documentation for the main library can be found on <a href="https://docs.rs/benoit/latest/benoit/"><span class="code">docs.rs</span></a>.</p>
 			</section>
 
-			<!--#include virtual="/shtml/footnote.shtml"-->
+			<!--#include virtual="/include/footnote.shtml"-->
 		</div>
 
-		<!--#include virtual="/shtml/initScripts.shtml"-->
+		<!--#include virtual="/include/initScripts.shtml"-->
 	</body>
 </html>

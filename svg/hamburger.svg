@@ -1,0 +1,9 @@
+<svg height="15" width="15" xmlns="http://www.w3.org/2000/svg">
+	<mask id="wordmark">
+		<rect fill="white" height="3" rx="1" width="15" x="0" y="0" />
+		<rect fill="white" height="3" rx="1" width="15" x="0" y="6" />
+		<rect fill="white" height="3" rx="1" width="15" x="0" y="12" />
+	</mask>
+
+	<rect fill="#FFFFFF" mask="url(#wordmark)" height="100%" width="100%" x="0" y="0" />
+</svg>
