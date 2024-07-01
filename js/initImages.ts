@@ -1,7 +1,7 @@
 function initImages() {
-	let content = document.getElementById("content")!;
+	let page = document.getElementById("page")!;
 
-	let image_list  = Array.from(content.getElementsByTagName("x-image"));
+	let image_list  = Array.from(page.getElementsByTagName("x-image"));
 	for (let image of image_list) {
 		let file = image.getAttribute("data-file")!;
 		console.log("initialising image that links to \"" + file + "\"");

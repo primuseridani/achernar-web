@@ -4,7 +4,14 @@ DESTINATION="${1}"
 
 if [ -z "${DESTINATION}" ]
 then
-	echo missing destination directory...
+	printf "missing destination directory...\n"
+	printf "\n"
+	printf "Usage:\n"
+	printf "    install.sh <directory>\n"
+	printf "\n"
+	printf "Installs the server to the given directory.\n"
+
+	exit 1
 fi
 
 mkdir -p "${DESTINATION}"

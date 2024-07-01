@@ -6,7 +6,7 @@ make_icon() {
 		width="${2}"
 		output="${3}"
 
-		echo rendering icon at \"${input}\" as ${width}px by ${width}px to \"${output}\"
+		printf "rendering icon at \"%s\" as %ipx by %ipx to \"%s\"\n" "${input}" ${width} ${width} "${output}"
 		inkscape -w ${width} -h ${width} "${input}" -o "${output}"
 	}
 
@@ -24,7 +24,7 @@ make_icon() {
 	render_icon "${input}" 192 "${directory}/192x192.png"
 	render_icon "${input}" 256 "${directory}/256x256.png"
 
-	echo combining renders in \"${directory}\" to \"${output}\"
+	printf "combining renders in \"%s\" to \"%s\"\n" "${directory}" "${output}"
 	icotool -co "favicon.ico" "${directory}/"*".png"
 
 	render_icon "${input}" 180 "apple-touch-icon.png"
@@ -34,7 +34,7 @@ make_stylesheet() {
 	input="css/${1}.scss"
 	output="css/${1}.css"
 
-	echo making stylesheet at \"${output}\"...
+	printf "making stylesheet at \"%s\"...\n" "${output}"
 	sass --no-source-map --style=compressed "${input}" "${output}"
 }
 
@@ -42,11 +42,11 @@ make_script() {
 	input="js/${1}.ts"
 	output="js/${1}.js"
 
-	echo making script at \"${output}\"...
+	printf "making script at \"%s\"...\n" "${output}"
 	tsc --outFile "${output}" --target ES2022 "${input}"
 }
 
-#make_icon "svg/achernar-icon.svg"
+make_icon "svg/achernar-icon.svg"
 
 make_stylesheet "main"
 make_stylesheet "noScript"

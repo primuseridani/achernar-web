@@ -1,5 +1,14 @@
 # Changelog
 
+## 6.1
+
+* Elaborate pages
+* Add readme
+* Make scripts verbose
+* Fix images
+* Add CVR number
+* Rework footer
+
 ## 6.0
 
 * Add mobile styling

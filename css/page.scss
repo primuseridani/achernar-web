@@ -4,7 +4,7 @@
 	padding:     1rem;
 	padding-top: calc($headerHeight + 1rem);
 
-	p:not(.heading, #contentHeading, #cloneNotice p) {
+	p:not(.heading, #pageHeading, #footer p) {
 		line-height: 2em;
 	}
 
@@ -34,11 +34,11 @@
 		}
 	}
 
-	p.heading, #contentHeading {
+	p.heading, #pageHeading {
 		font-family: "Martian Mono", "monospace";
 	}
 
-	#contentHeading {
+	#pageHeading {
 		background-color: var(--foregroundColour);
 		border-radius:    1rem;
 		display:          block;
@@ -65,17 +65,17 @@
 	}
 
 	p.heading {
-		font-size:           2em;
-		font-weight:         bold;
-		margin-bottom:       1rem;
-		width:               100%;
+		font-size:   2em;
+		font-weight: bold;
+		width:       100%;
 
 		&::after {
 			background-color: var(--textColour);
-			border-radius:    0.125rem;
+			border-radius:    0.25rem;
 			content:          "";
 			display:          block;
 			height:           0.25rem;
+			margin-bottom:    1rem;
 			margin-top:       0.25rem;
 			width:            100%;
 		}
@@ -111,7 +111,14 @@
 				border-radius:   1rem;
 				display:         block;
 				image-rendering: pixelated;
-				width:           100%;
+
+				&.fullheight {
+					height: 12rem;
+				}
+
+				&.fullwidth {
+					width: 100%;
+				}
 			}
 		}
 	}
