@@ -1,6 +1,4 @@
 #navBar {
-	backdrop-filter:  blur(1rem);
-	background-color: color-mix(in srgb, var(--backgroundColour), transparent 50%);
 	box-shadow:       $shadow;
 	color:            var(--textColour);
 	display:          flex;
@@ -8,11 +6,9 @@
 	left:             0;
 	min-height:       calc(100vh + 1rem);
 	padding:          1rem;
-	padding-top:      4rem;
 	position:         absolute;
 	transform:        translateX(-100%);
 	transition:       transform $navBarSlideDuration;
-	width:            50%;
 	z-index:          127;
 
 	&[data-state = "Visible"] {
@@ -60,12 +56,42 @@
 		transform: translateX(-50%);
 	}
 
-	@media (orientation: landscape) {
-		border-bottom-right-radius: 1rem;
-		border-top-right-radius:    1rem;
+	@media (pointer: fine) {
+		backdrop-filter:  blur(1rem);
+		background-color: color-mix(in srgb, var(--backgroundColour), transparent 50%);
+		padding-top:      4rem;
+
+		@media (orientation: landscape) {
+			border-bottom-right-radius: 1rem;
+			border-top-right-radius:    1rem;
+			width:                      50%;
+		}
+
+		@media (orientation: portrait) {
+			width: 100%;
+		}
 	}
 
-	@media (orientation: portrait) {
-		width: 100%;
+	@media (pointer: coarse) {
+		background-color: var(--backgroundColour);
+		flex-direction:   column;
+		font-size:        4rem;
+		padding-top:      6rem;
+		width:            100%;
+
+
+		p.clickable, a {
+			text-align: center;
+		}
+
+		p.heading::before {
+			background-color: var(--textColour);
+			border-radius:    0.25rem;
+			content:          "";
+			display:          block;
+			height:           0.25rem;
+			margin-bottom:    0.5rem;
+			width:            100%;
+		}
 	}
 }

@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.0
+
+* Add mobile styling
+* Add hamburger note
+* Update fonts
+
 ## 5.2
 
 * Open source link in new tab

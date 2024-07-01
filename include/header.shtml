@@ -1,5 +1,6 @@
-<div id="frontPage">
+<header id="header">
 	<div id="hamburger" onclick="toggleNavBar();"></div>
+	<div id="clickMe"></div>
 
 	<div data-state="Hidden" id="navBar">
 		<section>
@@ -34,4 +35,4 @@
 	</div>
 
 	<div id="glyph"></div>
-</div>
+</header>

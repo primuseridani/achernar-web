@@ -1,4 +1,4 @@
-#frontPage {
+#header {
 	border-bottom-left-radius:  1rem;
 	border-bottom-right-radius: 1rem;
 	box-shadow:                 $shadow;
@@ -135,7 +135,6 @@
 		aspect-ratio:     1;
 		background-color: var(--pageHighlightColour);
 		cursor:           pointer;
-		left:             1rem;
 		mask-image:       url("/svg/hamburger.svg");
 		mask-position:    center;
 		mask-repeat:      no-repeat;
@@ -143,12 +142,22 @@
 		position:         absolute;
 		top:              1rem;
 		transition:       background-color $navBarSlideDuration;
-		width:            2rem;
 		z-index:          255;
 
 		&[data-navBarState = "Visible"] {
 			background-color: var(--textColour);
 		}
+	}
+
+	#clickMe {
+		background-color: var(--pageHighlightColour);
+		height:           2rem;
+		mask-image:       url("/image/clickMe.webp");
+		mask-position:    center;
+		mask-repeat:      no-repeat;
+		mask-size:        cover;
+		position:         absolute;
+		width:            16rem;
 	}
 
 	@import "navBar";
@@ -172,5 +181,30 @@
 	p#glyph {
 		font-size:   4em;
 		font-weight: bold;
+	}
+
+	@media (pointer: fine) {
+		#hamburger {
+			left:  1rem;
+			width: 2rem;
+		}
+
+		#clickMe {
+			left: 4rem;
+			top:  1rem;
+		}
+	}
+
+	@media (pointer: coarse) {
+		#hamburger {
+			left:      50%;
+			transform: translateX(-50%);
+			width:     4rem;
+		}
+
+		#clickMe {
+			left: calc(50% + 3rem);
+			top:  2rem;
+		}
 	}
 }

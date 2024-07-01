@@ -2,7 +2,7 @@
 
 $achernarColour: #007B34;
 
-$frontPageHeight:     calc(100vh + 1rem);
+$headerHeight:     calc(100vh + 1rem);
 $navBarSlideDuration: 0.5s;
 
 $shadow: 0 0 1rem color-mix(in srgb, black, transparent 75%);;
@@ -44,5 +44,5 @@ li p::before {
 	content: "\2014\0020";
 }
 
-@import "frontPage.scss";
-@import "content.scss";
+@import "header.scss";
+@import "page.scss";
