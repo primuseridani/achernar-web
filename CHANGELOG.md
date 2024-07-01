@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.2
+
+* Fix footer styling
+
 ## 6.1
 
 * Elaborate pages
