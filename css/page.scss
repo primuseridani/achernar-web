@@ -8,7 +8,7 @@
 		line-height: 2em;
 	}
 
-	a, a:visited {
+	p.link, a, a:visited {
 		color: var(--textColour);
 	}
 
@@ -111,14 +111,7 @@
 				border-radius:   1rem;
 				display:         block;
 				image-rendering: pixelated;
-
-				&.fullheight {
-					height: 12rem;
-				}
-
-				&.fullwidth {
-					width: 100%;
-				}
+				width:           100%;
 			}
 		}
 	}

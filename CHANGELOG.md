@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3
+
+* Fix images
+
 ## 6.2
 
 * Fix footer styling
