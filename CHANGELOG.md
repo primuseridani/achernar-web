@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.1
+
+* Fix vertex
+
 ## 7.0
 
 * Fix internal links
