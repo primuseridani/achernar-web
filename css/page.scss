@@ -80,6 +80,13 @@
 			font-style:  normal;
 			font-weight: bold;
 		}
+
+		ul {
+			background-color: var(--foregroundColour);
+			border-radius:    1rem;
+			padding:          1rem;
+			width:            100%;
+		}
 	}
 
 	x-image {

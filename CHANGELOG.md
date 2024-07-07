@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.2
+
+* Elaborate pages
+* Update styling
+* Add Delta World glyph
+
 ## 7.1
 
 * Fix vertex

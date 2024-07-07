@@ -1,6 +1,4 @@
 #banner {
-	--textColour: var(--bannerHighlightColour);
-
 	align-items:     center;
 	background-size: cover;
 	display:         flex;
@@ -13,7 +11,7 @@
 	width:           100%;
 
 	body[data-page = "achernar"] & {
-		--bannerHighlightColour: #FFFFFF;
+		--textColour: #FFFFFF;
 
 		background-color: #007B34;
 
@@ -23,67 +21,67 @@
 	}
 
 	body[data-page = "agbsum"] & {
-		--bannerHighlightColour: #FFFFFF;
+		--textColour: #FFFFFF;
 
 		background-color: #422984;
 	}
 
 	body[data-page = "ax"] & {
-		--bannerHighlightColour: #FFFFFF;
+		--textColour: #FFFFFF;
 
 		background-color: #422984;
 	}
 
 	body[data-page = "backspace"] & {
-		--bannerHighlightColour: var(--textColour);
+		--textColour: #000000;
 
-		background-color: var(--backgroundColour);
+		background-color: #FFFFFF;
 	}
 
 	body[data-page = "benoit"] & {
-		--bannerHighlightColour: #FFFFFF;
+		--textColour: #FFFFFF;
 
 		background-image: url("/svg/benoit-background.svg");
 	}
 
 	body[data-page = "bowshock"] & {
-		--bannerHighlightColour: #FFEEE0;
+		--textColour: #FFEEE0;
 
 		background-color: #B61833;
 	}
 
 	body[data-page = "bzipper"] & {
-		--bannerHighlightColour: #B4202D;
+		--textColour: #B4202D;
 
 		background-color: #FFFFFF;
 	}
 
 	body[data-page = "deltaWorld"] & {
-		--bannerHighlightColour: var(--textColour);
+		--textColour: #FFFFFF;
 
-		background-color: var(--backgroundColour);
+		background-color: #000000;
 	}
 
 	body[data-page = "eas"] & {
-		--bannerHighlightColour: #00291B;
+		--textColour: #00291B;
 
 		background-color: #01CD93;
 	}
 
 	body[data-page = "luma"] & {
-		--bannerHighlightColour: #FFFFFF;
+		--textColour: #FFFFFF;
 
 		background-color: #6051B2;
 	}
 
 	body[data-page = "pollex"] & {
-		--bannerHighlightColour: #FFFFFF;
+		--textColour: #FFFFFF;
 
 		background-color: #4D4084;
 	}
 
 	body[data-page = "u8c"] & {
-		--bannerHighlightColour: #A9E13D;
+		--textColour: #A9E13D;
 
 		background-color: #444747;
 	}

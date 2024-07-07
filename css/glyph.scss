@@ -1,21 +1,28 @@
 #glyph {
-	aspect-ratio:               1;
-	background-position:        center;
-	background-repeat:          no-repeat;
-	background-size:            contain;
-	transition:                 transform 0.125s;
-	transition-timing-function: steps(4);
-	width:                      50vmin;
+	aspect-ratio:        1;
+	background-position: center;
+	background-repeat:   no-repeat;
+	background-size:     contain;
+	pointer-events:      none;
+	width:               50vmin;
 
 	body[data-page = "achernar"] & {
 		$pixelWIdth: calc(100vmax / 256);
 
-		background-image: url("/image/achernar.webp");
-		height:           floor(calc($pixelWIdth * 42));
-		width:            floor(calc($pixelWIdth * 154));
+		@media not (prefers-reduced-motion) {
+			background-image:           url("/image/achernarPixelated.webp");
+			height:                     floor(calc($pixelWIdth * 42));
+			transition-timing-function: steps(4);
+			transition:                 transform 0.125s;
+			width:                      floor(calc($pixelWIdth * 154));
 
-		@media (aspect-ratio < 1) {
-			transform: rotate(0.25turn);
+			@media (aspect-ratio < 1) {
+				transform: rotate(0.25turn);
+			}
+		}
+
+		@media (prefers-reduced-motion) {
+			background-image: url("/svg/glyph/achernar.svg");
 		}
 	}
 
@@ -45,6 +52,7 @@
 
 	body[data-page = "deltaWorld"] & {
 		background-image: url("/svg/glyph/deltaWorld.svg");
+		filter:           drop-shadow(0 0 calc(100vmin / 128) var(--textColour));
 	}
 
 	body[data-page = "eas"] & {

@@ -2,7 +2,7 @@
 	<div id="banner">
 		<div id="navBar">
 			<section>
-				<a onclick="loadPage('achernar');">ACHERNAR</a>
+				<a id="home" onclick="loadPage('achernar');">ACHERNAR</a>
 			</section>
 
 			<section>

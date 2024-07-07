@@ -12,7 +12,16 @@
 
 	section {
 		display: flex;
+		flex:    1;
 		gap:     $gap;
+
+		&:first-of-type {
+			justify-content: start;
+		}
+
+		&:last-of-type {
+			justify-content: end;
+		}
 
 		a {
 			text-decoration-color: #00000000;
@@ -31,20 +40,22 @@
 				pointer-events: none;
 			}
 		}
-	}
 
-	#hamburger {
-		aspect-ratio:     1;
-		background-color: var(--textColour);
-		cursor:           pointer;
-		mask-image:       url("/svg/hamburger.svg");
-		mask-size:        cover;
-		width:            var(--hamburgerWidth);
-	}
+		#hamburger {
+			aspect-ratio:     1;
+			background-color: var(--textColour);
+			cursor:           pointer;
+			mask-image:       url("/svg/hamburger.svg");
+			mask-size:        cover;
+			width:            var(--hamburgerWidth);
+		}
 
-	body[data-page = "achernar"] & {
-		section a, #hamburger {
-			mix-blend-mode: difference;
+		body[data-page = "achernar"] & {
+			a, div {
+				@media not (prefers-reduced-motion) {
+					mix-blend-mode: difference;
+				}
+			}
 		}
 	}
 }
