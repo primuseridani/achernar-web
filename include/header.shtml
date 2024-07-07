@@ -1,38 +1,58 @@
 <header id="header">
-	<div id="hamburger" onclick="toggleNavBar();"></div>
-	<div id="clickMe"></div>
+	<div id="banner">
+		<div id="navBar">
+			<section>
+				<a onclick="loadPage('achernar');">ACHERNAR</a>
+			</section>
 
-	<div data-state="Hidden" id="navBar">
-		<section>
-			<p class="heading">ACHERNAR</p>
+			<section>
+				<a onclick="loadPage('benoit');">BENOIT</a>
+				<a onclick="loadPage('bowshock');">BOWSHOCK</a>
+				<a onclick="loadPage('deltaWorld');">DELTA&middot;WORLD</a>
+				<a onclick="loadPage('eas');">eAS</a>
+			</section>
 
-			<p class="clickable" onclick="loadPage('about');">ABOUT</p>
-			<a href="https://mandelbrot.dk" rel="noopener noreferrer" target="_blank">SOURCES</a>
-		</section>
+			<section>
+				<div id="hamburger" onclick="toggleSideMenu();"></div>
+			</section>
+		</div>
 
-		<section>
-			<p class="heading">PRODUCTS</p>
-
-			<p class="clickable" onclick="loadPage('bowshock');">BOWSHOCK</p>
-			<p class="clickable" onclick="loadPage('deltaWorld');">DELTA&middot;WORLD</p>
-		</section>
-
-		<section>
-			<p class="heading">PROJECTS</p>
-
-			<p class="clickable" onclick="loadPage('agbsum');">AGBSUM</p>
-			<p class="clickable" onclick="loadPage('ax');">AX</p>
-			<p class="clickable" onclick="loadPage('backspace');">BACKSPACE</p>
-			<p class="clickable" onclick="loadPage('benoit');">BENOIT</p>
-			<p class="clickable" onclick="loadPage('bzipper');">BZIPPER</p>
-			<p class="clickable" onclick="loadPage('eas');">eAS</p>
-			<p class="clickable" onclick="loadPage('luma');">LUMA</p>
-			<p class="clickable" onclick="loadPage('pollex');">POLLEX</p>
-			<p class="clickable" onclick="loadPage('u8c');">U8C</p>
-		</section>
-
-		<p class="clickable" id="themeToggler" onclick="toggleTheme();">TOGGLE THEME</p>
+		<div id="glyph"></div>
 	</div>
 
-	<div id="glyph"></div>
+	<div id="sideMenu">
+		<div class="links">
+			<section>
+				<p>ACHERNAR</p>
+
+				<a onclick="loadPage('achernar', 'about');">ABOUT</a>
+				<a onclick="loadPage('achernar', 'vision');">VISION</a>
+				<a onclick="loadPage('achernar', 'team');">TEAM</a>
+				<a href="https://mandelbrot.dk" rel="noopener noreferrer" target="_blank">SOURCES</a>
+			</section>
+
+			<section>
+				<p>GAMES</p>
+
+				<a onclick="loadPage('bowshock');">BOWSHOCK</a>
+				<a onclick="loadPage('deltaWorld');">DELTA&middot;WORLD</a>
+			</section>
+
+			<section>
+				<p>PROJECTS</p>
+
+				<a onclick="loadPage('agbsum');">AGBSUM</a>
+				<a onclick="loadPage('ax');">AX</a>
+				<a onclick="loadPage('backspace');">BACKSPACE</a>
+				<a onclick="loadPage('benoit');">BENOIT</a>
+				<a onclick="loadPage('bzipper');">BZIPPER</a>
+				<a onclick="loadPage('eas');">eAS</a>
+				<a onclick="loadPage('luma');">LUMA</a>
+				<a onclick="loadPage('pollex');">POLLEX</a>
+				<a onclick="loadPage('u8c');">U8C</a>
+			</section>
+		</div>
+
+		<a id="themeToggler" onclick="toggleTheme();">TOGGLE THEME</a>
+	</div>
 </header>

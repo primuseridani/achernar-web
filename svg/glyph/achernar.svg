@@ -1,8 +1,4 @@
 <svg height="80" width="304" xmlns="http://www.w3.org/2000/svg">
-	<clipPath id="clip0">
-		<polygon points="52,48 64,48 64,80 52,80" />
-	</clipPath>
-
 	<mask id="glyph">
 		<polygon fill="white" points="8,0 56,0 64,8 64,32 48,32 48,24 16,24 16,32 0,32 0,8" />
 		<circle cx="8" cy="8" fill="white" r="8" />

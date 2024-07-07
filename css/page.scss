@@ -1,92 +1,91 @@
 #page {
-	margin:      auto;
-	max-width:   72rem;
-	padding:     1rem;
-	padding-top: calc($headerHeight + 1rem);
+	$padding: 1rem;
 
-	p:not(.heading, #pageHeading, #footer p) {
-		line-height: 2em;
+	margin:    auto;
+	max-width: 72rem;
+	padding:   $padding;
+
+	a, a:visited {
+		cursor:          pointer;
+		text-decoration: underline;
 	}
 
-	p.link, a, a:visited {
-		color: var(--textColour);
-	}
+	h1 {
+		font-size:     2em;
+		font-weight:   bold;
+		margin-bottom: 1rem;
+		width:         100%;
 
-	em {
-		font-style:  normal;
-		font-weight: bold;
-	}
-
-	span {
-		&.code {
-			background-color: var(--foregroundColour);
-			border-radius:    0.25rem;
-			font-family:      "Fira Mono", "monospace";
-			padding:          0.25rem;
-
-			a {
-				font-weight: normal;
-			}
-		}
-
-		&.small {
-			font-size: 0.75em;
-		}
-	}
-
-	p.heading, #pageHeading {
-		font-family: "Martian Mono", "monospace";
-	}
-
-	#pageHeading {
-		background-color: var(--foregroundColour);
-		border-radius:    1rem;
-		display:          block;
-		font-size:        4em;
-		font-weight:      bold;
-		margin:           auto;
-		margin-bottom:    1rem;
-		padding:          1rem;
-		text-align:       center;
-
-		span.small {
-			font-size: 0.5em;
-		}
-	}
-
-	section {
-		& + section {
-			margin-top: 1rem;
-		}
-
-		&:nth-of-type(even) p.heading {
+		&:nth-of-type(even) {
 			text-align: right;
 		}
-	}
-
-	p.heading {
-		font-size:   2em;
-		font-weight: bold;
-		width:       100%;
 
 		&::after {
 			background-color: var(--textColour);
-			border-radius:    0.25rem;
+			border-radius:    $separatorWidth;
 			content:          "";
 			display:          block;
-			height:           0.25rem;
+			height:           $separatorWidth;
 			margin-bottom:    1rem;
-			margin-top:       0.25rem;
+			margin-top:       $separatorWidth;
 			width:            100%;
+		};
+	}
+
+	section {
+		line-height: 2em;
+		max-width:   calc(36rem - $padding);
+		width:       100%;
+
+		&:nth-of-type(odd) {
+			p.note {
+				text-align: right;
+			}
+		}
+
+		&:nth-of-type(even) {
+			margin-left: auto;
+
+			ol, ul {
+				margin-left: auto;
+				text-align: left
+			}
+		}
+
+		&.fullWidth {
+			max-width: 100%;
+		}
+
+		& + h1 {
+			margin-top: 1rem;
+		}
+
+		p.note {
+			font-weight: bold;
+
+			&::before {
+				content: "Note:\0020";
+			}
+		}
+
+		code {
+			$padding: 0.25rem;
+
+			background-color: var(--foregroundColour);
+			border-radius:    $padding;
+			padding:          $padding;
+		}
+
+		em {
+			font-style:  normal;
+			font-weight: bold;
 		}
 	}
 
 	x-image {
-		background-position: center;
-		background-repeat:   no-repeat;
-		display:             block;
-		position:            relative;
-		width:               100%;
+		display: block;
+		position:relative;
+		width:   100%;
 
 		&:nth-of-type(odd) {
 			margin-right: auto;
@@ -97,15 +96,13 @@
 		}
 
 		img.blur {
-			filter:   blur(1rem);
+			filter:   blur(1rem) saturate(200%);
 			position: absolute;
-			z-index:  1;
 			width:    100%;
 		}
 
 		a {
 			position: relative;
-			z-index:  1;
 
 			img {
 				border-radius:   1rem;

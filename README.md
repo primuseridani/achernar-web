@@ -1,6 +1,6 @@
 # achernar
 
-This repository contains the source code for Achernar's webservice at `https://achernar.dk`.
+This repository contains the source code for [Achernar's webservice](https://achernar.dk) at `https://achernar.dk`.
 
 ## Testing
 
@@ -14,7 +14,7 @@ server {
 	server_name localhost;
 
 	location = / {
-		return 307 /html/about.html;
+		return 307 /html/achernar.html;
 	}
 
 	location = /apple-touch-icon.png {

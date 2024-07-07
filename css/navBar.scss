@@ -1,97 +1,50 @@
 #navBar {
-	box-shadow:       $shadow;
-	color:            var(--textColour);
-	display:          flex;
-	gap:              1rem;
-	left:             0;
-	min-height:       calc(100vh + 1rem);
-	padding:          1rem;
-	position:         absolute;
-	transform:        translateX(-100%);
-	transition:       transform $navBarSlideDuration;
-	z-index:          127;
+	$gap: 1rem;
 
-	&[data-state = "Visible"] {
-		transform: translateX(0);
-	}
-
-	p.clickable, a {
-		color:                 var(--textColour);
-		cursor:                pointer;
-		display:               block;
-		font-weight:           bold;
-		text-decoration:       underline;
-		text-decoration-color: #00000000;
-		transition:            text-decoration-color 0.125s;
-
-		&:hover {
-			text-decoration-color: var(--textColour);
-		}
-	}
+	align-items:     center;
+	display:         flex;
+	height:          calc($gap * 2 + var(--hamburgerWidth));
+	justify-content: space-between;
+	padding:         $gap;
+	position:        absolute;
+	top:             0;
+	width:           100%;
 
 	section {
-		display:        flex;
-		flex-direction: column;
-		gap:            0.5em;
+		display: flex;
+		gap:     $gap;
 
-		p.heading {
-			text-align: center;
+		a {
+			text-decoration-color: #00000000;
+			transition:            opacity $slideDuration, text-decoration-color 0.125s;
 
-			&::after {
-				background-color: var(--textColour);
-				border-radius:    0.25rem;
-				content:          "";
-				display:          block;
-				height:           0.25rem;
-				margin-top:       0.5rem;
-				width:            100%;
+			@media (orientation: portrait) or (pointer: coarse) {
+				display: none;
+			}
+
+			&:hover {
+				text-decoration-color: var(--textColour);
+			}
+
+			&.hidden:not(#home) {
+				opacity:        0;
+				pointer-events: none;
 			}
 		}
 	}
 
-	#themeToggler {
-		bottom:    2rem;
-		position:  absolute;
-		left:      50%;
-		transform: translateX(-50%);
+	#hamburger {
+		aspect-ratio:     1;
+		background-color: var(--textColour);
+		cursor:           pointer;
+		mask-image:       url("/svg/hamburger.svg");
+		mask-size:        cover;
+		width:            var(--hamburgerWidth);
 	}
 
-	@media (pointer: fine) {
-		backdrop-filter:  blur(1rem);
-		background-color: color-mix(in srgb, var(--backgroundColour), transparent 50%);
-		padding-top:      4rem;
-
-		@media (orientation: landscape) {
-			border-bottom-right-radius: 1rem;
-			border-top-right-radius:    1rem;
-			width:                      50%;
-		}
-
-		@media (orientation: portrait) {
-			width: 100%;
-		}
-	}
-
-	@media (pointer: coarse) {
-		background-color: var(--backgroundColour);
-		flex-direction:   column;
-		font-size:        4rem;
-		padding-top:      6rem;
-		width:            100%;
-
-
-		p.clickable, a {
-			text-align: center;
-		}
-
-		p.heading::before {
-			background-color: var(--textColour);
-			border-radius:    0.25rem;
-			content:          "";
-			display:          block;
-			height:           0.25rem;
-			margin-bottom:    0.5rem;
-			width:            100%;
+	body[data-page = "achernar"] & {
+		section a, #hamburger {
+			mix-blend-mode: difference;
 		}
 	}
 }

@@ -1,0 +1,65 @@
+#glyph {
+	aspect-ratio:               1;
+	background-position:        center;
+	background-repeat:          no-repeat;
+	background-size:            contain;
+	transition:                 transform 0.125s;
+	transition-timing-function: steps(4);
+	width:                      50vmin;
+
+	body[data-page = "achernar"] & {
+		$pixelWIdth: calc(100vmax / 256);
+
+		background-image: url("/image/achernar.webp");
+		height:           floor(calc($pixelWIdth * 42));
+		width:            floor(calc($pixelWIdth * 154));
+
+		@media (aspect-ratio < 1) {
+			transform: rotate(0.25turn);
+		}
+	}
+
+	body[data-page = "agbsum"] & {
+		background-image: url("/svg/glyph/ax.svg");
+	}
+
+	body[data-page = "ax"] & {
+		background-image: url("/svg/glyph/ax.svg");
+	}
+
+	body[data-page = "backspace"] & {
+		background-image: url("/svg/glyph/backspace.svg");
+	}
+
+	body[data-page = "benoit"] & {
+		background-image: url("/svg/glyph/benoit.svg");
+	}
+
+	body[data-page = "bowshock"] & {
+		background-image: url("/svg/glyph/bowshock.svg");
+	}
+
+	body[data-page = "bzipper"] & {
+		background-image: url("/svg/glyph/bzipper.svg");
+	}
+
+	body[data-page = "deltaWorld"] & {
+		background-image: url("/svg/glyph/deltaWorld.svg");
+	}
+
+	body[data-page = "eas"] & {
+		background-image: url("/svg/glyph/eas.svg");
+	}
+
+	body[data-page = "luma"] & {
+		background-image: url("/svg/glyph/luma.svg");
+	}
+
+	body[data-page = "pollex"] & {
+		background-image: url("/svg/glyph/pollex.svg");
+	}
+
+	body[data-page = "u8c"] & {
+		background-image: url("/svg/glyph/u8c.svg");
+	}
+}

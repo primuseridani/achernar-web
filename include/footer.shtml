@@ -1,14 +1,14 @@
 <footer id="footer">
-	<p id="footerHeading">Achernar</p>
+	<h1>achernar</h1>
 
 	<table>
 		<tbody>
 			<tr>
-				<th>CVR</th>
+				<th>cvr</th>
 				<td>44936429</td>
 			</tr>
 			<tr>
-				<th>E-mail</th>
+				<th>e-mail</th>
 				<td><div id="emailAddress"></div></td>
 			</tr>
 		</tbody>
@@ -16,5 +16,5 @@
 	<br>
 	<p>Communications can be done in English and Danish.</p>
 	<br>
-	<p>This webservice can be cloned from <a href="https://mandelbrot.dk/achernar/" rel="noopener noreferrer" target="_blank"><span class="code">mandelbrot.dk</span></a>.</p>
+	<p>This webservice can be cloned from <a href="https://mandelbrot.dk/achernar/" rel="noopener noreferrer" target="_blank"><code>mandelbrot.dk</code></a>.</p>
 </footer>

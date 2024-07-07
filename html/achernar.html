@@ -3,22 +3,25 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="darkreader-lock">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
 		<link href="/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
-		<title id="title">About | Achernar</title>
+		<title>Achernar</title>
 
 		<link href="/css/main.css" rel="stylesheet">
 		<noscript>
 			<link href="/css/noScript.css" rel="stylesheet">
 		</noscript>
+
+		<script src="/js/init.js" type="text/javascript"></script>
 	</head>
 
-	<body data-page="about" data-theme="Dark" id="body">
+	<body data-page="achernar">
 		<!--#include virtual="/include/header.shtml"-->
 
 		<div id="page">
-			<p id="pageHeading">About</p>
+			<h1 id="anchor.about">the future is now</h1>
 
 			<section>
 				<p><em>Achernar</em> is a small, indie development studio based in the Capital Region of Denmark. &#127465;&#127472;</p>
@@ -26,29 +29,52 @@
 				<p>We develop open-source software, including video games and more productive software. We work with embedded systems as well as hosted ones.</p>
 			</section>
 
-			<section>
-				<p class="heading">Vision</p>
+			<h1 id="anchor.vision">vision</h1>
 
+			<section>
 				<p>The goal of <em>Achernar</em> is to promote modern and robustly written open-source projects and alike.</p>
 				<br>
 				<p>In other words, our vision is to develop a human and clean industry and community for technology.</p>
+				<br>
+				<p>Currently, our roadmap is as follows:</p>
+				<br>
+				<ul>
+					<li>
+						<p>Complete the webservice before <em>autumn, 2024</em></p>
+					</li>
+					<li>
+						<p>Release our first game by <em>2024</em></p>
+					</li>
+					<li>
+						<p>Release early-access for Bowshock on Steam by <em>2025</em></p>
+					</li>
+					<li>
+						<p>Restructure to a normal sole proprietorship</p>
+					</li>
+				</ul>
 			</section>
 
-			<section>
-				<p class="heading">Inception</p>
+			<h1 id="anchor.team">team</h1>
 
+			<section>
+				<p>As <em>Achernar</em> is currently registered as a <em>PMV</em> (lesser sole proprietorship), <em>Gabriel Bjørnager Jensen</em> is currently our only member.</p>
+			</section>
+
+			<h1 id="anchor.inception">inception</h1>
+
+			<section>
 				<p><em>Achernar</em> was founded in the summer of 2024 by I, <em>Gabriel Bjørnager Jensen</em>.</p>
 				<br>
-				<p>Our domain &ndash; <span class="code">achernar.dk</span> &ndash; was already registered in the winter of 2021, at that time being used for hosting on-line source code repositories. This was, however, quickly outsourced to <span class="code"><a href="https://mandelbrot.dk">mandelbrot.dk</a></span> after I had managed to secure that domain.</p>
+				<p>Our domain &ndash; <code>achernar.dk</code> &ndash; was already registered in the winter of 2021, at that time being used for hosting on-line source code repositories. This was, however, quickly outsourced to <code><a href="https://mandelbrot.dk">mandelbrot.dk</a></code> after I had managed to secure that domain.</p>
 				<br>
-				<p><span class="code">achernar.dk</span> was then, in the mean time, used for hosting a few look-up references. This mostly served as my own notes for school &ndash; mainly mathematics, physics, and chemistry &ndash; but quickly grew unorganised and umaintained, although I did have plans to expand the lexicon.</p>
+				<p><code>achernar.dk</code> was then, in the mean time, used for hosting a few look-up references. This mostly served as my own notes for school &ndash; mainly mathematics, physics, and chemistry &ndash; but quickly grew unorganised and umaintained, although I did have plans to expand the lexicon.</p>
 				<br>
-				<p>The idea of a company had started in the spring of 2020. At that time it would've been named after the binary system <em>Sheliak</em> (Bayer: <span class="code">&beta; Lyr&#230;</span>). But it was this idea that evolved into <em>Achernar</em>.</p>
+				<p>The idea of a company had started in the spring of 2020. At that time it would've been named after the binary system <em>Sheliak</em> (Bayer: <code>&beta; Lyr&#230;</code>). But it was this idea that evolved into <em>Achernar</em>.</p>
 			</section>
 
-			<section>
-				<p class="heading">Credits</p>
+			<h1 id="anchor.credits">credits</h1>
 
+			<section class="fullWidth">
 				<p>Thanks to the following projects which make our webservice possible:</p>
 				<br>
 				<ul>
@@ -92,7 +118,9 @@
 
 			<!--#include virtual="/include/footer.shtml"-->
 		</div>
-
-		<!--#include virtual="/include/initScripts.shtml"-->
 	</body>
+
+	<script type="text/javascript">
+		init();
+	</script>
 </html>

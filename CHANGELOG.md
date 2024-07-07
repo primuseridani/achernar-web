@@ -1,5 +1,18 @@
 # Changelog
 
+## 7.0
+
+* Fix internal links
+* Improve script logging
+* Rework pages
+* Rework page layout
+* Rework navigation
+* Rewrite styles
+* Rewrite scripts
+* Elaborate pages
+* Add roadmap
+* Update readme
+
 ## 6.3
 
 * Fix images

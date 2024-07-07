@@ -1,0 +1,93 @@
+#banner {
+	--textColour: var(--bannerHighlightColour);
+
+	align-items:     center;
+	background-size: cover;
+	display:         flex;
+	height:          100%;
+	image-rendering: pixelated;
+	justify-content: center;
+	padding-bottom:  1rem;
+	position:        absolute;
+	top:             0;
+	width:           100%;
+
+	body[data-page = "achernar"] & {
+		--bannerHighlightColour: #FFFFFF;
+
+		background-color: #007B34;
+
+		@media not (prefers-reduced-motion) {
+			background-image: url("/image/vertexAnimated.webp");
+		}
+	}
+
+	body[data-page = "agbsum"] & {
+		--bannerHighlightColour: #FFFFFF;
+
+		background-color: #422984;
+	}
+
+	body[data-page = "ax"] & {
+		--bannerHighlightColour: #FFFFFF;
+
+		background-color: #422984;
+	}
+
+	body[data-page = "backspace"] & {
+		--bannerHighlightColour: var(--textColour);
+
+		background-color: var(--backgroundColour);
+	}
+
+	body[data-page = "benoit"] & {
+		--bannerHighlightColour: #FFFFFF;
+
+		background-image: url("/svg/benoit-background.svg");
+	}
+
+	body[data-page = "bowshock"] & {
+		--bannerHighlightColour: #FFEEE0;
+
+		background-color: #B61833;
+	}
+
+	body[data-page = "bzipper"] & {
+		--bannerHighlightColour: #B4202D;
+
+		background-color: #FFFFFF;
+	}
+
+	body[data-page = "deltaWorld"] & {
+		--bannerHighlightColour: var(--textColour);
+
+		background-color: var(--backgroundColour);
+	}
+
+	body[data-page = "eas"] & {
+		--bannerHighlightColour: #00291B;
+
+		background-color: #01CD93;
+	}
+
+	body[data-page = "luma"] & {
+		--bannerHighlightColour: #FFFFFF;
+
+		background-color: #6051B2;
+	}
+
+	body[data-page = "pollex"] & {
+		--bannerHighlightColour: #FFFFFF;
+
+		background-color: #4D4084;
+	}
+
+	body[data-page = "u8c"] & {
+		--bannerHighlightColour: #A9E13D;
+
+		background-color: #444747;
+	}
+
+	@import "navBar";
+	@import "glyph";
+}
