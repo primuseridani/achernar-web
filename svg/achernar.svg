@@ -4,6 +4,7 @@
 		<circle cx="24" cy="24" fill="white" r="8" />
 		<circle cx="72" cy="24" fill="white" r="8" />
 		<polygon fill="black" points="32,24 64,24 64,32 32,32" />½
+
 		<polygon fill="white" points="104,16 160,16 160,24 112,24 112,40 160,40 160,48 104,48 96,40 96,24" />
 		<circle cx="104" cy="24" fill="white" r="8" />
 		<circle cx="104" cy="40" fill="white" r="8" />

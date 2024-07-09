@@ -10,14 +10,14 @@
 		$pixelWIdth: calc(100vmax / 256);
 
 		@media not (prefers-reduced-motion) {
-			background-image:           url("/image/achernarPixelated.webp");
-			height:                     floor(calc($pixelWIdth * 42));
-			transition-timing-function: steps(4);
-			transition:                 transform 0.125s;
-			width:                      floor(calc($pixelWIdth * 154));
+			background-image: url("/image/achernarPixelated.webp");
+			height:           floor(calc($pixelWIdth * 42));
+			width:            floor(calc($pixelWIdth * 154));
 
-			@media (aspect-ratio < 1) {
-				transform: rotate(0.25turn);
+			@media (orientation: portrait) {
+				background-image: url("/image/achernarVerticalPixelated.webp");
+				height:           floor(calc($pixelWIdth * 90));
+				width:            floor(calc($pixelWIdth * 74));
 			}
 		}
 

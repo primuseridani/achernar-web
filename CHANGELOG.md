@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.3
+
+* Update vertical styling
+
 ## 7.2
 
 * Elaborate pages

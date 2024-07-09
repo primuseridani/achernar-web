@@ -1,0 +1,36 @@
+<svg height="208" width="176" xmlns="http://www.w3.org/2000/svg">
+	<mask id="wordmark">
+		<polygon fill="white" points="24,16 72,16 80,24 80,48 64,48 64,40 32,40 32,48 16,48 16,24" />
+		<circle cx="24" cy="24" fill="white" r="8" />
+		<circle cx="72" cy="24" fill="white" r="8" />
+		<polygon fill="black" points="32,24 64,24 64,32 32,32" />½
+
+		<polygon fill="white" points="104,16 160,16 160,24 112,24 112,40 160,40 160,48 104,48 96,40 96,24" />
+		<circle cx="104" cy="24" fill="white" r="8" />
+		<circle cx="104" cy="40" fill="white" r="8" />
+
+		<polygon fill="white" points="16,64 32,64 32,76 64,76 64,64 80,64 80,96 64,96 64,84 32,84 32,96 16,96" />
+
+		<polygon fill="white" points="96,64 160,64 160,72 112,72 112,76 128,76 128,84 112,84 112,88 160,88 160,96 96,96" />
+
+		<polygon fill="white" points="16,112 72,112 80,120 80,128 72,136 64,136 80,144 64,144 48,136 32,136 32,144 16,144" />
+		<circle cx="72" cy="120" fill="white" r="8" />
+		<circle cx="72" cy="128" fill="white" r="8" />
+		<polygon fill="black" points="32,120 64,120 64,128 32,128" />
+
+		<polygon fill="white" points="96,112 112,112 144,128 144,112 160,112 160,144 144,144 112,128 112,144 96,144" />
+
+		<polygon fill="white" points="24,160 72,160 80,168 80,192 64,192 64,184 32,184 32,192 16,192 16,168" />
+		<circle cx="24" cy="168" fill="white" r="8" />
+		<circle cx="72" cy="168" fill="white" r="8" />
+		<polygon fill="black" points="32,168 64,168 64,176 32,176" />
+
+		<polygon fill="white" points="96,160 152,160 160,168 160,176 152,184 144,184 160,192 144,192 128,184 112,184 112,192 96,192" />
+		<circle cx="152" cy="168" fill="white" r="8" />
+		<circle cx="152" cy="176" fill="white" r="8" />
+		<polygon fill="black" points="112,168 144,168 144,176 112,176" />
+	</mask>
+
+	<rect fill="#007B34" height="100%" width="100%" x="0" y="0" /> <!-- 356 C -->
+	<rect fill="#FFFFFF" mask="url(#wordmark)" height="100%" width="100%" x="0" y="0" />
+</svg>

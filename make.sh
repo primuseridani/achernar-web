@@ -46,7 +46,7 @@ make_script() {
 	tsc --outFile "${output}" --target ES2022 "${input}"
 }
 
-make_icon "svg/achernar-icon.svg"
+make_icon "svg/achernarIcon.svg"
 
 make_stylesheet "main"
 make_stylesheet "noScript"
