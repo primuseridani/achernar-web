@@ -1,5 +1,9 @@
 # Changelog
 
+## 8.1
+
+* Add more meta tags
+
 ## 8.0
 
 * Rework side menu and headers
