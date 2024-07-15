@@ -1,86 +1,66 @@
 #sideMenu {
-	backdrop-filter:         blur(1rem);
-	-webkit-backdrop-filter: blur(1rem);
-	background-color:        color-mix(in srgb, var(--backgroundColour), transparent 50%);
-	box-shadow:              0 0 1rem color-mix(in srgb, black, transparent 50%);;
-	display:                 flex;
-	flex-direction:          column;
-	gap:                     1rem;
-	height:                  calc(100vh - var(--hamburgerWidth) - 3rem);
-	justify-content:         space-between;
-	left:                    100%;
-	overflow:                scroll;
-	padding:                 1rem;
-	position:                absolute;
-	top:                     calc(var(--hamburgerWidth) + 2rem);
-	transition:              left $slideDuration;
-	width:                   100vw;
-	z-index:                 255;
+	align-items:      center;
+	background-color: var(--backgroundColour);
+	display:          flex;
+	flex-direction:   column;
+	gap:              1rem;
+	height:           calc(100% + 1rem);
+	justify-content:  space-between;
+	left:             100%;
+	overflow:         hidden;
+	padding:          1rem;
+	padding-bottom:   2rem;
+	padding-top:      calc(var(--hamburgerHeight) + 2rem);
+	position:         absolute;
+	width:            100%;
+	z-index:          127;
+
+	body[data-page = "achernar"] & {
+		background-color: var(--backgroundColour);
+	}
+
+	@media (pointer: fine) and (not (prefers-reduced-motion)) {
+		transition:                 left $slideDuration;
+		transition-timing-function: ease-in-out;
+	}
+
+	@media (pointer: coarse) {
+		font-size: 2em;
+		overflow:  scroll;
+	}
 
 	&.visible {
 		left: 0;
 	}
 
-	@media (orientation: landscape) and (pointer: fine) {
-		border-bottom-left-radius: 1rem;
-		border-top-left-radius:    1rem;
-		width:                     50vw;
-
-		&.visible {
-			left: 50%;
-		}
-	}
-
-	@media (pointer: coarse) {
-		border-style: solid;
-		border-width: $separatorWidth;
-		font-size:    2em;
-	}
-
 	div.links {
-		display: flex;
-		gap:     1rem;
+		display:    flex;
+		gap:        1rem;
+		max-width:  $contentWidth;
+		padding:    1rem;
+		width:      100%;
 
 		@media (pointer: coarse) {
 			flex-direction: column;
 		}
 
 		section {
-			$gap: 0.25rem;
-
 			display:        flex;
 			flex-direction: column;
-			gap:            $gap;
+			gap:            0.25rem;
 
 			p {
-				text-align: center;
+				background-color: var(--textColour);
+				border-radius:    0.25rem;
+				color:            var(--backgroundColour);
+				font-weight:      bold;
+				padding:          0.25rem 1rem;
+				text-align:       center;
+			}
 
-				&::after {
-					background-color: var(--textColour);
-					border-radius:    calc($separatorWidth / 2);
-					content:          "";
-					display:          block;
-					height:           $separatorWidth;
-					margin-top:       $gap;
-					width:            100%;
-				}
-
-				@media (pointer: coarse) {
-					&::before {
-						background-color: var(--textColour);
-						border-radius:    calc($separatorWidth / 2);
-						content:          "";
-						display:          block;
-						height:           $separatorWidth;
-						margin-top:       $gap;
-						width:            100%;
-					}
-				}
+			a {
+				padding: 0.25rem;
 			}
 		}
-	}
-
-	#themeToggler {
-		align-self: center;
 	}
 }

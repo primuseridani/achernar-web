@@ -1,23 +1,18 @@
 <header id="header">
-	<div id="banner">
-		<div id="navBar">
-			<section>
-				<a id="home" onclick="loadPage('achernar');">ACHERNAR</a>
-			</section>
+	<div id="navBar">
+		<section>
+			<a id="home" onclick="loadPage('achernar');">ACHERNAR</a>
+		</section>
 
-			<section>
-				<a onclick="loadPage('benoit');">BENOIT</a>
-				<a onclick="loadPage('bowshock');">BOWSHOCK</a>
-				<a onclick="loadPage('deltaWorld');">DELTA&middot;WORLD</a>
-				<a onclick="loadPage('eas');">eAS</a>
-			</section>
+		<section>
+			<a onclick="loadPage('benoit');">BENOIT</a>
+			<a onclick="loadPage('bowshock');">BOWSHOCK</a>
+			<a onclick="loadPage('deltaWorld');">DELTA&middot;WORLD</a>
+		</section>
 
-			<section>
-				<div id="hamburger" onclick="toggleSideMenu();"></div>
-			</section>
-		</div>
-
-		<div id="glyph"></div>
+		<section>
+			<div id="hamburger" onclick="toggleSideMenu();"></div>
+		</section>
 	</div>
 
 	<div id="sideMenu">
@@ -55,4 +50,6 @@
 
 		<a id="themeToggler" onclick="toggleTheme();">TOGGLE THEME</a>
 	</div>
+
+	<div id="glyph"></div>
 </header>

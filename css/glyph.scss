@@ -9,20 +9,14 @@
 	body[data-page = "achernar"] & {
 		$pixelWIdth: calc(100vmax / 256);
 
-		@media not (prefers-reduced-motion) {
-			background-image: url("/image/achernarPixelated.webp");
-			height:           floor(calc($pixelWIdth * 42));
-			width:            floor(calc($pixelWIdth * 154));
+		background-image: url("/image/achernarPixelated.webp");
+		height:           floor(calc($pixelWIdth * 42));
+		width:            floor(calc($pixelWIdth * 154));
 
-			@media (orientation: portrait) {
-				background-image: url("/image/achernarVerticalPixelated.webp");
-				height:           floor(calc($pixelWIdth * 90));
-				width:            floor(calc($pixelWIdth * 74));
-			}
-		}
-
-		@media (prefers-reduced-motion) {
-			background-image: url("/svg/glyph/achernar.svg");
+		@media (orientation: portrait) {
+			background-image: url("/image/achernarVerticalPixelated.webp");
+			height:           floor(calc($pixelWIdth * 90));
+			width:            floor(calc($pixelWIdth * 74));
 		}
 	}
 

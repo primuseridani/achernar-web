@@ -1,5 +1,12 @@
 # Changelog
 
+## 8.0
+
+* Rework side menu and headers
+* Improve reduced motion support
+* Rework footer
+* Improve mobile styling
+
 ## 7.3
 
 * Update vertical styling

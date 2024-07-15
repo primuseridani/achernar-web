@@ -2,7 +2,7 @@
 	$padding: 1rem;
 
 	margin:    auto;
-	max-width: 72rem;
+	max-width: $contentWidth;
 	padding:   $padding;
 
 	a, a:visited {

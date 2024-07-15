@@ -2,6 +2,7 @@
 
 $monospaceFont: "Fira Mono", "monospace";
 
+$contentWidth:   72rem;
 $separatorWidth: 0.25rem;
 
 :root {
@@ -16,8 +17,8 @@ $separatorWidth: 0.25rem;
 }
 
 body {
-	--backgroundColour: oklch( 20% 0.014800 253.71);
-	--foregroundColour: oklch( 25% 0.014800 253.71);
+	--backgroundColour: oklch( 20% 0.029600 253.71);
+	--foregroundColour: oklch( 25% 0.029600 253.71);
 	--textColour:       oklch(100% 0          0);
 
 	background-color: var(--backgroundColour);

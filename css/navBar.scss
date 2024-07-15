@@ -1,19 +1,25 @@
 #navBar {
-	$gap: 1rem;
-
 	align-items:     center;
 	display:         flex;
-	height:          calc($gap * 2 + var(--hamburgerWidth));
+	height:          calc(2rem + var(--hamburgerHeight));
 	justify-content: space-between;
-	padding:         $gap;
+	padding:         1rem;
 	position:        absolute;
 	top:             0;
+	max-width:       $contentWidth;
 	width:           100%;
 
+	body[data-page = "achernar"] & {
+		a, #home, #hamburger {
+			mix-blend-mode: difference;
+		}
+	}
+
 	section {
-		display: flex;
-		flex:    1;
-		gap:     $gap;
+		display:         flex;
+		flex:            1;
+		gap:             1rem;
+		justify-content: center;
 
 		&:first-of-type {
 			justify-content: start;
@@ -25,7 +31,10 @@
 
 		a {
 			text-decoration-color: #00000000;
-			transition:            opacity $slideDuration, text-decoration-color 0.125s;
+
+			@media not (prefers-reduced-motion) {
+				transition: opacity $slideDuration, text-decoration-color 0.125s;
+			}
 
 			@media (orientation: portrait) or (pointer: coarse) {
 				display: none;
@@ -34,28 +43,20 @@
 			&:hover {
 				text-decoration-color: var(--textColour);
 			}
+		}
 
-			&.hidden:not(#home) {
-				opacity:        0;
-				pointer-events: none;
-			}
+		#home {
+			z-index: 255;
 		}
 
 		#hamburger {
 			aspect-ratio:     1;
 			background-color: var(--textColour);
 			cursor:           pointer;
+			height:           var(--hamburgerHeight);
 			mask-image:       url("/svg/hamburger.svg");
 			mask-size:        cover;
-			width:            var(--hamburgerWidth);
-		}
-
-		body[data-page = "achernar"] & {
-			a, div {
-				@media not (prefers-reduced-motion) {
-					mix-blend-mode: difference;
-				}
-			}
+			z-index:          255;
 		}
 	}
 }

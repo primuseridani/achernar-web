@@ -1,17 +1,94 @@
 #header {
 	$slideDuration: 0.5s;
 
-	--hamburgerWidth: 2rem;
+	--hamburgerHeight: 2rem;
 
+	align-items:                center;
+	background-color:           var(--backgroundColour);
+	background-size:            cover;
 	border-bottom-left-radius:  1rem;
 	border-bottom-right-radius: 1rem;
+	display:                    flex;
 	height:                     calc(100vh + 1rem);
+	image-rendering:            pixelated;
+	justify-content:            center;
 	overflow:                   hidden;
+	padding-bottom:             1rem;
 	position:                   relative;
 	width:                      100%;
 
+	body[data-page = "achernar"] & {
+		--backgroundColour: #007B34;
+		--textColour:       #FFFFFF;
+
+		@media not (prefers-reduced-motion) {
+			background-image: url("/image/vertex.webp");
+		}
+	}
+
+	body[data-page = "agbsum"] & {
+		--backgroundColour: #422984;
+		--textColour:       #FFFFFF;
+	}
+
+	body[data-page = "ax"] & {
+		--backgroundColour: #422984;
+		--textColour:       #FFFFFF;
+	}
+
+	body[data-page = "backspace"] & {
+		--backgroundColour: #FFFFFF;
+		--textColour:       #000000;
+	}
+
+	body[data-page = "benoit"] & {
+		--backgroundColour: #BA0035;
+		--textColour:       #FFFFFF;
+
+		background-image: url("/svg/benoitBackground.svg");
+	}
+
+	body[data-page = "bowshock"] & {
+		--backgroundColour: #B61833;
+		--textColour:       #FFEEE0;
+	}
+
+	body[data-page = "bzipper"] & {
+		--backgroundColour: #FFFFFF;
+		--textColour:       #B4202D;
+	}
+
+	body[data-page = "deltaWorld"] & {
+		--backgroundColour: #000000;
+		--textColour:       #FFFFFF;
+	}
+
+	body[data-page = "eas"] & {
+		--backgroundColour: #01CD93;
+		--textColour:       #00291B;
+	}
+
+	body[data-page = "luma"] & {
+		--backgroundColour: #6051B2;
+		--textColour:       #FFFFFF;
+	}
+
+	body[data-page = "pollex"] & {
+		--backgroundColour: #4D4084;
+		--textColour:       #FFFFFF;
+	}
+
+	body[data-page = "u8c"] & {
+		--backgroundColour: #444747;
+		--textColour:       #A9E13D;
+	}
+
 	@media (pointer: coarse) {
-		--hamburgerWidth: 4rem;
+		--hamburgerHeight: 4rem;
+	}
+
+	p, a, a:hover {
+		color: var(--textColour)
 	}
 
 	a {
@@ -19,14 +96,18 @@
 		font-weight:           bold;
 		text-decoration:       underline;
 		text-decoration-color: #00000000;
-		transition:            text-decoration-color 0.125s;
 		user-select:           none;
+
+		@media not (prefers-reduced-motion) {
+			transition: text-decoration-color 0.125s;
+		}
 
 		&:hover {
 			text-decoration-color: var(--textColour);
 		}
 	}
 
-	@import "banner";
+	@import "navBar";
 	@import "sideMenu";
+	@import "glyph";
 }
