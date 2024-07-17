@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.1
+
+* Fix icons
+
 ## 9.0
 
 * Update side menu on touch screens
