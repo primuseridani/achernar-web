@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.2
+
+* Update contact email
+
 ## 9.1
 
 * Fix icons
