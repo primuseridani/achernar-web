@@ -1,0 +1,12 @@
+<svg height="108" width="108" xmlns="http://www.w3.org/2000/svg">
+	<mask id="letters">
+		<polygon fill="white" points="24,36 36,36 48,72 36,72 30,54 24,72 12,72" />
+		<polygon fill="black" points="12,36 30,54 12,54" />
+
+		<polygon fill="white" points="60,36 72,36 78,45 84,36 96,36 84,54 96,72 84,72 78,63 72,72 60,72 72,54" />
+		<polygon fill="black" points="60,36 78,54 60,54" />
+	</mask>
+
+	<rect fill="#422984" height="100%" width="100%" x="0" y="0" />
+	<rect fill="#FFFFFF" height="100%" mask="url(#letters)" width="100%" x="0" y="0" />
+</svg>

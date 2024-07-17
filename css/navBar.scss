@@ -6,7 +6,6 @@
 	padding:         1rem;
 	position:        absolute;
 	top:             0;
-	max-width:       $contentWidth;
 	width:           100%;
 
 	body[data-page = "achernar"] & {
@@ -30,14 +29,30 @@
 		}
 
 		a {
+			position:              relative;
 			text-decoration-color: #00000000;
+
+			&[aria-current = "page"]:not(#home)::after {
+				background-color: var(--textColour);
+				border-radius:    $separatorWidth;
+				content:          "";
+				display:          block;
+				height:           $separatorWidth;
+				left:             50%;
+				position:         absolute;
+				top:              calc(100% + $separatorWidth);
+				transform:        translateX(-50%);
+				width:            100%;
+			}
 
 			@media not (prefers-reduced-motion) {
 				transition: opacity $slideDuration, text-decoration-color 0.125s;
 			}
 
 			@media (orientation: portrait) or (pointer: coarse) {
-				display: none;
+				&:not(#home, #hamburger) {
+					display: none;
+				}
 			}
 
 			&:hover {
@@ -45,18 +60,21 @@
 			}
 		}
 
-		#home {
-			z-index: 255;
-		}
-
-		#hamburger {
+		#home, #hamburger {
 			aspect-ratio:     1;
 			background-color: var(--textColour);
 			cursor:           pointer;
 			height:           var(--hamburgerHeight);
-			mask-image:       url("/svg/hamburger.svg");
 			mask-size:        cover;
 			z-index:          255;
+		}
+
+		#home {
+			mask-image: url("/svg/home.svg");
+		}
+
+		#hamburger {
+			mask-image: url("/svg/hamburger.svg");
 		}
 	}
 }

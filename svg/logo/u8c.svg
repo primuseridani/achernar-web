@@ -1,0 +1,40 @@
+<svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
+	<clipPath id="clip0">
+		<rect height="100%" width="50%" x="0" y="0" />
+	</clipPath>
+
+	<clipPath id="clip1">
+		<rect height="100%" width="50%" x="50%" y="0" />
+	</clipPath>
+
+	<mask id="inner">
+		<circle cx="48" cy="48" fill="white" r="42" />
+
+		<circle cx="48" cy="48" fill="none" r="42" stroke="black" stroke-width="12" />
+
+		<circle cx="48" cy="29" fill="none" r="23" stroke="black" stroke-width="12" />
+		<circle cx="48" cy="67" fill="none" r="23" stroke="black" stroke-width="12" />
+	</mask>
+
+	<mask id="rings">
+		<circle clip-path="url(#clip0)" cx="48" cy="67" fill="none" r="23" stroke="white" stroke-width="4" />
+
+		<circle clip-path="url(#clip0)" cx="48" cy="29" fill="none" r="23" stroke="black" stroke-width="12" />
+		<circle clip-path="url(#clip0)" cx="48" cy="29" fill="none" r="23" stroke="white" stroke-width="4" />
+
+		<circle clip-path="url(#clip1)" cx="48" cy="29" fill="none" r="23" stroke="white" stroke-width="4" />
+
+		<circle clip-path="url(#clip1)" cx="48" cy="67" fill="none" r="23" stroke="black" stroke-width="12" />
+		<circle clip-path="url(#clip1)" cx="48" cy="67" fill="none" r="23" stroke="white" stroke-width="4" />
+
+		<circle cx="48" cy="48" fill="none" r="42" stroke="white" stroke-width="4" />
+
+		<!-- joints -->
+		<circle cx="48" cy="44" fill="white" r="2" />
+		<circle cx="48" cy="52" fill="white" r="2" />
+	</mask>
+
+	<rect fill="#444747" height="100%" width="100%" x="0" y="0" />
+	<rect fill="#FFFFFF" height="100%" mask="url(#inner)" width="100%" x="0" y="0" />
+	<rect fill="#A9E13D" height="100%" mask="url(#rings)" width="100%" x="0" y="0" />
+</svg>

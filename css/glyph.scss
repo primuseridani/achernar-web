@@ -3,7 +3,10 @@
 	background-position: center;
 	background-repeat:   no-repeat;
 	background-size:     contain;
-	pointer-events:      none;
+	left:                50%;
+	position:            absolute;
+	top:                 50%;
+	transform:           translate(-50%, -50%);
 	width:               50vmin;
 
 	body[data-page = "achernar"] & {
@@ -28,9 +31,9 @@
 		background-image: url("/svg/glyph/ax.svg");
 	}
 
-	body[data-page = "backspace"] & {
-		background-image: url("/svg/glyph/backspace.svg");
-	}
+//	body[data-page = "backspace"] & {
+//		background-image: url("/svg/glyph/backspace.svg");
+//	}
 
 	body[data-page = "benoit"] & {
 		background-image: url("/svg/glyph/benoit.svg");
@@ -47,6 +50,10 @@
 	body[data-page = "deltaWorld"] & {
 		background-image: url("/svg/glyph/deltaWorld.svg");
 		filter:           drop-shadow(0 0 calc(100vmin / 128) var(--textColour));
+	}
+
+	body[data-page = "dux"] & {
+		background-image: url("/svg/glyph/dux.svg");
 	}
 
 	body[data-page = "eas"] & {

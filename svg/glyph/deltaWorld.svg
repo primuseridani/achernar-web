@@ -1,7 +1,7 @@
 <svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
 	<mask id="glyph">
-		<polygon fill="white" points="48,0 6.430780618,72 89.569219382,72" />
-		<polygon fill="black" points="48,32 34.143593539,56 61.856406461,56" />
+		<polygon fill="white" points="48,12 6.430780618,84 89.569219382,84" />
+		<polygon fill="black" points="48,44 34.143593539,68 61.856406461,68" />
 	</mask>
 
 	<rect fill="#FFFFFF" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />

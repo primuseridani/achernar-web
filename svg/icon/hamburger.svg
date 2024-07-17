@@ -5,5 +5,5 @@
 		<rect fill="white" height="3" rx="1" width="100%" x="0" y="12" />
 	</mask>
 
-	<rect fill="#FFFFFF" mask="url(#glyph)" height="100%" width="100%" x="0" y="0" />
+	<rect fill="white" mask="url(#glyph)" height="100%" width="100%" x="0" y="0" />
 </svg>

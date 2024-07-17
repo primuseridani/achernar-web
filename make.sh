@@ -1,15 +1,18 @@
 #!/usr/bin/env sh
 
-make_icon() {
-	render_icon() {
-		input="${1}"
-		width="${2}"
-		output="${3}"
+render_icon() {
+	input="${1}"
+	width="${2}"
+	output="${3}"
 
-		printf "rendering icon at \"%s\" as %ipx by %ipx to \"%s\"\n" "${input}" ${width} ${width} "${output}"
-		inkscape -w ${width} -h ${width} "${input}" -o "${output}"
-	}
+	printf "rendering icon at \"%s\" as %ipx by %ipx to \"%s\"\n" "${input}" ${width} ${width} "${output}"
+	inkscape -w ${width} -h ${width} "${input}" -o "${output}"
+}
 
+directory="$(mktemp -d)"
+printf "using temporary directory at \"%s\"\n" "${directory}"
+
+make_favicon() {
 	input="${1}"
 
 	directory="$(mktemp -d)"
@@ -46,9 +49,11 @@ make_script() {
 	tsc --outFile "${output}" --target ES2022 "${input}"
 }
 
-make_icon "svg/achernarIcon.svg"
+render_icon "svg/logo/achernarIcon.svg" 180 "apple-touch-icon.png"
+
+make_favicon "svg/favicon.svg"
 
 make_stylesheet "main"
 make_stylesheet "noScript"
 
-make_script "init"
+make_script "main"

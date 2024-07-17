@@ -1,54 +1,59 @@
 <header id="header">
 	<div id="navBar">
 		<section>
-			<a id="home" onclick="loadPage('achernar');">ACHERNAR</a>
+			<a id="home" href="/html/achernar.html"></a>
 		</section>
 
 		<section>
-			<a onclick="loadPage('benoit');">BENOIT</a>
-			<a onclick="loadPage('bowshock');">BOWSHOCK</a>
-			<a onclick="loadPage('deltaWorld');">DELTA&middot;WORLD</a>
+			<a href="/html/benoit.html">BENOIT</a>
+			<a href="/html/bowshock.html">BOWSHOCK</a>
+			<a href="/html/deltaWorld.html">DELTA&middot;WORLD</a>
+			<a href="/html/eas.html">eAS</a>
 		</section>
 
 		<section>
-			<div id="hamburger" onclick="toggleSideMenu();"></div>
+			<a id="hamburger" onclick="Ach.toggleSideMenu();"></a>
 		</section>
 	</div>
 
 	<div id="sideMenu">
-		<div class="links">
+		<section class="links">
 			<section>
 				<p>ACHERNAR</p>
 
-				<a onclick="loadPage('achernar', 'about');">ABOUT</a>
-				<a onclick="loadPage('achernar', 'vision');">VISION</a>
-				<a onclick="loadPage('achernar', 'team');">TEAM</a>
+				<a href="/html/achernar.html#about">ABOUT</a>
+				<a href="/html/achernar.html#vision">VISION</a>
+				<a href="/html/achernar.html#roadmap">ROADMAP</a>
+				<a href="/html/achernar.html#team">TEAM</a>
 				<a href="https://mandelbrot.dk" rel="noopener noreferrer" target="_blank">SOURCES</a>
 			</section>
 
 			<section>
 				<p>GAMES</p>
 
-				<a onclick="loadPage('bowshock');">BOWSHOCK</a>
-				<a onclick="loadPage('deltaWorld');">DELTA&middot;WORLD</a>
+				<a href="/html/bowshock.html">BOWSHOCK</a>
+				<a href="/html/deltaWorld.html">DELTA&middot;WORLD</a>
 			</section>
 
 			<section>
 				<p>PROJECTS</p>
 
-				<a onclick="loadPage('agbsum');">AGBSUM</a>
-				<a onclick="loadPage('ax');">AX</a>
-				<a onclick="loadPage('backspace');">BACKSPACE</a>
-				<a onclick="loadPage('benoit');">BENOIT</a>
-				<a onclick="loadPage('bzipper');">BZIPPER</a>
-				<a onclick="loadPage('eas');">eAS</a>
-				<a onclick="loadPage('luma');">LUMA</a>
-				<a onclick="loadPage('pollex');">POLLEX</a>
-				<a onclick="loadPage('u8c');">U8C</a>
+				<a href="/html/agbsum.html">AGBSUM</a>
+				<a href="/html/ax.html">AX</a>
+				<a href="/html/backspace.html">BACKSPACE</a>
+				<a href="/html/benoit.html">BENOIT</a>
+				<a href="/html/bzipper.html">BZIPPER</a>
+				<a href="/html/dux.html">DUX</a>
+				<a href="/html/eas.html">eAS</a>
+				<a href="/html/luma.html">LUMA</a>
+				<a href="/html/pollex.html">POLLEX</a>
+				<a href="/html/u8c.html">U8C</a>
 			</section>
-		</div>
+		</section>
 
-		<a id="themeToggler" onclick="toggleTheme();">TOGGLE THEME</a>
+		<section>
+			<a id="themeToggler" onclick="Ach.toggleTheme();">TOGGLE THEME</a>
+		</section>
 	</div>
 
 	<div id="glyph"></div>

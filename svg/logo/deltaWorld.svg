@@ -1,0 +1,9 @@
+<svg height="160" width="160" xmlns="http://www.w3.org/2000/svg">
+	<mask id="triangle">
+		<polygon fill="white" points="80,44 38.430780618,116 121.569219382,116" />
+		<polygon fill="black" points="80,76 66.143593539,100 93.856406461,100" />
+	</mask>
+
+	<rect fill="#000000" height="100%" width="100%" x="0" y="0" />
+	<rect fill="#FFFFFF" height="100%" mask="url(#triangle)" width="100%" x="0" y="0" />
+</svg>

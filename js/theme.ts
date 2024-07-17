@@ -1,51 +1,55 @@
-const DEFAULT_THEME = "dark";
+namespace Ach {
+	export function toggleTheme() {
+		let body = Ach.getFirstElement(document, "body");
 
-function toggleTheme() {
-	let bodies = document.getElementsByTagName("body");
+		let theme = "light";
 
-	if (!bodies) {
-		throw new Error("unable to find body");
-	}
-
-	let theme = "light";
-
-	if (bodies[0x0].classList.contains("light")) {
-		theme = "dark";
-	}
-
-	console.log("setting theme to `" + theme + "`");
-
-	bodies[0x0].classList.toggle("light");
-	localStorage.setItem("theme", theme);
-}
-
-function loadTheme() {
-	let theme = localStorage.getItem("theme");
-
-	if (!theme) {
-		console.log("theme not set, using default");
-		theme = DEFAULT_THEME;
-	}
-
-	switch (theme) {
-	case "dark":
-		// We assume this theme in our stylesheets.
-		break;
-
-	case "light":
-		let bodies = document.getElementsByTagName("body");
-
-		if (!bodies) {
-			throw new Error("unable to find body");
+		if (body.classList.contains("light")) {
+			theme = "dark";
 		}
 
-		bodies[0x0].classList.add("light");
-		break;
+		console.log("setting theme to `" + theme + "`");
 
-	default:
-		console.log(`invalid theme \"${theme}\", using default`);
-		//theme = DEFAULT_THEME; // Redundant now.
+		body.classList.toggle("light");
+		sessionStorage.setItem("theme", theme);
+	}
 
-		break;
+	export function loadTheme() {
+		let theme = sessionStorage.getItem("theme");
+
+		if (!theme) {
+			console.log("theme not set, using default");
+			theme = defaultTheme();
+		}
+
+		switch (theme) {
+		case "dark":
+			// We assume this theme in our stylesheets.
+			break;
+
+		case "light":
+			let body = Ach.getFirstElement(document, "body");
+			body.classList.add("light");
+
+			break;
+
+		default:
+			console.log(`invalid theme \"${theme}\", using default`);
+			//theme = DEFAULT_THEME; // Redundant now.
+
+			break;
+		}
+
+		console.log(`note: theme is now \`${theme}\``);
+	}
+
+	function defaultTheme(): string {
+		let hour = new Date().getHours();
+
+		if (hour >= 0x6 && hour <= 0x12) {
+			return "light";
+		} else {
+			return "dark";
+		}
 	}
 }

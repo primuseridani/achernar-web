@@ -17,7 +17,7 @@
 			<link href="/css/noScript.css" rel="stylesheet">
 		</noscript>
 
-		<script src="/js/init.js" type="text/javascript"></script>
+		<script src="/js/main.js" type="text/javascript"></script>
 	</head>
 
 	<body data-page="benoit">
@@ -29,7 +29,7 @@
 			<section>
 				<p><em>Benoit</em> is a Rust-written programme for visualising complex functions, e.g. <em>the Mandelbrot Set</em> and similar fractals.</p>
 				<br>
-				<x-image data-file="benoit_screenshot0"></x-image>
+				<x-image alt="A render of a single Minibrot on a green background. The render is coloures so that it resembles lightning coming from the Minibrot." data-file="benoit_screenshot0"></x-image>
 				<br>
 				<p>The project consists of the core <a href="https://crates.io/crates/benoit/"><code>benoit</code></a> crate, from which the frontends <code>benoit-cli</code> and (in the future) <code>benoit-gui</code> derive.</p>
 			</section>
@@ -39,7 +39,7 @@
 			<section>
 				<p>The <code>benoit-cli</code> executable can render and animate using <a href="https://en.wikipedia.org/wiki/TOML/">TOML</a> files right from the commandline.</p>
 				<br>
-				<x-image data-file="benoit_screenshot1"></x-image>
+				<x-image alt="A Julia Set centred on a point inside the Mandelbrot Set. The resulting image resembles creeping, black vines with rainbows around." data-file="benoit_screenshot1"></x-image>
 			</section>
 
 			<h1 id="anchor.benoitGui">benoit-gui</h1>
@@ -47,7 +47,7 @@
 			<section>
 				<p>The <code>benoit-gui</code> executable, on the other hand, allows viewing fractals in realtime. Do note, however, that this frontend is currently unimplemented.</p>
 				<br>
-				<x-image data-file="benoit_screenshot2"></x-image>
+				<x-image alt="An render of an inverse Julia Set of the Mandelbrot. It appears on a grey gradiant background with a warm-coloured pattern resembling smaller minibrots." data-file="benoit_screenshot2"></x-image>
 			</section>
 
 			<h1 id="anchor.docs">docs</h1>
@@ -61,6 +61,6 @@
 	</body>
 
 	<script type="text/javascript">
-		init();
+		Ach.init();
 	</script>
 </html>

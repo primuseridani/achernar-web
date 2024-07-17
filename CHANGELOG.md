@@ -1,5 +1,25 @@
 # Changelog
 
+## 9.0
+
+* Update side menu on touch screens
+* Update vertical styling
+* Round favicon
+* Caption images
+* Update home button
+* Restructure vector graphics
+* Update note styling
+* Elaborate pages
+* Add new project *Dux*
+* Add project logos (to tree)
+* Make links crawlable
+* Specify font display
+* Calculate default theme from time
+* Fix wrong page for *Luma*
+* Refactor scripts
+* Indicate current page
+* Update make script
+
 ## 8.1
 
 * Add more meta tags

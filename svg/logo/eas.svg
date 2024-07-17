@@ -1,0 +1,16 @@
+<svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
+	<mask id="strike">
+		<circle cx="48" cy="48" fill="white" r="30" />
+		<polygon fill="black" points="84,12 84,84 12,84" />
+	</mask>
+
+	<mask id="e">
+		<circle cx="48" cy="48" fill="white" r="36" />
+		<circle cx="48" cy="48" fill="black" r="24" />
+		<polygon fill="black" points="84,12 84,48 48,48" />
+		<polyline mask="url(#strike)" points="84,12 12,84" stroke="white" stroke-width="24" />
+	</mask>
+
+	<rect fill="#01CD93" height="100%" width="100%" x="0" y="0" />
+	<rect fill="#00291B" height="100%" mask="url(#e)" width="100%" x="0" y="0" />
+</svg>

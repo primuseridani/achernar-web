@@ -34,14 +34,9 @@
 
 	section {
 		line-height: 2em;
-		max-width:   calc(36rem - $padding);
+		max-width:   calc($contentWidth / 2 - $padding);
+		text-align:  justify;
 		width:       100%;
-
-		&:nth-of-type(odd) {
-			p.note {
-				text-align: right;
-			}
-		}
 
 		&:nth-of-type(even) {
 			margin-left: auto;
@@ -61,7 +56,11 @@
 		}
 
 		p.note {
-			font-weight: bold;
+			background-color: var(--foregroundColour);
+			border-radius:    1rem;
+			font-weight:      bold;
+			padding:          1rem;
+			text-align:       center;
 
 			&::before {
 				content: "Note:\0020";
