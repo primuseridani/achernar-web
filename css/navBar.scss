@@ -1,7 +1,7 @@
 #navBar {
 	align-items:     center;
 	display:         flex;
-	height:          calc(2rem + var(--hamburgerHeight));
+	height:          calc(2rem + $hamburgerHeight);
 	justify-content: space-between;
 	padding:         1rem;
 	position:        absolute;
@@ -46,7 +46,7 @@
 			}
 
 			@media not (prefers-reduced-motion) {
-				transition: opacity $slideDuration, text-decoration-color 0.125s;
+				transition: opacity $sideMenuToggleDuration, text-decoration-color 0.125s;
 			}
 
 			@media (orientation: portrait) or (pointer: coarse) {
@@ -64,7 +64,7 @@
 			aspect-ratio:     1;
 			background-color: var(--textColour);
 			cursor:           pointer;
-			height:           var(--hamburgerHeight);
+			height:           $hamburgerHeight;
 			mask-size:        cover;
 			z-index:          255;
 		}

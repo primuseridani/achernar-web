@@ -9,7 +9,7 @@
 	min-height:       calc(100vh + 1rem);
 	padding:          1rem;
 	padding-bottom:   2rem;
-	padding-top:      calc(var(--hamburgerHeight) + 1rem);
+	padding-top:      calc($hamburgerHeight + 1rem);
 	position:         relative;
 	top:              0;
 	width:            100%;
@@ -20,7 +20,7 @@
 	}
 
 	@media (pointer: fine) and (not (prefers-reduced-motion)) {
-		transition:                 left $slideDuration;
+		transition:                 left $sideMenuToggleDuration;
 		transition-timing-function: ease-in-out;
 	}
 

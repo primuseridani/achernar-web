@@ -1,7 +1,6 @@
 #header {
-	$slideDuration: 0.5s;
-
-	--hamburgerHeight: 2rem;
+	$hamburgerHeight:        2rem;
+	$sideMenuToggleDuration: 0.5s;
 
 	background-color:           var(--backgroundColour);
 	background-size:            cover;
@@ -85,10 +84,6 @@
 	body[data-page = "u8c"] & {
 		--backgroundColour: #444747;
 		--textColour:       #A9E13D;
-	}
-
-	@media (pointer: coarse) {
-		--hamburgerHeight: 4rem;
 	}
 
 	p, a {

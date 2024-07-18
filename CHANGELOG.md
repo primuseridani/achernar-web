@@ -1,5 +1,11 @@
 # Changelog
 
+## 9.3
+
+* Update touch screen styling
+* Update note styling
+* Add Backspace glyph
+
 ## 9.2
 
 * Update contact email
