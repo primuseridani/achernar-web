@@ -1,5 +1,11 @@
 # Changelog
 
+## 9.4
+
+* Update page descriptions
+* Elaborate pages
+* Update home icon
+
 ## 9.3
 
 * Update touch screen styling
