@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.5
+
+* Add tool tips
+
 ## 9.4
 
 * Update page descriptions

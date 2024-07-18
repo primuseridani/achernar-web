@@ -41,6 +41,7 @@ namespace Ach {
 			hyperlinkElement.setAttribute("href",   sourceUrl);
 			hyperlinkElement.setAttribute("rel",    "noopener noreferrer");
 			hyperlinkElement.setAttribute("target", "_blank");
+			hyperlinkElement.setAttribute("title", "Click to view image source.");
 
 			let image_element = document.createElement("img");
 			image_element.setAttribute("alt", alt);

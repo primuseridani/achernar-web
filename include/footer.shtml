@@ -1,11 +1,11 @@
 <footer id="footer">
 	<h1>achernar</h1>
 
-	<p id="cvrNumber">cvr: 44936429</p>
+	<p id="cvrNumber" title="Danish VAT number.">VAT: DK44936429</p>
 	<br>
 	<p>Communications can be done in English and Danish.</p>
 	<br>
 	<p>This webservice may be cloned from <a href="https://mandelbrot.dk/achernar/" rel="noopener noreferrer" target="_blank"><code>mandelbrot.dk</code></a>.</p>
 	<br>
-	<div class="center" id="emailAddress"></div>
+	<div class="center" id="emailAddress" title="Obfuscated email address."></div>
 </footer>
