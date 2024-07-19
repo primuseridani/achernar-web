@@ -5,13 +5,12 @@
 	flex-direction:   column;
 	gap:              1rem;
 	justify-content:  space-between;
-	left:             100%;
+	left:             100vw;
 	min-height:       calc(100vh + 1rem);
 	padding:          1rem;
 	padding-bottom:   2rem;
-	padding-top:      calc($hamburgerHeight + 1rem);
+	padding-top:      calc($hamburgerHeight + $gap * 2);
 	position:         relative;
-	top:              0;
 	width:            100%;
 	z-index:          127;
 
@@ -30,10 +29,10 @@
 
 	section.links {
 		display:         flex;
-		gap:             1rem;
+		gap:             $gap;
 		justify-content: end;
 		max-width:       $contentWidth;
-		padding:         1rem;
+		padding:         0 1rem;
 		width:           100%;
 
 		@media (orientation: portrait) {

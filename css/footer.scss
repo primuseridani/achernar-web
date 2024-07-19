@@ -9,6 +9,7 @@
 	h1 {
 		font-size:   2em;
 		font-weight: bold;
+		text-align:  center;
 
 		&::after {
 			background-color: var(--textColour);
@@ -24,6 +25,8 @@
 
 	#cvrNumber {
 		font-weight: bold;
+		margin:      auto;
+		width:       fit-content;
 	}
 
 	#emailAddress {
@@ -39,5 +42,17 @@
 		max-height:       1em;
 		max-width:        calc(183em / 8);
 		width:            100%;
+	}
+
+	#socials {
+		display:     flex;
+		font-weight: bold;
+		gap:         1rem;
+		margin:      auto;
+		width:       fit-content;
+
+		@media (orientation: portrait) {
+			flex-direction: column;
+		}
 	}
 }

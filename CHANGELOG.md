@@ -1,5 +1,11 @@
 # Changelog
 
+## 9.6
+
+* Restructure scripts
+* Rework Achernar banner
+* Add SoMe links
+
 ## 9.5
 
 * Add tool tips

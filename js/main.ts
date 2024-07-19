@@ -1,8 +1,19 @@
-/// <reference path="init.ts" />
 /// <reference path="navigation.ts" />
+/// <reference path="page.ts" />
 /// <reference path="theme.ts" />
 
 namespace Ach {
+	export async function init() {
+		Ach.loadTheme();
+
+		Ach.initImages();
+		Ach.initLinks();
+
+		window.addEventListener("popstate", (_e) => {
+			location.reload();
+		});
+	}
+
 	export function currentPage() {
 		let body = Ach.getFirstElement(document, "body");
 		let page = body.getAttribute("data-page");

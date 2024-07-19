@@ -3,23 +3,27 @@
 	background-position: center;
 	background-repeat:   no-repeat;
 	background-size:     contain;
-	left:                50%;
+	left:                50vw;
 	position:            absolute;
-	top:                 50%;
+	top:                 50vh;
 	transform:           translate(-50%, -50%);
 	width:               50vmin;
 
 	body[data-page = "achernar"] & {
 		$pixelWIdth: calc(100vmax / 256);
 
+		--glyphWidth:  154;
+		--glyphHeight: 42;
+
 		background-image: url("/image/achernarPixelated.webp");
-		height:           floor(calc($pixelWIdth * 42));
-		width:            floor(calc($pixelWIdth * 154));
+		height:           calc($pixelWIdth * var(--glyphHeight));
+		width:            calc($pixelWIdth * var(--glyphWidth));
 
 		@media (orientation: portrait) {
+			--glyphWidth:  90;
+			--glyphHeight: 74;
+
 			background-image: url("/image/achernarVerticalPixelated.webp");
-			height:           floor(calc($pixelWIdth * 90));
-			width:            floor(calc($pixelWIdth * 74));
 		}
 	}
 

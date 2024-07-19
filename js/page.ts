@@ -1,15 +1,4 @@
 namespace Ach {
-	export async function init() {
-		Ach.loadTheme();
-
-		Ach.initImages();
-		Ach.initLinks();
-
-		window.addEventListener("popstate", (_e) => {
-			location.reload();
-		});
-	}
-
 	export async function initImages() {
 		let page = Ach.getOnlyElement(document, "page");
 
