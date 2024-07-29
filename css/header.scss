@@ -5,8 +5,8 @@
 
 	background-color:           var(--backgroundColour);
 	background-size:            cover;
-	border-bottom-left-radius:  1rem;
-	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius:  var(--padding);
+	border-bottom-right-radius: var(--padding);
 	height:                     fit-content;
 	image-rendering:            pixelated;
 	overflow:                   hidden;

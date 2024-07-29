@@ -49,10 +49,28 @@
 		font-weight: bold;
 		gap:         1rem;
 		margin:      auto;
+		margin-top:  1rem;
 		width:       fit-content;
 
-		@media (orientation: portrait) {
-			flex-direction: column;
+		a {
+			aspect-ratio:     1;
+			background-color: var(--textColour);
+			display:          block;
+			image-rendering:  pixelated;
+			mask-size:        cover;
+			width:            2rem;
+
+			&.instagram {
+				mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAX0lEQVQ4y8VTQQ6AMAiDhfT/7+0FLy6ZBnWMLPYILYQCKicAuCRAUmVVfNFkxSMfgLcV8VjEZjr1mUkqAP+cPxW7J948ibhNivi/QNlEezrTaI0R16ZufasH1WfS6jsfuEMzS24xXK8AAAAASUVORK5CYII");
+			}
+
+			&.threads {
+				mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeElEQVQ4y6VTMQ4AIQgDcun/38viTRolRTEyGVtogaBCAkBj/+6usgsALUs+4qfkLa+azPhf1l8sOOPurgNnytFR5hBAk6r1rIDJYyiAxva7c7bwKzOIvPltJRWC9SK2rKSgGMMYqavPrTzfQWnIN/cw1nhzzmzAP95rU0FdYvnBAAAAAElFTkSuQmCC");
+			}
+
+			&.x {
+				mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVQ4y62SOw5AIQgEgWLvf14aX2WiPuQTpFOzm8kgAxhkjKoyObPlAIz14jxb4fkuVJwZ/BFmKCIyt+QWlhZ2laIkKltS3sJzCg5/2SLPkikt4xF2Sahn2iuRLjZnwze6D+xmTvrTiNc4AAAAAElFTkSuQmCC");
+			}
 		}
 	}
 }

@@ -1,5 +1,14 @@
 # Changelog
 
+## 10.0
+
+* Add *Threads* link
+* Add socials icons
+* Update text styling
+* Update touch styling
+* Elaborate pages
+* Add code block styling
+
 ## 9.6
 
 * Restructure scripts

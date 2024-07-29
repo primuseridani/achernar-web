@@ -3,13 +3,13 @@
 	background-color: var(--backgroundColour);
 	display:          flex;
 	flex-direction:   column;
-	gap:              1rem;
+	gap:              $separatorWidth;
 	justify-content:  space-between;
 	left:             100vw;
-	min-height:       calc(100vh + 1rem);
+	min-height:       calc(100vh + var(--padding));
 	padding:          1rem;
 	padding-bottom:   2rem;
-	padding-top:      calc($hamburgerHeight + $gap * 2);
+	padding-top:      calc($hamburgerHeight + var(--padding) * 2);
 	position:         relative;
 	width:            100%;
 	z-index:          127;
@@ -29,7 +29,7 @@
 
 	section.links {
 		display:         flex;
-		gap:             $gap;
+		gap:             $separatorWidth;
 		justify-content: end;
 		max-width:       $contentWidth;
 		padding:         0 1rem;

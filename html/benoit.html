@@ -40,6 +40,14 @@
 				<p>The <code>benoit-cli</code> executable can render and animate using <a href="https://en.wikipedia.org/wiki/TOML/">TOML</a> files right from the commandline.</p>
 				<br>
 				<x-image alt="A Julia Set centred on a point inside the Mandelbrot Set. The resulting image resembles creeping, black vines with rainbows around." data-file="benoit_screenshot1"></x-image>
+				<br>
+				<p>The main use of <code>benoit-cli</code> is to render still images or animations of fractals, e.g. zoom-ins. An example configuration could look like the following:</p>
+				<br>
+				<div class="codeblock"># benoit.toml<br><br>[render]<br>count  = 24<br>width  = 1024<br>height = 1024<br><br>fractal = "mandelbrot"<br>inverse = false<br>julia   = false<br><br>[render.start]<br>frame = 0<br><br>max_iter_count = 0x100<br><br>centre = "0.0+1.0i"<br>seed   = "0.0+0.0i"<br>zoom   = "1.0"<br><br>colour_range = 64.0<br><br>[render.stop]<br>frame = 23<br><br>max_iter_count = 0x100<br><br>centre = "0.0+1.0i"<br>seed   = "0.0+0.0i"<br>zoom   = "1.0"<br><br>colour_range = 64.0<br><br>[final]<br>palette = "fire"<br><br>[output]<br>directory = "render/"</div>
+				<br>
+				<p>Just provide the path to the desired configuration:</p>
+				<br>
+				<code>benoit-cli "benoit.toml"</code>
 			</section>
 
 			<h1 id="anchor.benoitGui">benoit-gui</h1>
@@ -53,7 +61,7 @@
 			<h1 id="anchor.docs">docs</h1>
 
 			<section>
-				<p>Documentation for the main library can be found on <a href="https://docs.rs/benoit/latest/benoit/"><code>docs.rs</code></a>.</p>
+				<p>Documentation is written in source. Documentation for the main library is hosted on <a href="https://docs.rs/benoit/latest/benoit/"><code>docs.rs</code></a>.</p>
 			</section>
 
 			<!--#include virtual="/include/footer.shtml"-->

@@ -8,11 +8,10 @@
 	<p>This webservice may be cloned from <a href="https://mandelbrot.dk/achernar/" rel="noopener noreferrer" target="_blank"><code>mandelbrot.dk</code></a>.</p>
 	<br>
 	<div class="center" id="emailAddress" title="Obfuscated email address."></div>
-	<br>
-	<h1>socials</h1>
 
 	<div id="socials">
-		<a href="https://www.instagram.com/primuseridani/" title="primuseridani">instagram</a>
-		<a href="https://x.com/PrimusEridani/" title="PrimusEridani">x</a>
+		<a class="instagram" href="https://www.instagram.com/primuseridani/" title="primuseridani"></a>
+		<a class="threads" href="https://www.threads.net/@primuseridani/" title="primuseridani"></a>
+		<a class="x" href="https://x.com/PrimusEridani/" title="PrimusEridani"></a>
 	</div>
 </footer>

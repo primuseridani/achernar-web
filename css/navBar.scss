@@ -1,9 +1,8 @@
 #navBar {
 	align-items:     center;
 	display:         flex;
-	height:          calc(2rem + $hamburgerHeight);
 	justify-content: space-between;
-	padding:         $gap;
+	padding:         var(--padding);
 	position:        absolute;
 	top:             0;
 	width:           100%;

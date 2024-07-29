@@ -1,5 +1,5 @@
 #page {
-	$padding: 1rem;
+	$padding: var(--padding);
 
 	margin:    auto;
 	max-width: $contentWidth;
@@ -33,6 +33,7 @@
 	}
 
 	section {
+		font-family: "Montserrat";
 		line-height: 2em;
 		max-width:   calc($contentWidth / 2 - $padding);
 		text-align:  justify;
@@ -81,7 +82,18 @@
 			background-color: var(--foregroundColour);
 			border-radius:    1rem;
 			padding:          1rem;
+			text-align:       left;
 			width:            100%;
+		}
+
+		div.codeblock {
+			background-color: var(--textColour);
+			border-radius:    1rem;
+			color:            var(--backgroundColour);
+			font-family:      $monospaceFont;
+			line-height:      normal;
+			padding:          1rem;
+			white-space:      preserve;
 		}
 	}
 

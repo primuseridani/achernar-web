@@ -21,10 +21,15 @@ body {
 	--foregroundColour: oklch( 25% 0.029600 253.71);
 	--textColour:       oklch(100% 0          0);
 
+	--padding: 1rem;
+
 	background-color: var(--backgroundColour);
 	color:            var(--textColour);
-	font-size:        1.25em;
 	z-index:          -1;
+
+	@media (pointer: coarse) {
+		--padding: 2rem;
+	}
 
 	&.light {
 		--backgroundColour: oklch(96.875% 0 0);
@@ -45,7 +50,7 @@ ul {
 	list-style: none;
 
 	li p::before {
-		content: "\2014\0020";
+		content: "\2022\0020";
 	}
 }
 
