@@ -10,8 +10,9 @@
 	<div class="center" id="emailAddress" title="Obfuscated email address."></div>
 
 	<div id="socials">
-		<a class="instagram" href="https://www.instagram.com/primuseridani/" title="primuseridani"></a>
-		<a class="threads" href="https://www.threads.net/@primuseridani/" title="primuseridani"></a>
-		<a class="x" href="https://x.com/PrimusEridani/" title="PrimusEridani"></a>
+		<a class="instagram" href="https://www.instagram.com/primuseridani/" title="Instagram: primuseridani"></a>
+		<a class="linktree" href="https://linktr.ee/alphaeridani/" title="Linktree: alphaeridani"></a>
+		<a class="threads" href="https://www.threads.net/@primuseridani/" title="Threads: @primuseridani"></a>
+		<a class="x" href="https://x.com/PrimusEridani/" title="X: @PrimusEridani"></a>
 	</div>
 </footer>

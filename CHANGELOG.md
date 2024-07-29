@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.1
+
+* Add *Linktree* link
+
 ## 10.0
 
 * Add *Threads* link
