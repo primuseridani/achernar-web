@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.2
+
+* Remove *X* link
+
 ## 10.1
 
 * Add *Linktree* link
