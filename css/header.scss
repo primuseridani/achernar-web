@@ -10,10 +10,11 @@
 	border-bottom-right-radius: $padding;
 	box-shadow:                 0 0 calc($padding / 2) $shadowColour;
 	display:                    flex;
-	height:                     100vh;
+	height:                     calc(100vh + $padding);
 	image-rendering:            pixelated;
 	justify-content:            center;
 	overflow:                   hidden;
+	padding-bottom:             $padding;
 	position:                   relative;
 	user-select:                none;
 	width:                      100%;
@@ -23,7 +24,6 @@
 		display:         block;
 		image-rendering: pixelated;
 		object-fit:      contain;
-		pointer-events:  none;
 		width:           50vmin;
 	}
 

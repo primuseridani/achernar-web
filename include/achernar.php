@@ -38,7 +38,7 @@
 			}
 
 			addCard("agbsum",     "agbsum");
-			//addCard("ax",         "AX");
+			addCard("ax",         "AX");
 			//addCard("backspace",  "Backspace");
 			addCard("benoit",     "Benoit");
 			addCard("bowshock",   "Bowshock");

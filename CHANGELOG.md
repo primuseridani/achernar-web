@@ -1,5 +1,13 @@
 # Changelog
 
+## 11.1
+
+* Update banner styling
+* Add agbsum logo
+* Add AX to main menu
+* Update overview styling
+* Update AX and Luma logos
+
 ## 11.0
 
 * Elaborate pages

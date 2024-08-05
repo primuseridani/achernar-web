@@ -15,6 +15,6 @@
 			<circle cx="120" cy="88" fill="white" r="8" />
 	</mask>
 
-	<rect fill="#6051B2" height="100%" width="100%" x="0" y="0" />
+	<rect fill="#4D4084" height="100%" width="100%" x="0" y="0" /> <!-- 7672 C -->
 	<rect fill="#FFFFFF" height="100%" mask="url(#wordmark)" width="100%" x="0" y="0" />
 </svg>

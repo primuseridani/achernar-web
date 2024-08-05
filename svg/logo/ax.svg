@@ -7,6 +7,6 @@
 		<polygon fill="black" points="60,36 78,54 60,54" />
 	</mask>
 
-	<rect fill="#422984" height="100%" width="100%" x="0" y="0" />
+	<rect fill="#4D4084" height="100%" width="100%" x="0" y="0" /> <!-- 7672 C -->
 	<rect fill="#FFFFFF" height="100%" mask="url(#letters)" width="100%" x="0" y="0" />
 </svg>

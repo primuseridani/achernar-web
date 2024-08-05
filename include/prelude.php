@@ -10,8 +10,8 @@
 	function pageColours($page) {
 		return match ($page) {
 			"achernar"   => ["#007B34", "#FFFFFF"],
-			"agbsum"     => ["#422984", "#FFFFFF"],
-			"ax"         => ["#422984", "#FFFFFF"],
+			"agbsum"     => ["#4D4084", "#FFFFFF"],
+			"ax"         => ["#4D4084", "#FFFFFF"],
 			"backspace"  => ["#000000", "#FFFFFF"],
 			"benoit"     => ["#BA0035", "#FFFFFF"],
 			"bowshock"   => ["#B61833", "#FFEEE0"],
@@ -19,7 +19,7 @@
 			"deltaWorld" => ["#000000", "#FFFFFF"],
 			"dux"        => ["#131313", "#06FBB2"],
 			"eas"        => ["#01CD93", "#00291B"],
-			"luma"       => ["#6051B2", "#FFFFFF"],
+			"luma"       => ["#4D4084", "#FFFFFF"],
 			"pollex"     => ["#4D4084", "#FFFFFF"],
 			"u8c"        => ["#444747", "#A9E13D"],
 			default      => die(),

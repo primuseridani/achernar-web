@@ -8,6 +8,7 @@
 	flex-wrap:        wrap;
 	gap:              $padding;
 	padding:          $padding;
+	user-select:      none;
 	width:            100%;
 
 	a {
@@ -34,9 +35,8 @@
 		}
 
 		img {
-			display:        block;
-			pointer-events: none;
-			width:          50%;
+			display: block;
+			width:   75%;
 		}
 	}
 }
