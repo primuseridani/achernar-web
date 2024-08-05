@@ -1,5 +1,12 @@
 # Changelog
 
+## 11.2
+
+* Elaborate pages
+* Update romanisation
+* Update keywords
+* Fix make script logging
+
 ## 11.1
 
 * Update banner styling

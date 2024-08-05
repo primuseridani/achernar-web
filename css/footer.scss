@@ -21,13 +21,13 @@
 		background-color: var(--textColour);
 		image-rendering:  pixelated;
 		margin:           auto;
-		mask-image:       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAALCAQAAAAt4J4/AAAAS0lEQVQoz9WRMQ4AIAgDW+P/v1xHIKIRNhlpuQYgmqWG4nVBqVObL+fGvtHu85YpYDgcnzamB87A3fNCMEFlQXG4cO55vEz1H//VAg5FJOyjOJa9AAAAAElFTkSuQmCC");
+		mask-image:       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAALCAQAAAAt4J4/AAAATElEQVQoz9WRwQ4AMARDdfH/v9wdlghBlrnNDU8rQIbBQcf3KSxJJq7WjfVKjQ1n2XIw7svzUEZo0M1+wRgCBqNy+OHc2l7m9R//xQbPdSTsn4rEMwAAAABJRU5ErkJggg");
 		mask-size:        cover;
 		max-height:       $actualHeight;
 		max-width:        calc($actualHeight * ($width / $height));
 	}
 
-	#systemDescription {
+	#starDescription {
 		font-style:      italic;
 		margin:          $padding auto;
 		max-width:       calc($contentWidth / 2);

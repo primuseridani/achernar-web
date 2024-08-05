@@ -44,7 +44,7 @@
 				"agbsum" => [
 					"agbsum | Achernar",
 					"agbsum is a CLI utility for patching AGB images.",
-					"achernar, advance, agb, agbsum, cli, console, embedded, game, terminal",
+					"achernar, advance, agb, agbsum, cli, console, embedded, game, patch, terminal",
 				],
 
 				"ax" => [
@@ -92,13 +92,13 @@
 				"eas" => [
 					"eAS | Achernar",
 					"eAS is an assembler for cross-compiling to Arm ISAs.",
-					"achernar, agb, arm, assembler, assembly, eas, embedded, risc, thumb",
+					"achernar, agb, arm, as, asm, assembler, assembly, eas, embedded, risc, thumb",
 				],
 
 				"luma" => [
 					"Luma | Achernar",
 					"Luma is an emulator for the AGB line of devices.",
-					"achernar, agb, arm, luma, rust, thumb",
+					"achernar, agb, arm, emulator, luma, rust, thumb",
 				],
 
 				"pollex" => [
@@ -205,7 +205,7 @@
 		<footer id="footer">
 			<div id="romanisation" title="&#1570;&#1582;&#1616;&#1585; &#1575;&#1614;&#1604;&#1618;&#1606;&#1614;&#1607;&#1614;&#1585;"></div>
 
-			<p id="systemDescription">ACHERNAR &mdash; Type B star; primary component of ALPHA ERIDANI; approx. (6) solar masses, (15) kilokelvin at surface; c. (140) light years from SOL III; no native lifeforms discovered, human life on terraformed ACHERNAR IV.</p>
+			<p id="starDescription">ACHERNAR &mdash; Type B star; primary component of ALPHA ERIDANI; approx. (6) solar masses, (15) kilokelvin at surface; c. (140) light years from SOL III; no native lifeforms discovered, human life on terraformed ACHERNAR IV.</p>
 
 			<p>Communications can be done in English and Danish.</p>
 			<br>

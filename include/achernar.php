@@ -1,4 +1,4 @@
-<?php addHeading("The future is now", "about"); ?>
+<?php addHeading("The future is <em>now</em>", "about"); ?>
 
 <section>
 	<p><em>Achernar</em> is a European indie development studio based in the Capital Region of Denmark. &#127465;&#127472;</p>

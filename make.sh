@@ -27,8 +27,10 @@ make_favicon() {
 	render_icon "${input}" 192 "${directory}/192x192.png"
 	render_icon "${input}" 256 "${directory}/256x256.png"
 
+	output="${directory}/favicon.ico"
+
 	printf "combining renders in \"%s\" to \"%s\"\n" "${directory}" "${output}"
-	icotool -co "favicon.ico" "${directory}/"*".png"
+	icotool -co "${output}" "${directory}/"*".png"
 
 	render_icon "${input}" 180 "apple-touch-icon.png"
 }
