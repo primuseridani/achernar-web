@@ -1,8 +1,6 @@
 #page {
-	$padding: var(--padding);
-
 	margin:    auto;
-	max-width: $contentWidth;
+	max-width: calc($contentWidth + $padding * 2);
 	padding:   $padding;
 
 	a, a:visited {
@@ -11,10 +9,9 @@
 	}
 
 	h1 {
-		font-size:     2em;
-		font-weight:   bold;
-		margin-bottom: 1rem;
-		width:         100%;
+		font-size:   2em;
+		font-weight: bold;
+		width:       100%;
 
 		&:nth-of-type(even) {
 			text-align: right;
@@ -26,42 +23,58 @@
 			content:          "";
 			display:          block;
 			height:           $separatorWidth;
-			margin-bottom:    1rem;
 			margin-top:       $separatorWidth;
 			width:            100%;
-		};
+		}
+
+		a.anchor {
+			aspect-ratio:     1;
+			background-color: var(--textColour);
+			display:          inline-block;
+			mask-image:       url("/svg/glyph/chain.svg");
+			mask-size:        cover;
+			vertical-align:   middle;
+			width:            0.5em;
+		}
 	}
 
 	section {
-		font-family: "Montserrat";
+		font-family: "Montserrat", "sans-serif";
 		line-height: 2em;
 		max-width:   calc($contentWidth / 2 - $padding);
 		text-align:  justify;
 		width:       100%;
 
-		&:nth-of-type(even) {
-			margin-left: auto;
-
-			ol, ul {
-				margin-left: auto;
-				text-align: left
-			}
+		&:nth-of-type(even):not(.fullWidth) {
+			margin-left:     auto;
+			text-align-last: right;
 		}
 
 		&.fullWidth {
-			max-width: 100%;
+			max-width:  100%;
+			text-align: center;
 		}
 
-		& + h1 {
-			margin-top: 1rem;
+		p.codeblock {
+			background-color: var(--textColour);
+			border-radius:    $padding;
+			color:            var(--backgroundColour);
+			font-family:      $monospaceFont;
+			line-height:      normal;
+			padding:          $padding;
+			text-align:       left;
+			text-align-last:  left;
+			white-space:      preserve;
 		}
 
 		p.note {
-			font-weight: bold;
-			text-align:  center;
+			font-style:      italic;
+			font-weight:     bold;
+			text-align:      left;
+			text-align-last: left;
 
 			&::before {
-				content: "Note:\0020";
+				content: "\2014\0020Note:\0020";
 			}
 		}
 
@@ -73,60 +86,43 @@
 			padding:          $padding;
 		}
 
-		em {
-			font-style:  normal;
-			font-weight: bold;
-		}
-
 		ul {
 			background-color: var(--foregroundColour);
-			border-radius:    1rem;
-			padding:          1rem;
+			border-radius:    $padding;
+			display:          block;
+			padding:          $padding;
 			text-align:       left;
+			text-align-last:  left;
 			width:            100%;
 		}
 
-		div.codeblock {
-			background-color: var(--textColour);
-			border-radius:    1rem;
-			color:            var(--backgroundColour);
-			font-family:      $monospaceFont;
-			line-height:      normal;
-			padding:          1rem;
-			white-space:      preserve;
-		}
-	}
-
-	x-image {
-		display: block;
-		position:relative;
-		width:   100%;
-
-		&:nth-of-type(odd) {
-			margin-right: auto;
-		}
-
-		&:nth-of-type(even) {
-			margin-left: auto;
-		}
-
-		img.blur {
-			filter:   blur(1rem) saturate(200%);
-			position: absolute;
-			width:    100%;
-		}
-
-		a {
+		div.image {
 			position: relative;
+			width:    100%;
+
+			a {
+				border-radius: $padding;
+				display:       block;
+				position:      relative;
+			}
 
 			img {
-				border-radius:   1rem;
-				display:         block;
-				image-rendering: pixelated;
-				width:           100%;
+				border-radius: $padding;
+				display:       block;
+				width:         100%;
+
+				&.blur {
+					filter:         blur($padding) saturate(200%);
+					pointer-events: none;
+					position:       absolute;
+				}
 			}
 		}
 	}
 
-	@import "footer";
+	h1 + section, section + h1 {
+		margin-top: $padding;
+	}
+
+	@import "overview";
 }

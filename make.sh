@@ -53,6 +53,7 @@ render_icon "svg/logo/achernarIcon.svg" 180 "apple-touch-icon.png"
 
 make_favicon "svg/favicon.svg"
 
+make_stylesheet "font"
 make_stylesheet "main"
 make_stylesheet "noScript"
 

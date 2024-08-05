@@ -1,12 +1,15 @@
-@import "fonts";
-
 $monospaceFont: "Fira Mono", "monospace";
 
 $contentWidth:   72rem;
+$padding:        1rem;
 $separatorWidth: 0.25rem;
+
+$shadowColour: color-mix(in srgb, black, transparent 50%);
 
 :root {
 	font-family: "Raleway", "sans-serif";
+
+	scroll-behavior: smooth;
 }
 
 * {
@@ -17,19 +20,16 @@ $separatorWidth: 0.25rem;
 }
 
 body {
-	--backgroundColour: oklch( 20% 0.029600 253.71);
-	--foregroundColour: oklch( 25% 0.029600 253.71);
-	--textColour:       oklch(100% 0          0);
-
-	--padding: 1rem;
+	--backgroundColour: oklch( 25% 0 0);
+	--foregroundColour: oklch( 20% 0 0);
+	--textColour:       oklch(100% 0 0);
 
 	background-color: var(--backgroundColour);
 	color:            var(--textColour);
 	z-index:          -1;
 
-	@media (pointer: coarse) {
-		--padding: 2rem;
-	}
+	// Default.
+	//&.dark { }
 
 	&.light {
 		--backgroundColour: oklch(96.875% 0 0);

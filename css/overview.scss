@@ -1,0 +1,42 @@
+#overview {
+	$cardsPerRow: 3;
+
+	align-items:      center;
+	background-color: var(--foregroundColour);
+	border-radius:    $padding;
+	display:          flex;
+	flex-wrap:        wrap;
+	gap:              $padding;
+	padding:          $padding;
+	width:            100%;
+
+	a {
+		--foregroundColour: var(--backgroundColour);
+
+		align-items:      center;
+		aspect-ratio:     1;
+		background-color: var(--backgroundColour);
+		background-size:  cover;
+		border-radius:    $padding;
+		display:          flex;
+		flex-basis:       calc((100% - $padding * ($cardsPerRow - 1)) / $cardsPerRow);
+		justify-content:  center;
+		padding:          $padding;
+		width:            $padding;
+
+		@media not (prefers-reduced-motion) {
+			transition:                 box-shadow 0.25s;
+			transition-timing-function: steps(4);
+		}
+
+		&:hover {
+			box-shadow: inset 0 0 $padding $shadowColour;
+		}
+
+		img {
+			display:        block;
+			pointer-events: none;
+			width:          50%;
+		}
+	}
+}

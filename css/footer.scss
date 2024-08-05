@@ -1,26 +1,38 @@
+@use "sass:list";
+
 #footer {
-	background-color: var(--foregroundColour);
-	border-radius:    1rem;
-	font-family:      $monospaceFont;
-	margin-top:       1rem;
-	padding:          1rem;
-	text-align:       center;
+	background-color:        var(--foregroundColour);
+	border-top-left-radius:  $padding;
+	border-top-right-radius: $padding;
+	font-family:             $monospaceFont;
+	margin:                  auto;
+	max-width:               calc($contentWidth + $padding * 2);
+	padding:                 $padding;
+	text-align:              center;
+	width:                   100%;
 
-	h1 {
-		font-size:   2em;
-		font-weight: bold;
-		text-align:  center;
+	#romanisation {
+		$width:  31;
+		$height: 11;
 
-		&::after {
-			background-color: var(--textColour);
-			border-radius:    $separatorWidth;
-			content:          "";
-			display:          block;
-			height:           $separatorWidth;
-			margin-bottom:    1rem;
-			margin-top:       $separatorWidth;
-			width:            100%;
-		}
+		$actualHeight: 4em;
+
+		aspect-ratio:     list.slash($width, $height);
+		background-color: var(--textColour);
+		image-rendering:  pixelated;
+		margin:           auto;
+		mask-image:       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAALCAQAAAAt4J4/AAAAS0lEQVQoz9WRMQ4AIAgDW+P/v1xHIKIRNhlpuQYgmqWG4nVBqVObL+fGvtHu85YpYDgcnzamB87A3fNCMEFlQXG4cO55vEz1H//VAg5FJOyjOJa9AAAAAElFTkSuQmCC");
+		mask-size:        cover;
+		max-height:       $actualHeight;
+		max-width:        calc($actualHeight * ($width / $height));
+	}
+
+	#systemDescription {
+		font-style:      italic;
+		margin:          $padding auto;
+		max-width:       calc($contentWidth / 2);
+		text-align:      justify;
+		text-align-last: center;
 	}
 
 	#cvrNumber {
@@ -30,17 +42,20 @@
 	}
 
 	#emailAddress {
-		aspect-ratio:     183/8;
+		$width:  183;
+		$height: 8;
+
+		$actualHeight: 1em;
+
+		aspect-ratio:     list.slash($width, $height);
 		background-color: var(--textColour);
 		display:          block;
 		image-rendering:  pixelated;
 		margin:           auto;
-		mask-image:       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAAICAYAAAC78m4/AAAA80lEQVRYw+1YQQ7EIAiETf//ZfeyJqRRhAFN18rNEhGGAbFMRFRKKXTkyEbCzMyV2MzMUikJ39Pdv0d0VW/RIcXoicF6hgezXgxy7cWlZUNbe3LkiTvCF8uZo33d86yAZ+ruTo++WXQWcLy+oDY9MWTua9mJ5igaewbWHr7I9YV2rV5lZY04kS79L9fmjNg1u2+Ty0pUDTRZNXLUiRB/BqlnJB61iY4GKJ6WYtqtmXyswJafIEkczVyrBI1htU0UT80Pzc8n5Si9c9dZKaMrIA8SbZbyPFieIi08kXkevfFWEbSV9yiXvHzRztt6rj3y7l+BX5T3s/pA2wdgAAAAAElFTkSuQmCC");
-		mask-position:    center;
-		mask-repeat:      no-repeat;
+		mask-image:       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAAICAQAAAAR+6a0AAAA0klEQVRIx+1W0Q4CMQhrzf3/L9eHM25zwJAzi4nyomSw0kLYEYDwtz1GQgD4cE/he4/P0MgDZHh+G+neEkWO+Ozy5dbSIsZfm5GNHesyZ76edXk0C895cP7N3lyOglwv0kbInbWYFaMV+rpqWxcC0BHOVt+tzMrh5tXEN9D5DdvkMEUdSzt7w+HMpqWiUNXIaB1EdbI4TpftZharAFzT7qqY0vRUFELGq2Tf+RlG6ekWmJgF/ymh+Zh4VK+0iOGdMZ5KgjbuK5U8XYa83dv2xz8E70XwbQlyNNhzAAAAAElFTkSuQmCC");
 		mask-size:        cover;
-		max-height:       1em;
-		max-width:        calc(183em / 8);
+		max-height:       $actualHeight;
+		max-width:        calc($actualHeight * $width / $height);
 		width:            100%;
 	}
 
@@ -49,7 +64,6 @@
 		font-weight: bold;
 		gap:         1rem;
 		margin:      auto;
-		margin-top:  1rem;
 		width:       fit-content;
 
 		a {

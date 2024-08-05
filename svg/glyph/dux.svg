@@ -33,17 +33,17 @@
 	<mask id="spiral">
 		<circle cx="88" cy="88" fill="none" r="84" stroke="white" stroke-width="8" />
 
-		<circle clip-path="url(#semicircle-vertical-left)" cx="88" cy="130" fill="none" r="42" stroke="#000" stroke-width="24" />
-		<circle clip-path="url(#semicircle-vertical-right)" cx="88" cy="46" fill="none" r="42" stroke="#000" stroke-width="24" />
-		<circle cx="88" cy="88" fill="#000" r="8" />
+		<circle clip-path="url(#semicircle-vertical-left)" cx="88" cy="130" fill="none" r="42" stroke="black" stroke-width="24" />
+		<circle clip-path="url(#semicircle-vertical-right)" cx="88" cy="46" fill="none" r="42" stroke="black" stroke-width="24" />
+		<circle cx="88" cy="88" fill="black" r="12" />
 
 		<circle clip-path="url(#semicircle-vertical-left)" cx="88" cy="130" fill="none" r="42" stroke="white" stroke-width="8" />
 		<circle clip-path="url(#semicircle-vertical-right)" cx="88" cy="46" fill="none" r="42" stroke="white" stroke-width="8" />
 		<circle cx="88" cy="88" fill="white" r="4" />
 
-		<circle clip-path="url(#semicircle-horizontal-high)" cx="46" cy="88" fill="none" r="42" stroke="#000" stroke-width="24" />
-		<circle clip-path="url(#semicircle-horizontal-low)" cx="130" cy="88" fill="none" r="42" stroke="#000" stroke-width="24" />
-		<circle cx="88" cy="88" fill="#000" r="8" />
+		<circle clip-path="url(#semicircle-horizontal-high)" cx="46" cy="88" fill="none" r="42" stroke="black" stroke-width="24" />
+		<circle clip-path="url(#semicircle-horizontal-low)" cx="130" cy="88" fill="none" r="42" stroke="black" stroke-width="24" />
+		<circle cx="88" cy="88" fill="black" r="12" />
 
 		<circle clip-path="url(#semicircle-horizontal-high)" cx="46" cy="88" fill="none" r="42" stroke="white" stroke-width="8" />
 		<circle clip-path="url(#semicircle-horizontal-low)" cx="130" cy="88" fill="none" r="42" stroke="white" stroke-width="8" />

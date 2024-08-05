@@ -42,9 +42,9 @@
 		<circle cx="96" cy="96" fill="none" r="84" stroke="white" stroke-width="8" />
 
 		<!-- vertical spiral arm border -->
-		<circle clip-path="url(#semicircle-vertical-left)" cx="96" cy="138" fill="none" r="42" stroke="#000" stroke-width="24" />
-		<circle clip-path="url(#semicircle-vertical-right)" cx="96" cy="54" fill="none" r="42" stroke="#000" stroke-width="24" />
-		<circle cx="96" cy="96" fill="#000" r="8" />
+		<circle clip-path="url(#semicircle-vertical-left)" cx="96" cy="138" fill="none" r="42" stroke="black" stroke-width="24" />
+		<circle clip-path="url(#semicircle-vertical-right)" cx="96" cy="54" fill="none" r="42" stroke="black" stroke-width="24" />
+		<circle cx="96" cy="96" fill="black" r="12" />
 
 		<!-- vertical spiral arm -->
 		<circle clip-path="url(#semicircle-vertical-left)" cx="96" cy="138" fill="none" r="42" stroke="white" stroke-width="8" />
@@ -52,9 +52,9 @@
 		<circle cx="96" cy="96" fill="white" r="4" />
 
 		<!-- horizontal spiral arm border -->
-		<circle clip-path="url(#semicircle-horizontal-high)" cx="54" cy="96" fill="none" r="42" stroke="#000" stroke-width="24" />
-		<circle clip-path="url(#semicircle-horizontal-low)" cx="138" cy="96" fill="none" r="42" stroke="#000" stroke-width="24" />
-		<circle cx="96" cy="96" fill="#000" r="8" />
+		<circle clip-path="url(#semicircle-horizontal-high)" cx="54" cy="96" fill="none" r="42" stroke="black" stroke-width="24" />
+		<circle clip-path="url(#semicircle-horizontal-low)" cx="138" cy="96" fill="none" r="42" stroke="black" stroke-width="24" />
+		<circle cx="96" cy="96" fill="black" r="12" />
 
 		<!-- horizontal spiral arm -->
 		<circle clip-path="url(#semicircle-horizontal-high)" cx="54" cy="96" fill="none" r="42" stroke="white" stroke-width="8" />

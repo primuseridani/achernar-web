@@ -1,114 +1,31 @@
 #header {
-	$gap:                    1rem;
-	$hamburgerHeight:        2rem;
-	$sideMenuToggleDuration: 0.5s;
+	$gap: 1rem;
 
+	--foregroundColour: var(--backgroundColour);
+
+	align-items:                center;
 	background-color:           var(--backgroundColour);
 	background-size:            cover;
-	border-bottom-left-radius:  var(--padding);
-	border-bottom-right-radius: var(--padding);
-	height:                     fit-content;
+	border-bottom-left-radius:  $padding;
+	border-bottom-right-radius: $padding;
+	box-shadow:                 0 0 calc($padding / 2) $shadowColour;
+	display:                    flex;
+	height:                     100vh;
 	image-rendering:            pixelated;
+	justify-content:            center;
 	overflow:                   hidden;
 	position:                   relative;
 	user-select:                none;
 	width:                      100%;
 
-	body[data-page = "achernar"] & {
-		--backgroundColour: #007B34;
-		--textColour:       white;
-
-		@media not (prefers-reduced-motion) {
-			background-image: url("/image/vertex.webp");
-		}
-	}
-
-	body[data-page = "agbsum"] & {
-		--backgroundColour: #422984;
-		--textColour:       #FFFFFF;
-	}
-
-	body[data-page = "ax"] & {
-		--backgroundColour: #422984;
-		--textColour:       #FFFFFF;
-	}
-
-	body[data-page = "backspace"] & {
-		--backgroundColour: #000000;
-		--textColour:       #FFFFFF;
-	}
-
-	body[data-page = "benoit"] & {
-		--backgroundColour: #BA0035;
-		--textColour:       #FFFFFF;
-
-		background-image: url("/svg/benoitBackground.svg");
-	}
-
-	body[data-page = "bowshock"] & {
-		--backgroundColour: #B61833;
-		--textColour:       #FFEEE0;
-	}
-
-	body[data-page = "bzipper"] & {
-		--backgroundColour: #FFFFFF;
-		--textColour:       #B4202D;
-	}
-
-	body[data-page = "deltaWorld"] & {
-		--backgroundColour: #000000;
-		--textColour:       #FFFFFF;
-	}
-
-	body[data-page = "dux"] & {
-		--backgroundColour: #131313;
-		--textColour:       #06fbb2;
-
-		background-image: url("/image/duxBackground.webp");
-	}
-
-	body[data-page = "eas"] & {
-		--backgroundColour: #01CD93;
-		--textColour:       #00291B;
-	}
-
-	body[data-page = "luma"] & {
-		--backgroundColour: #6051B2;
-		--textColour:       #FFFFFF;
-	}
-
-	body[data-page = "pollex"] & {
-		--backgroundColour: #4D4084;
-		--textColour:       #FFFFFF;
-	}
-
-	body[data-page = "u8c"] & {
-		--backgroundColour: #444747;
-		--textColour:       #A9E13D;
-	}
-
-	p, a {
-		@media not (prefers-reduced-motion) {
-			transition-timing-function: ease-in-out;
-		}
-	}
-
-	a {
-		cursor:                pointer;
-		font-weight:           bold;
-		text-decoration:       underline;
-		text-decoration-color: #00000000;
-
-		@media not (prefers-reduced-motion) {
-			transition: text-decoration-color 0.125s;
-		}
-
-		&:hover {
-			text-decoration-color: var(--textColour);
-		}
+	#glyph {
+		aspect-ratio:    1;
+		display:         block;
+		image-rendering: pixelated;
+		object-fit:      contain;
+		pointer-events:  none;
+		width:           50vmin;
 	}
 
 	@import "navBar";
-	@import "sideMenu";
-	@import "glyph";
 }

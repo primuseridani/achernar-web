@@ -1,9 +1,8 @@
 namespace Ach {
-	export function toggleTheme() {
-		let body = Ach.getFirstElement(document, "body");
+	export function toggleTheme(): void {
+		let body = Ach.getFirstElementIn(document, "body");
 
 		let theme = "light";
-
 		if (body.classList.contains("light")) {
 			theme = "dark";
 		}
@@ -14,7 +13,7 @@ namespace Ach {
 		sessionStorage.setItem("theme", theme);
 	}
 
-	export function loadTheme() {
+	export function loadTheme(): void {
 		let theme = sessionStorage.getItem("theme");
 
 		if (!theme) {
@@ -24,11 +23,11 @@ namespace Ach {
 
 		switch (theme) {
 		case "dark":
-			// We assume this theme in our stylesheets.
+			// We already assume this theme in our stylesheets.
 			break;
 
 		case "light":
-			let body = Ach.getFirstElement(document, "body");
+			let body = Ach.getFirstElementIn(document, "body");
 			body.classList.add("light");
 
 			break;

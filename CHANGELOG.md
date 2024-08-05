@@ -1,5 +1,20 @@
 # Changelog
 
+## 11.0
+
+* Elaborate pages
+* Rework banner (for main page)
+* Rework navigation (remove side menu)
+* Use PHP for page initialisation (disable SSI)
+* Refactor stylesheets
+* Update keywords
+* Restructure pages
+* Update readme
+* Update touch styling
+* Add anchor link buttons
+* Update Linktree link
+* Update footer styling
+
 ## 10.2
 
 * Remove *X* link

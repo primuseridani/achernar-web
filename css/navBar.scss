@@ -2,36 +2,39 @@
 	align-items:     center;
 	display:         flex;
 	justify-content: space-between;
-	padding:         var(--padding);
+	left:            50%;
+	max-width:       calc($contentWidth + $padding * 2);
+	padding:         $padding;
 	position:        absolute;
 	top:             0;
+	transform:       translateX(-50%);
 	width:           100%;
-
-	body[data-page = "achernar"] & {
-		a, #home, #hamburger {
-			mix-blend-mode: difference;
-		}
-	}
 
 	section {
 		display:         flex;
-		flex:            1;
+		flex:            1 1 0;
 		gap:             $gap;
 		justify-content: center;
+		text-align:      center;
 
 		&:first-of-type {
 			justify-content: start;
+			text-align:      left;
 		}
 
 		&:last-of-type {
 			justify-content: end;
+			text-align:      right;
 		}
 
 		a {
+			cursor:                pointer;
+			font-weight:           bold;
 			position:              relative;
+			text-decoration:       underline;
 			text-decoration-color: #00000000;
 
-			&[aria-current = "page"]:not(#home)::after {
+			&[aria-current = "page"]::after {
 				background-color: var(--textColour);
 				border-radius:    $separatorWidth;
 				content:          "";
@@ -45,11 +48,12 @@
 			}
 
 			@media not (prefers-reduced-motion) {
-				transition: opacity $sideMenuToggleDuration, text-decoration-color 0.125s;
+				transition:                 text-decoration-color 0.125s;
+				transition-timing-function: ease-in-out;
 			}
 
 			@media (orientation: portrait) or (pointer: coarse) {
-				&:not(#home, #hamburger) {
+				&:not(#home, #themeToggler) {
 					display: none;
 				}
 			}
@@ -57,23 +61,6 @@
 			&:hover {
 				text-decoration-color: var(--textColour);
 			}
-		}
-
-		#home, #hamburger {
-			aspect-ratio:     1;
-			background-color: var(--textColour);
-			cursor:           pointer;
-			height:           $hamburgerHeight;
-			mask-size:        cover;
-			z-index:          255;
-		}
-
-		#home {
-			mask-image: url("/svg/icon/home.svg");
-		}
-
-		#hamburger {
-			mask-image: url("/svg/icon/hamburger.svg");
 		}
 	}
 }

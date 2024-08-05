@@ -1,0 +1,23 @@
+<svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
+	<clipPath id="clip0">
+		<polygon points="32,0 96,0 96,64" />
+	</clipPath>
+
+	<clipPath id="clip1">
+		<polygon points="0,32 64,96 0,96" />
+	</clipPath>
+
+	<mask id="glyph">
+		<circle clip-path="url(#clip0)" cx="64" cy="32" r="26" stroke="white" stroke-width="12" />
+		<circle cx="45.615223689" cy="13.615223689" fill="white" r="6" />
+		<circle cx="82.384776311" cy="50.384776311" fill="white" r="6" />
+
+		<circle clip-path="url(#clip1)" cx="32" cy="64" r="26" stroke="white" stroke-width="12" />
+		<circle cx="13.615223689" cy="45.615223689" fill="white" r="6" />
+		<circle cx="50.384776311" cy="82.384776311" fill="white" r="6" />
+
+		<polyline points="64,32 32,64" stroke="white" stroke-linecap="round" stroke-width="12" />
+	</mask>
+
+	<rect fill="#FFFFFF" mask="url(#glyph)" height="100%" width="100%" x="0" y="0" />
+</svg>
