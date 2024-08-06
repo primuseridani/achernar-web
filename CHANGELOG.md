@@ -1,5 +1,9 @@
 # Changelog
 
+## 11.3
+
+* Bring back *X* link
+
 ## 11.2
 
 * Elaborate pages

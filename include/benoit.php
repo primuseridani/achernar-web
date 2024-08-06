@@ -31,7 +31,7 @@
 	<br>
 	<p>Just provide the path to the desired configuration:</p>
 	<br>
-	<p class="codeblock">benoit-cli "benoit.toml"</p>
+	<p class="codeblock">$ benoit-cli "benoit.toml"</p>
 </section>
 
 <?php addHeading("benoit-gui", "benoitGui"); ?>
