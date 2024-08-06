@@ -219,7 +219,7 @@
 				<a class="instagram" href="https://www.instagram.com/primuseridani/" title="Instagram: primuseridani"></a>
 				<a class="linktree" href="https://linktr.ee/PrimusEridani/" title="Linktree: @PrimusEridani"></a>
 				<a class="threads" href="https://www.threads.net/@primuseridani/" title="Threads: @primuseridani"></a>
-				<a class="x" href="https://www.threads.net/PrimusEridani/" title="X: @PrimusEridani"></a>
+				<a class="x" href="https://x.com/PrimusEridani/" title="X: @PrimusEridani"></a>
 			</div>
 		</footer>
 	</body>

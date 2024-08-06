@@ -1,5 +1,9 @@
 # Changelog
 
+## 11.4
+
+* Fix *X* link
+
 ## 11.3
 
 * Bring back *X* link
