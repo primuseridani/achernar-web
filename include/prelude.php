@@ -125,7 +125,7 @@
 	function add_nav_bar_link($title, $page) {
 		global $current_page;
 
-		$ariaCurrent = match ($page) {
+		$aria_current = match ($page) {
 			$current_page => "page",
 			default       => "false",
 		};
@@ -135,7 +135,7 @@
 			default    => "",
 		};
 
-		echo "<a aria-current=\"$ariaCurrent\" href=\"?p=$page\" id=\"$id\">$title</a>";
+		echo "<a aria-current=\"$aria_current\" href=\"?p=$page\" id=\"$id\">$title</a>";
 	}
 
 	function add_heading($title, $anchor) {
@@ -145,14 +145,14 @@
 	}
 
 	function add_image($image, $alt) {
-		$sourceAddr    = "/image/source/" . $image . ".webp";
-		$thumbnailAddr = "/image/thumbnail/" . $image . ".avif";
+		$source_addr    = "/image/source/" . $image . ".webp";
+		$thumbnail_addr = "/image/thumbnail/" . $image . ".avif";
 
 		echo <<<HTML
 			<div class="image">
-				<img class="blur" src="$thumbnailAddr">
-				<a href="$sourceAddr" rel="noopener noreferrer" target="_blank" title="Click to view image source.">
-					<img alt="$alt" src="$thumbnailAddr">
+				<img class="blur" src="$thumbnail_addr">
+				<a href="$source_addr" rel="noopener noreferrer" target="_blank" title="Click to view image source.">
+					<img alt="$alt" src="$thumbnail_addr">
 				</a>
 			</div>
 		HTML;

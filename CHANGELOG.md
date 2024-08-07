@@ -1,5 +1,10 @@
 # Changelog
 
+## 11.9
+
+* Refactor server scripts
+* Fix 404 with no page query
+
 ## 11.8
 
 * Update overview styling

@@ -23,6 +23,10 @@
 		case "u8c":
 			break;
 
+		case null:
+			$current_page = "achernar";
+			break;
+
 		default:
 			http_response_code(404);
 			require "html/404.html";
