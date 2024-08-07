@@ -113,22 +113,22 @@
 	<br>
 	<ul>
 		<li>
-			<p>Carrois Apostrophe: <a href="https://fonts.google.com/specimen/Fira+Mono/"><span style="font-family: Fira Mono;">Fira Mono</span></a></p>
+			<p>Carrois Apostrophe: <a href="https://fonts.google.com/specimen/Fira+Mono/"><strong style="font-family: Fira Mono;">Fira Mono</strong></a></p>
 		</li>
 		<li>
-			<p>Roman Shamin & the &#8220;people&#8221; at Evil Martians &#128125;: <a href="https://fonts.google.com/specimen/Martian+Mono/"><span style="font-family: Martian Mono;">Martian Mono</span></a></p>
+			<p>Roman Shamin & the &#8220;people&#8221; at Evil Martians &#128125;: <a href="https://fonts.google.com/specimen/Martian+Mono/"><strong style="font-family: Martian Mono;">Martian Mono</strong></a></p>
 		</li>
 		<li>
-			<p>Sorkin Type: <a href="https://fonts.google.com/specimen/Merriweather/"><span style="font-family: Merriweather;">Merriweather</span></a></p>
+			<p>Sorkin Type: <a href="https://fonts.google.com/specimen/Merriweather/"><strong style="font-family: Merriweather;">Merriweather</strong></a></p>
 		</li>
 		<li>
-			<p>Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, and Jacques Le Bailly: <a href="https://fonts.google.com/specimen/Montserrat/"><span style="font-family: Montserrat;">Montserrat</span></a></p>
+			<p>Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, and Jacques Le Bailly: <a href="https://fonts.google.com/specimen/Montserrat/"><strong style="font-family: Montserrat;">Montserrat</strong></a></p>
 		</li>
 		<li>
-			<p>Claus Eggers S&#248;rensen: <a href="https://fonts.google.com/specimen/Playfair+Display/"><span style="font-family: Playfair Display;">Playfair Display</span></a></p>
+			<p>Claus Eggers S&#248;rensen: <a href="https://fonts.google.com/specimen/Playfair+Display/"><strong style="font-family: Playfair Display;">Playfair Display</strong></a></p>
 		</li>
 		<li>
-			<p>Matt McInerney, Pablo Impallari, and Rodrigo Fuenzalida: <a href="https://fonts.google.com/specimen/Raleway/"><span style="font-family: Raleway;">Raleway</span></a></p>
+			<p>Matt McInerney, Pablo Impallari, and Rodrigo Fuenzalida: <a href="https://fonts.google.com/specimen/Raleway/"><strong style="font-family: Raleway;">Raleway</strong></a></p>
 		</li>
 	</ul>
 </section>

@@ -153,5 +153,9 @@
 </html>
 
 <?php
-	dump_cache($cache_addr, ob_get_contents());
+	$page_buffer = ob_get_contents();
+	ob_end_clean();
+
+	echo $page_buffer;
+	dump_cache($cache_addr, $page_buffer);
 ?>

@@ -1,5 +1,10 @@
 # Changelog
 
+## 11.10
+
+* Elaborate pages
+* Fix blank screen with empty cache
+
 ## 11.9
 
 * Refactor server scripts
