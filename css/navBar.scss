@@ -1,6 +1,7 @@
 #navBar {
 	align-items:     center;
 	display:         flex;
+	font-family:     $specialFont;
 	justify-content: space-between;
 	left:            50%;
 	max-width:       calc($contentWidth + $padding * 2);
@@ -35,7 +36,7 @@
 			text-decoration-color: #00000000;
 
 			&[aria-current = "page"]::after {
-				@include separator(100%);
+				@include separator;
 
 				left:      50%;
 				position:  absolute;

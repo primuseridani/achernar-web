@@ -1,5 +1,11 @@
 # Changelog
 
+## 11.7
+
+* Fix separators
+* Update fonts
+* Update and fix make script
+
 ## 11.6
 
 * Update footer

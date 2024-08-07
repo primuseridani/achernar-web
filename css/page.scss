@@ -9,6 +9,7 @@
 	}
 
 	h1 {
+		font-family: $specialFont;
 		font-size:   2em;
 		font-weight: bold;
 		width:       100%;
@@ -18,7 +19,7 @@
 		}
 
 		&::after {
-			@include separator(100%);
+			@include separator;
 
 			margin-top: $separatorWidth;
 		}
@@ -35,7 +36,6 @@
 	}
 
 	section {
-		font-family: "Montserrat", "sans-serif";
 		line-height: 2em;
 		max-width:   calc($contentWidth / 2 - $padding);
 		text-align:  justify;
@@ -55,7 +55,7 @@
 			background-color: var(--textColour);
 			border-radius:    calc($padding / 2);
 			color:            var(--backgroundColour);
-			font-family:      $monospaceFont;
+			font-family:      $codeFont;
 			line-height:      normal;
 			padding:          $padding;
 			text-align:       left;

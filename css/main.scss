@@ -1,4 +1,6 @@
-$monospaceFont: "Fira Mono", "monospace";
+$mainFont:    "Montserrat", "sans-serif";
+$specialFont: "Raleway", "sans-serif";
+$codeFont:    "Fira Mono", "Martian Mono", "monospace";
 
 $contentWidth:   72rem;
 $padding:        1rem;
@@ -6,17 +8,17 @@ $separatorWidth: 0.25rem;
 
 $shadowColour: color-mix(in srgb, black, transparent 50%);
 
-@mixin separator($width) {
+@mixin separator {
 	background-color: var(--textColour);
 	border-radius:    calc($separatorWidth / 3);
 	content:          "";
 	display:          block;
 	height:           $separatorWidth;
-	width:            $width;
+	width:            100%;
 }
 
 :root {
-	font-family: "Raleway", "sans-serif";
+	font-family: $mainFont;
 
 	scroll-behavior: smooth;
 }
@@ -52,7 +54,7 @@ a, a:visited {
 }
 
 code {
-	font-family: $monospaceFont;
+	font-family: $codeFont;
 }
 
 ul {

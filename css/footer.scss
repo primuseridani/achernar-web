@@ -4,7 +4,7 @@
 	background-color:        var(--foregroundColour);
 	border-top-left-radius:  calc($padding / 2);
 	border-top-right-radius: calc($padding / 2);
-	font-family:             $monospaceFont;
+	font-family:             $codeFont;
 	margin:                  auto;
 	max-width:               calc($contentWidth + $padding * 2);
 	padding:                 $padding;
@@ -35,9 +35,9 @@
 		text-align: left;
 
 		&::before, &::after {
-			@include separator($width);
+			@include separator;
 
-			margin: $padding 0;
+			margin:    $padding 0;
 		}
 	}
 

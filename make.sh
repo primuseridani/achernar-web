@@ -27,7 +27,7 @@ make_favicon() {
 	render_icon "${input}" 192 "${directory}/192x192.png"
 	render_icon "${input}" 256 "${directory}/256x256.png"
 
-	output="${directory}/favicon.ico"
+	output="favicon.ico"
 
 	printf "combining renders in \"%s\" to \"%s\"\n" "${directory}" "${output}"
 	icotool -co "${output}" "${directory}/"*".png"
@@ -51,9 +51,12 @@ make_script() {
 	tsc --outFile "${output}" --target ES2022 "${input}"
 }
 
-render_icon "svg/logo/achernarIcon.svg" 180 "apple-touch-icon.png"
+if [ "${1}" != "--skip-icons" ]
+then
+	render_icon "svg/logo/achernarIcon.svg" 180 "apple-touch-icon.png"
 
-make_favicon "svg/favicon.svg"
+	make_favicon "svg/favicon.svg"
+fi
 
 make_stylesheet "font"
 make_stylesheet "main"
