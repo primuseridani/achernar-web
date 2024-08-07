@@ -1,5 +1,12 @@
 # Changelog
 
+## 11.6
+
+* Update footer
+* Refactor stylesheets
+* Update rounding
+* Update header styling
+
 ## 11.5
 
 * Elaborate pages

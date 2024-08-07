@@ -18,13 +18,9 @@
 		}
 
 		&::after {
-			background-color: var(--textColour);
-			border-radius:    $separatorWidth;
-			content:          "";
-			display:          block;
-			height:           $separatorWidth;
-			margin-top:       $separatorWidth;
-			width:            100%;
+			@include separator(100%);
+
+			margin-top: $separatorWidth;
 		}
 
 		a.anchor {
@@ -57,7 +53,7 @@
 
 		p.codeblock {
 			background-color: var(--textColour);
-			border-radius:    $padding;
+			border-radius:    calc($padding / 2);
 			color:            var(--backgroundColour);
 			font-family:      $monospaceFont;
 			line-height:      normal;
@@ -82,13 +78,13 @@
 			$padding: 0.25rem;
 
 			background-color: var(--foregroundColour);
-			border-radius:    $padding;
+			border-radius:    calc($padding / 2);
 			padding:          $padding;
 		}
 
 		ul {
 			background-color: var(--foregroundColour);
-			border-radius:    $padding;
+			border-radius:    calc($padding / 2);
 			display:          block;
 			padding:          $padding;
 			text-align:       left;
@@ -101,13 +97,13 @@
 			width:    100%;
 
 			a {
-				border-radius: $padding;
+				border-radius: calc($padding / 2);
 				display:       block;
 				position:      relative;
 			}
 
 			img {
-				border-radius: $padding;
+				border-radius: calc($padding / 2);
 				display:       block;
 				width:         100%;
 

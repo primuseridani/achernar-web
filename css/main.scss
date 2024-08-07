@@ -6,6 +6,15 @@ $separatorWidth: 0.25rem;
 
 $shadowColour: color-mix(in srgb, black, transparent 50%);
 
+@mixin separator($width) {
+	background-color: var(--textColour);
+	border-radius:    calc($separatorWidth / 3);
+	content:          "";
+	display:          block;
+	height:           $separatorWidth;
+	width:            $width;
+}
+
 :root {
 	font-family: "Raleway", "sans-serif";
 

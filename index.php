@@ -209,7 +209,7 @@
 		<footer id="footer">
 			<div id="romanisation" title="&#1570;&#1582;&#1616;&#1585; &#1575;&#1614;&#1604;&#1618;&#1606;&#1614;&#1607;&#1614;&#1585;"></div>
 
-			<p id="starDescription">ACHERNAR &mdash; Type B star; primary component of ALPHA ERIDANI; approx. (6) solar masses, (15) kilokelvin at surface; c. (140) light years from SOL III; no native lifeforms discovered, human life on terraformed ACHERNAR IV.</p>
+			<p id="starDescription">&ldquo;ACHERNAR &mdash; type B star; primary component of ALPHA ERIDANI, i.e. ALPHA ERIDANI A; approx. (6) solar masses, (15) kilokelvin at surface; c. (3 668) light-seconds from sibling ALPHA ERIDANI B; no native lifeforms discovered on children, human life on terraformed ACHERNAR IV, a.k.a. CONVERSION.&rdquo;</p>
 
 			<p>Communications can be done in English and Danish.</p>
 			<br>

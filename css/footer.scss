@@ -2,8 +2,8 @@
 
 #footer {
 	background-color:        var(--foregroundColour);
-	border-top-left-radius:  $padding;
-	border-top-right-radius: $padding;
+	border-top-left-radius:  calc($padding / 2);
+	border-top-right-radius: calc($padding / 2);
 	font-family:             $monospaceFont;
 	margin:                  auto;
 	max-width:               calc($contentWidth + $padding * 2);
@@ -28,11 +28,17 @@
 	}
 
 	#starDescription {
-		font-style:      italic;
-		margin:          $padding auto;
-		max-width:       calc($contentWidth / 2);
-		text-align:      justify;
-		text-align-last: center;
+		$width: calc($contentWidth / 2);
+
+		margin:     auto;
+		max-width:  $width;
+		text-align: left;
+
+		&::before, &::after {
+			@include separator($width);
+
+			margin: $padding 0;
+		}
 	}
 
 	#cvrNumber {

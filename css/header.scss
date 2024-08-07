@@ -3,21 +3,18 @@
 
 	--foregroundColour: var(--backgroundColour);
 
-	align-items:                center;
-	background-color:           var(--backgroundColour);
-	background-size:            cover;
-	border-bottom-left-radius:  $padding;
-	border-bottom-right-radius: $padding;
-	box-shadow:                 0 0 calc($padding / 2) $shadowColour;
-	display:                    flex;
-	height:                     calc(100vh + $padding);
-	image-rendering:            pixelated;
-	justify-content:            center;
-	overflow:                   hidden;
-	padding-bottom:             $padding;
-	position:                   relative;
-	user-select:                none;
-	width:                      100%;
+	align-items:      center;
+	background-color: var(--backgroundColour);
+	background-size:  cover;
+	box-shadow:       0 0 calc($padding / 2) $shadowColour;
+	display:          flex;
+	height:           100vh;
+	image-rendering:  pixelated;
+	justify-content:  center;
+	overflow:         hidden;
+	position:         relative;
+	user-select:      none;
+	width:            100%;
 
 	#glyph {
 		aspect-ratio:    1;
