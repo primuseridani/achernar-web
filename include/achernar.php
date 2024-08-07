@@ -11,7 +11,7 @@
 <?php addHeading("Projects", "projects"); ?>
 
 <section class="fullWidth">
-	<p>The following is a list of our current and maintained projects.</p>
+	<p>The following is a list of our current projects. Click on a card to view the project's page.</p>
 	<br>
 	<p class="note">Scroll <a href="#anchor.vision">down</a> for more information about us.</p>
 	<br>
@@ -19,16 +19,16 @@
 		<?php
 			function addCard($page, $title) {
 				[$backgroundColour, $textColour] = pageColours($page);
-				$backgroundImage = pageBackgroundImage($page);
-				$glyphAddr = pageGlyph($page);
 
-				if (is_null($backgroundImage)) {
-					$backgroundImage = "none";
-				} else {
-					$backgroundImage = "url('" . $backgroundImage . "')";
-				}
+				$glyphAddr = match ($page) {
+					"benoit",
+					"pollex",
+					=> "/svg/glyph/" . $page . "Small.svg",
 
-				$cardStyle = "--backgroundColour: $backgroundColour; --textColour: $textColour; background-image: $backgroundImage";
+					default => "/svg/glyph/" . $page . ".svg",
+				};
+
+				$cardStyle = "--backgroundColour: $backgroundColour; --textColour: $textColour;";
 
 				echo <<<HTML
 					<a href="?p=$page" style="$cardStyle" title="$title">

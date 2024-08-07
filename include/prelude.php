@@ -26,18 +26,6 @@
 		};
 	}
 
-	function pageBackgroundImage($page) {
-		return match ($page) {
-			"benoit" => "/svg/benoitBackground.svg",
-			"dux"    => "/image/duxBackground.webp",
-			default  => null,
-		};
-	}
-
-	function pageGlyph($page) {
-		return "/svg/glyph/" . $page . ".svg";
-	}
-
 	function addHeading($title, $anchor) {
 		$anchor = "anchor." . $anchor;
 

@@ -1,0 +1,11 @@
+<svg height="72" width="72" xmlns="http://www.w3.org/2000/svg">
+	<mask id="glyph">
+		<ellipse cx="36" cy="36" fill="white" rx="36" ry="24" />
+		<ellipse cx="36" cy="36" fill="black" rx="30" ry="18" />
+
+		<ellipse cx="36" cy="36" fill="white" rx="24" ry="24" />
+		<ellipse cx="36" cy="36" fill="black" rx="18" ry="18" />
+	</mask>
+
+	<rect fill="#FFFFFF" mask="url(#glyph)" height="100%" width="100%" x="0" y="0" />
+</svg>

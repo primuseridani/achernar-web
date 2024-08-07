@@ -1,5 +1,11 @@
 # Changelog
 
+## 11.5
+
+* Elaborate pages
+* Refactor server scripts
+* Update overview icons
+
 ## 11.4
 
 * Fix *X* link

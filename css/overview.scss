@@ -17,7 +17,6 @@
 		align-items:      center;
 		aspect-ratio:     1;
 		background-color: var(--backgroundColour);
-		background-size:  cover;
 		border-radius:    $padding;
 		display:          flex;
 		flex-basis:       calc((100% - $padding * ($cardsPerRow - 1)) / $cardsPerRow);
@@ -36,7 +35,7 @@
 
 		img {
 			display: block;
-			width:   75%;
+			width:   50%;
 		}
 	}
 }

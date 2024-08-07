@@ -1,0 +1,14 @@
+<svg height="64" width="64" xmlns="http://www.w3.org/2000/svg">
+	<mask id="glyph">
+		<polygon fill="white" points="0,0 55,0 55,18 16,18 16,0 16,24 0,24" />
+		<circle cx="55" cy="9" fill="white" r="9" />
+
+		<polygon fill="black" points="16,6 45,6 45,12 16,12" />
+		<circle cx="45" cy="9" fill="black" r="3" />
+
+		<polygon fill="white" points="0,40 16,40 64,64 48,64" />
+		<polygon fill="white" points="48,40 64,40 16,64 0,64" />
+	</mask>
+
+	<rect fill="#FFFFFF" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
+</svg>

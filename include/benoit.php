@@ -11,7 +11,7 @@
 <?php addHeading("Features", "features"); ?>
 
 <section>
-	<p>The core library used multi-threading for rendering the provided scenes. Internally, the <a href="https://crates.io/crates/rayon/">Rayon</a> crate is used for threadpooling and such, where each pixel on the canvas is a job in and of itself.</p>
+	<p>The core library uses multi-threading for rendering the provided scenes. Internally, the <a href="https://crates.io/crates/rayon/">Rayon</a> crate is used for threadpooling and such, where each pixel on the canvas is a job in and of itself.</p>
 	<br>
 	<?php addImage("inverseJulia20231009200744", "An inverse Julia Set outside the Burning Ship fractal, resembling circles intertwined in a diamond shape with a dark red colour scheme.") ?>
 	<br>

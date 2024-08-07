@@ -142,7 +142,11 @@
 				--textColour:       <?php echo pageColours($currentPage)[0x1] ?>;
 
 				<?php
-					$backgroundImage = pageBackgroundImage($currentPage);
+					$backgroundImage = match ($currentPage) {
+						"benoit" => "/svg/benoitBackground.svg",
+						"dux"    => "/image/duxBackground.webp",
+						default  => null,
+					};
 
 					if (!is_null($backgroundImage)) {
 						echo 'background-image: url("' . $backgroundImage . '");';
@@ -192,7 +196,7 @@
 			</div>
 
 			<?php
-				$glyphAddr = pageGlyph($currentPage);
+				$glyphAddr = "/svg/glyph/" . $currentPage . ".svg";
 
 				echo "<img alt=\"$currentPage\" id=\"glyph\" src=\"$glyphAddr\" />";
 			?>
