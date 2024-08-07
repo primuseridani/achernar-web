@@ -1,5 +1,16 @@
 # Changelog
 
+## 11.8
+
+* Update overview styling
+* Refactor stylesheets
+* Elaborate pages
+* Cache pages
+* Refactor server scripts
+* Disallow invalid pages
+* Add our own `404` page
+* Update touch styling
+
 ## 11.7
 
 * Fix separators

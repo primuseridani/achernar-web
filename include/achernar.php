@@ -1,4 +1,26 @@
-<?php addHeading("The future is <em>now</em>", "about"); ?>
+<?php
+	function add_overview_card($page, $title) {
+		[$background_colour, $text_colour] = page_colours($page);
+
+		$glyph_addr = match ($page) {
+			"benoit",
+			"pollex",
+			=> "/svg/glyph/" . $page . "Small.svg",
+
+			default => "/svg/glyph/" . $page . ".svg",
+		};
+
+		$card_style = "--backgroundColour: $background_colour; --textColour: $text_colour;";
+
+		echo <<<HTML
+			<a href="?p=$page" style="$card_style" title="$title">
+				<img alt="$page" src="$glyph_addr">
+			</a>
+		HTML;
+	}
+?>
+
+<?php add_heading("The future is now", "about"); ?>
 
 <section>
 	<p><em>Achernar</em> is a European indie development studio based in the Capital Region of Denmark. &#127465;&#127472;</p>
@@ -8,7 +30,7 @@
 	<p class="note">See footer for contact information.</p>
 </section>
 
-<?php addHeading("Projects", "projects"); ?>
+<?php add_heading("Projects", "projects"); ?>
 
 <section class="fullWidth">
 	<p>The following is a list of our current projects. Click on a card to view the project's page.</p>
@@ -17,43 +39,23 @@
 	<br>
 	<div id="overview">
 		<?php
-			function addCard($page, $title) {
-				[$backgroundColour, $textColour] = pageColours($page);
-
-				$glyphAddr = match ($page) {
-					"benoit",
-					"pollex",
-					=> "/svg/glyph/" . $page . "Small.svg",
-
-					default => "/svg/glyph/" . $page . ".svg",
-				};
-
-				$cardStyle = "--backgroundColour: $backgroundColour; --textColour: $textColour;";
-
-				echo <<<HTML
-					<a href="?p=$page" style="$cardStyle" title="$title">
-						<img alt="$page" src="$glyphAddr">
-					</a>
-				HTML;
-			}
-
-			addCard("agbsum",     "agbsum");
-			addCard("ax",         "AX");
-			//addCard("backspace",  "Backspace");
-			addCard("benoit",     "Benoit");
-			addCard("bowshock",   "Bowshock");
-			addCard("bzipper",    "Bzipper");
-			//addCard("deltaWorld", "Delta&middot;World");
-			addCard("dux",        "Dux");
-			addCard("eas",        "eAS");
-			addCard("luma",       "Luma");
-			addCard("pollex",     "Pollex");
-			addCard("u8c",        "u8c");
+			add_overview_card("agbsum",     "agbsum");
+			add_overview_card("ax",         "AX");
+			//add_overview_card("backspace",  "Backspace");
+			add_overview_card("benoit",     "Benoit");
+			add_overview_card("bowshock",   "Bowshock");
+			add_overview_card("bzipper",    "Bzipper");
+			//add_overview_card("deltaWorld", "Delta&middot;World");
+			add_overview_card("dux",        "Dux");
+			add_overview_card("eas",        "eAS");
+			add_overview_card("luma",       "Luma");
+			add_overview_card("pollex",     "Pollex");
+			add_overview_card("u8c",        "u8c");
 		?>
 	</div>
 </section>
 
-<?php addHeading("Vision", "vision"); ?>
+<?php add_heading("Vision", "vision"); ?>
 
 <section>
 	<p>The goal of Achernar is to promote modern and robust software for everyone. In other words, our vision is to develop a human and clean industry and community for technology.</p>
@@ -61,7 +63,7 @@
 	<p>We believe in a society free of patents, and as such we release our scientific software in open-source form. For our games, we try to keep the base engine as open as possible whilst still keeping in mind that they yield our main income.</p>
 </section>
 
-<?php addHeading("Roadmap", "roadmap"); ?>
+<?php add_heading("Roadmap", "roadmap"); ?>
 
 <section>
 	<p>Currently, our roadmap is as follows:</p>
@@ -84,13 +86,13 @@
 	<p>This roadmap is, however, also subject to change, altough we do strive to live up to it.</p>
 </section>
 
-<?php addHeading("Team", "team"); ?>
+<?php add_heading("Team", "team"); ?>
 
 <section>
 	<p>As Achernar is currently registered as a PMV (lesser sole proprietorship), Gabriel Bjørnager Jensen is currently our only member.</p>
 </section>
 
-<?php addHeading("Inception", "inception"); ?>
+<?php add_heading("Inception", "inception"); ?>
 
 <section>
 	<p><em>Achernar</em> was incorporated on the first july of 2024 by current sole proprietor Gabriel Bjørnager Jensen.</p>
@@ -104,7 +106,7 @@
 	<p>Shortly after being incorporated, we registered the domain <code>achernar.io</code>. At that time, we also set up mail services using our domain.</p>
 </section>
 
-<?php addHeading("Credits", "credits"); ?>
+<?php add_heading("Credits", "credits"); ?>
 
 <section class="fullWidth">
 	<p>Thanks to <strong>Nicolas Gallagher</strong> for the <a href="https://necolas.github.io/normalize.css/"><code>normalize.css</code></a> stylesheet. Additionally thanks to the following creators for the fonts which we use on our website:</p>

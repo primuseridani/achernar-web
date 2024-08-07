@@ -1,22 +1,19 @@
 #navBar {
-	align-items:     center;
-	display:         flex;
-	font-family:     $specialFont;
-	justify-content: space-between;
-	left:            50%;
-	max-width:       calc($contentWidth + $padding * 2);
-	padding:         $padding;
-	position:        absolute;
-	top:             0;
-	transform:       translateX(-50%);
-	width:           100%;
+	display:     flex;
+	font-family: $specialFont;
+	left:        50%;
+	max-width:   calc($contentWidth + $padding * 2);
+	padding:     $padding;
+	position:    absolute;
+	top:         0;
+	transform:   translateX(-50%);
+	width:       100%;
 
 	section {
-		display:         flex;
-		flex:            1 1 0;
-		gap:             $gap;
-		justify-content: center;
-		text-align:      center;
+		display:    flex;
+		flex:       1 1 0;
+		gap:        $gap;
+		text-align: center;
 
 		&:first-of-type {
 			justify-content: start;
@@ -35,6 +32,17 @@
 			text-decoration:       underline;
 			text-decoration-color: #00000000;
 
+			@media not (prefers-reduced-motion) {
+				transition:                 text-decoration-color 0.125s;
+				transition-timing-function: ease-in-out;
+			}
+
+			@media (orientation: portrait) {
+				&:not(#home, #themeToggler) {
+					display: none;
+				}
+			}
+
 			&[aria-current = "page"]::after {
 				@include separator;
 
@@ -42,17 +50,6 @@
 				position:  absolute;
 				top:       calc(100% + $separatorWidth);
 				transform: translateX(-50%);
-			}
-
-			@media not (prefers-reduced-motion) {
-				transition:                 text-decoration-color 0.125s;
-				transition-timing-function: ease-in-out;
-			}
-
-			@media (orientation: portrait) or (pointer: coarse) {
-				&:not(#home, #themeToggler) {
-					display: none;
-				}
 			}
 
 			&:hover {

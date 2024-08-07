@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Gabriel Bjørnager Jensen">
+		<meta name="darkreader-lock">
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+		<link href="/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+
+		<link href="/css/normalise.css" rel="stylesheet" type="text/css">
+		<link href="/css/font.css" rel="stylesheet" type="text/css">
+
+		<style>
+			:root {
+				font-family: "Martian Mono", "monospace";
+			}
+
+			* {
+				margin:  0;
+				padding: 0;
+
+				box-sizing: border-box;
+			}
+
+			body {
+				align-items:      center;
+				background-color: black;
+				color:            white;
+				display:          flex;
+				flex-direction:   column;
+				height:           100vh;
+				justify-content:  center;
+				width:            100vw;
+			}
+
+			p {
+				animation-duration:        8s;
+				animation-iteration-count: infinite;
+				animation-name:            glow;
+				animation-timing-function: ease-in-out;
+				display:                   block;
+				font-size:                 16rem;
+				font-weight:               bold;
+				width:                     fit-content;
+			}
+
+			@keyframes glow {
+				0% {
+					text-shadow: 0 0 0 white;
+				}
+
+				50% {
+					text-shadow: 0 0 0.125em white;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<p>404</p>
+	</body>
+</html>

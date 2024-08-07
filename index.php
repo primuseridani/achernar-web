@@ -1,28 +1,41 @@
-<?php require "include/prelude.php" ?>
-
 <?php
-	$currentPage = readConfig("p");
+	namespace ach;
+
+	require "include/prelude.php";
+
+	$current_page = read_config("p");
 
 	// Remember to sanitise unsafe values.
 
-	$currentPage = match ($currentPage) {
-		"achernar",
-		"agbsum",
-		"ax",
-		"backspace",
-		"benoit",
-		"bowshock",
-		"bzipper",
-		"deltaWorld",
-		"dux",
-		"eas",
-		"luma",
-		"pollex",
-		"u8c",
-		=> $currentPage,
+	switch ($current_page) {
+		case "achernar":
+		case "agbsum":
+		case "ax":
+		case "backspace":
+		case "benoit":
+		case "bowshock":
+		case "bzipper":
+		case "deltaWorld":
+		case "dux":
+		case "eas":
+		case "luma":
+		case "pollex":
+		case "u8c":
+			break;
 
-		default => "achernar",
+		default:
+			http_response_code(404);
+			require "html/404.html";
+
+			exit;
 	};
+
+	// Set up cache now.
+
+	$cache_addr = "cache/" . $current_page . ".cache";
+	maybe_use_cache($cache_addr);
+
+	ob_start();
 ?>
 
 <!DOCTYPE html>
@@ -34,87 +47,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<?php
-			[$title, $description, $keywords] = match ($currentPage) {
-				"achernar" => [
-					"Achernar",
-					"Achernar is a Danish indie studio developing video games and open-source software.",
-					"achernar, fractals, game, open source, open-source, software, video game",
-				],
-
-				"agbsum" => [
-					"agbsum | Achernar",
-					"agbsum is a CLI utility for patching AGB images.",
-					"achernar, advance, agb, agbsum, cli, console, embedded, game, patch, terminal",
-				],
-
-				"ax" => [
-					"AX | Achernar",
-					"AX is a C framework for developing AGB apps.",
-					"achernar, advance, agb, arm, assembly, ax, c, c++, cpp, cxx, thumb",
-				],
-
-				"backspace" => [
-					"Backspace | Achernar",
-					"About the Backspace game engine.",
-					"achernar, backspace, game engine, rust, udp, webgpu",
-				],
-
-				"benoit" => [
-					"Benoit | Achernar",
-					"Benoit is a Rust-written fractal renderer.",
-					"achernar, benoit, burning ship, cli, console, fractal, julia, mandelbrot, rust, terminal, tricorn, webgpu",
-				],
-
-				"bowshock" => [
-					"Bowshock | Achernar",
-					"About Bowshock.",
-					"achernar, bowshock, dangerous, frontier, game, rust, open world, sci-fi, science fiction, space, video game",
-				],
-
-				"bzipper" => [
-					"bzipper | Achernar",
-					"bzipper is a Rust crate for serialisation and deserialisation of binary streams.",
-					"achernar, binary, bzipper, deserialise, deserialiser, deserialize, deserializer, octet, serialize, serializer, serialize, serializer, tcp, udp",
-				],
-
-				"deltaWorld" => [
-					"Delta&middot;World | Achernar",
-					"About Delta World.",
-					"achernar, adventure, delta world, open world, rust, webgpu",
-				],
-
-				"dux" => [
-					"Dux | Achernar",
-					"Dux is a cross-platform widgeting library for developing GUI applications.",
-					"achernar, dux, multimedia, rust, webgpu, widget",
-				],
-
-				"eas" => [
-					"eAS | Achernar",
-					"eAS is an assembler for cross-compiling to Arm ISAs.",
-					"achernar, agb, arm, as, asm, assembler, assembly, eas, embedded, risc, thumb",
-				],
-
-				"luma" => [
-					"Luma | Achernar",
-					"Luma is an emulator for the AGB line of devices.",
-					"achernar, agb, arm, emulator, luma, rust, thumb",
-				],
-
-				"pollex" => [
-					"Pollex | Achernar",
-					"Pollex is a Rust crate for manipulating Arm ISA instructions.",
-					"achernar, agb, arm, pollex, rust, thumb",
-				],
-
-				"u8c" => [
-					"u8c | Achernar",
-					"u8c is a library for handling Unicode sequences in C.",
-					"achernar, u8c, unicode, utf, utf-16, utf-32, utf-8, utf16, utf32, utf8",
-				],
-
-				default => die(),
-			};
+			[$title, $description, $keywords] = page_metadata($current_page);
 
 			echo <<<HTML
 				<meta name="description" content="$description">
@@ -138,18 +71,18 @@
 
 		<style type="text/css">
 			#header {
-				--backgroundColour: <?php echo pageColours($currentPage)[0x0] ?>;
-				--textColour:       <?php echo pageColours($currentPage)[0x1] ?>;
+				--backgroundColour: <?php echo page_colours($current_page)[0x0] ?>;
+				--textColour:       <?php echo page_colours($current_page)[0x1] ?>;
 
 				<?php
-					$backgroundImage = match ($currentPage) {
+					$background_image = match ($current_page) {
 						"benoit" => "/svg/benoitBackground.svg",
 						"dux"    => "/image/duxBackground.webp",
 						default  => null,
 					};
 
-					if (!is_null($backgroundImage)) {
-						echo 'background-image: url("' . $backgroundImage . '");';
+					if (!is_null($background_image)) {
+						echo 'background-image: url("' . $background_image . '");';
 					}
 				?>
 			}
@@ -159,34 +92,16 @@
 	<body>
 		<header id="header">
 			<div id="navBar">
-				<?php
-					function addNavBarLink($title, $page) {
-						global $currentPage;
-
-						$ariaCurrent = "false";
-						if ($page == $currentPage) {
-							$ariaCurrent = "page";
-						}
-
-						$id = match ($page) {
-							"achernar" => "home",
-							default    => "",
-						};
-
-						echo "<a aria-current=\"$ariaCurrent\" href=\"?p=$page\" id=\"$id\">$title</a>";
-					}
-				?>
-
 				<section>
-					<?php addNavBarLink("ACHERNAR", "achernar"); ?>
+					<?php add_nav_bar_link("ACHERNAR", "achernar"); ?>
 				</section>
 
 				<section>
 					<?php
-						addNavBarLink("BENOIT",             "benoit");
-						addNavBarLink("BOWSHOCK",           "bowshock");
-						addNavBarLink("DELTA&middot;WORLD", "deltaWorld");
-						addNavBarLink("eAS",                "eas");
+						add_nav_bar_link("BENOIT",             "benoit");
+						add_nav_bar_link("BOWSHOCK",           "bowshock");
+						add_nav_bar_link("DELTA&middot;WORLD", "deltaWorld");
+						add_nav_bar_link("eAS",                "eas");
 					?>
 				</section>
 
@@ -196,14 +111,14 @@
 			</div>
 
 			<?php
-				$glyphAddr = "/svg/glyph/" . $currentPage . ".svg";
+				$glyphAddr = "/svg/glyph/" . $current_page . ".svg";
 
-				echo "<img alt=\"$currentPage\" id=\"glyph\" src=\"$glyphAddr\" />";
+				echo "<img alt=\"$current_page\" id=\"glyph\" src=\"$glyphAddr\" />";
 			?>
 		</header>
 
 		<div id="page">
-			<?php require "include/" . $currentPage . ".php" ?>
+			<?php require "include/" . $current_page . ".php" ?>
 		</div>
 
 		<footer id="footer">
@@ -232,3 +147,7 @@
 		Ach.init();
 	</script>
 </html>
+
+<?php
+	dump_cache($cache_addr, ob_get_contents());
+?>

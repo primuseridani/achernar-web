@@ -1,7 +1,6 @@
 #overview {
-	$cardsPerRow: 3;
+	$cardsPerRow: 4;
 
-	align-items:      center;
 	background-color: var(--foregroundColour);
 	border-radius:    calc($padding / 2);
 	display:          flex;
@@ -21,8 +20,6 @@
 		display:          flex;
 		flex-basis:       calc((100% - $padding * ($cardsPerRow - 1)) / $cardsPerRow);
 		justify-content:  center;
-		padding:          $padding;
-		width:            $padding;
 
 		@media not (prefers-reduced-motion) {
 			transition:                 box-shadow 0.25s;

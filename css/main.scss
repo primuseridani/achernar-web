@@ -50,7 +50,8 @@ body {
 }
 
 a, a:visited {
-	color: var(--textColour);
+	color:  var(--textColour);
+	cursor: pointer;
 }
 
 code {

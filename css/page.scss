@@ -3,11 +3,6 @@
 	max-width: calc($contentWidth + $padding * 2);
 	padding:   $padding;
 
-	a, a:visited {
-		cursor:          pointer;
-		text-decoration: underline;
-	}
-
 	h1 {
 		font-family: $specialFont;
 		font-size:   2em;
