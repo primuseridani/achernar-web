@@ -1,5 +1,10 @@
 # Changelog
 
+## 11.11
+
+* Remove robots
+* Add YouTube link
+
 ## 11.10
 
 * Elaborate pages

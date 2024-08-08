@@ -37,7 +37,7 @@
 	// Set up cache now.
 
 	$cache_addr = "cache/" . $current_page . ".cache";
-	maybe_use_cache($cache_addr);
+	//maybe_use_cache($cache_addr);
 
 	ob_start();
 ?>
@@ -126,7 +126,7 @@
 		</div>
 
 		<footer id="footer">
-			<div id="romanisation" title="&#1570;&#1582;&#1616;&#1585; &#1575;&#1614;&#1604;&#1618;&#1606;&#1614;&#1607;&#1614;&#1585;"></div>
+			<div id="romanisation" title="&#1570;&#1582;&#1616;&#1585; &#1575;&#1614;&#1604;&#1618;&#1606;&#1614;&#1607;&#1585;&#1616;"></div>
 
 			<p id="starDescription">&ldquo;ACHERNAR &mdash; type B star; primary component of ALPHA ERIDANI, i.e. ALPHA ERIDANI A; approx. (6) solar masses, (15) kilokelvin at surface; c. (3 668) light-seconds from sibling ALPHA ERIDANI B; no native lifeforms discovered on children, human life on terraformed ACHERNAR IV, a.k.a. CONVERSION.&rdquo;</p>
 
@@ -143,6 +143,7 @@
 				<a class="linktree" href="https://linktr.ee/PrimusEridani/" title="Linktree: @PrimusEridani"></a>
 				<a class="threads" href="https://www.threads.net/@primuseridani/" title="Threads: @primuseridani"></a>
 				<a class="x" href="https://x.com/PrimusEridani/" title="X: @PrimusEridani"></a>
+				<a class="youTube" href="https://youtube.com/@primuseridani/" title="YouTube: @PrimusEridani"></a>
 			</div>
 		</footer>
 	</body>
