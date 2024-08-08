@@ -37,7 +37,7 @@
 	// Set up cache now.
 
 	$cache_addr = "cache/" . $current_page . ".cache";
-	//maybe_use_cache($cache_addr);
+	maybe_use_cache($cache_addr);
 
 	ob_start();
 ?>

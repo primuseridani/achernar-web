@@ -1,5 +1,9 @@
 # Changelog
 
+## 11.12
+
+* Fix caches being disabled
+
 ## 11.11
 
 * Remove robots
