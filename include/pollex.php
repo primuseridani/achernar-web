@@ -5,11 +5,11 @@
 	<br>
 	<p>Currently, only the legacy 32-bit architectures are supported (if barely), but complete support is planned in the future.</p>
 	<br>
-	<p>See more at <a href="https://crates.io/crates/pollex/"><code>crates.io</code></a>.</p>
+	<p>See more at <a href="https://crates.io/crates/pollex/">crates.io</a>.</p>
 </section>
 
 <?php add_heading("Docs", "docs"); ?>
 
 <section>
-	<p>As per usual, documentation for <em>Pollex</em> can be found on <a href="https://docs.rs/pollex/latest/pollex/"><code>docs.rs</code></a>.</p>
+	<p>As per usual, documentation for <em>Pollex</em> can be found on <a href="https://docs.rs/pollex/latest/pollex/">Docs.rs</a>.</p>
 </section>

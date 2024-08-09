@@ -58,6 +58,13 @@ code {
 	font-family: $codeFont;
 }
 
+img {
+	// Set the `color` property so that alternative
+	// text uses the correct colour.
+
+	color: var(--textColour);
+}
+
 ul {
 	list-style: none;
 

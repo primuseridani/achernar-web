@@ -66,7 +66,21 @@
 <?php add_heading("Roadmap", "roadmap"); ?>
 
 <section>
-	<p>Currently, our roadmap is as follows:</p>
+	<p>Currently, the following tasks are our highest priorities (in order of decreasing priority):</p>
+	<br>
+	<ul>
+		<li>
+			<p>Implement derive macros for the <code>Serialise</code> and <code>Deserialise</code> traits in <a href="?p=bzipper">bzipper</a></p>
+		</li>
+		<li>
+			<p>Develop <a href="?p=bowshock">Bowshock</a> to a semi-playable state and begin marketing hereof</p>
+		</li>
+		<li>
+			<p>Implement the graphical front-end (<code>benoit-cli</code>) for <a href="?p=benoit">Benoit</a><a></a></p>
+		</li>
+	</ul>
+	<br>
+	<p>The following additional goals denote company objectives:</p>
 	<br>
 	<ul>
 		<li>
@@ -79,11 +93,11 @@
 			<p>Release early-access for Bowshock (on Steam) by <strong>2025</strong></p>
 		</li>
 		<li>
-			<p>Restructure to a normal sole proprietorship</p>
+			<p>Restructure to a normal sole proprietorship <strong>sometime</strong></p>
 		</li>
 	</ul>
 	<br>
-	<p>This roadmap is, however, also subject to change, altough we do strive to live up to it.</p>
+	<p>These roadmaps are, however, also subject to change, altough we do strive to fullfil our goals.</p>
 </section>
 
 <?php add_heading("Team", "team"); ?>
@@ -109,7 +123,7 @@
 <?php add_heading("Credits", "credits"); ?>
 
 <section class="fullWidth">
-	<p>Thanks to <strong>Nicolas Gallagher</strong> for the <a href="https://necolas.github.io/normalize.css/"><code>normalize.css</code></a> stylesheet. Additionally thanks to the following creators for the fonts which we use on our website:</p>
+	<p>Thanks to <strong>Nicolas Gallagher</strong> for the <a href="https://necolas.github.io/normalize.css/">Normalize.css</a> stylesheet. Additionally thanks to the following creators for the fonts which we use on our website:</p>
 	<br>
 	<ul>
 		<li>

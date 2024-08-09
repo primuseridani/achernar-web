@@ -1,5 +1,11 @@
 # Changelog
 
+## 11.13
+
+* Update roadmap
+* Elaborate pages
+* Widen navigation bar again
+
 ## 11.12
 
 * Fix caches being disabled

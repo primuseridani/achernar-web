@@ -47,5 +47,5 @@
 <?php add_heading("Docs", "docs"); ?>
 
 <section>
-	<p>Documentation is written in source. Documentation for the main library is hosted on <a href="https://docs.rs/benoit/latest/benoit/"><code>docs.rs</code></a>.</p>
+	<p>Documentation is written in source. Documentation for the main library is hosted on <a href="https://docs.rs/benoit/latest/benoit/">Docs.rs</a>.</p>
 </section>
