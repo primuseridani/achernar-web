@@ -1,5 +1,9 @@
 # Changelog
 
+## 11.14
+
+* Revert alternative text change to glyphs
+
 ## 11.13
 
 * Update roadmap

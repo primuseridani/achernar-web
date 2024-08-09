@@ -117,7 +117,7 @@
 			<?php
 				$glyphAddr = "/svg/glyph/" . $current_page . ".svg";
 
-				echo "<img alt=\"$current_page logo\" id=\"glyph\" src=\"$glyphAddr\" />";
+				echo "<img alt=\"$current_page\" id=\"glyph\" src=\"$glyphAddr\" />";
 			?>
 		</header>
 
