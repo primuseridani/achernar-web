@@ -27,7 +27,7 @@
 			"backspace"  => ["#000000", "#FFFFFF"],
 			"benoit"     => ["#BA0035", "#FFFFFF"],
 			"bowshock"   => ["#B61833", "#FFEEE0"],
-			"bzipper"    => ["#FFFFFF", "#B4202D"],
+			"bzipper"    => ["#526F03", "#FFFFFF"],
 			"deltaWorld" => ["#000000", "#FFFFFF"],
 			"dux"        => ["#131313", "#06FBB2"],
 			"eas"        => ["#01CD93", "#00291B"],

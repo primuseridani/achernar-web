@@ -1,5 +1,10 @@
 # Changelog
 
+## 11.15
+
+* Update font styling
+* Update bzipper logo etc.
+
 ## 11.14
 
 * Revert alternative text change to glyphs

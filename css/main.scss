@@ -9,7 +9,7 @@ $separatorWidth: 0.25rem;
 $shadowColour: color-mix(in srgb, black, transparent 50%);
 
 @mixin separator {
-	background-color: var(--textColour);
+	background-color: var(--highlightColour);
 	border-radius:    calc($separatorWidth / 3);
 	content:          "";
 	display:          block;
@@ -34,6 +34,7 @@ body {
 	--backgroundColour: oklch( 25% 0 0);
 	--foregroundColour: oklch( 20% 0 0);
 	--textColour:       oklch(100% 0 0);
+	--highlightColour:  var(--textColour);
 
 	background-color: var(--backgroundColour);
 	color:            var(--textColour);
@@ -45,13 +46,18 @@ body {
 	&.light {
 		--backgroundColour: oklch(96.875% 0 0);
 		--foregroundColour: oklch(93.750% 0 0);
-		--textColour:       oklch(25%     0 0);
+		--textColour:       oklch(33.333% 0 0);
+		--highlightColour:  oklch(25%     0 0);
 	}
 }
 
 a, a:visited {
-	color:  var(--textColour);
+	color:  var(--highlightColour);
 	cursor: pointer;
+}
+
+h1 {
+	color: var(--highlightColour);
 }
 
 code {
@@ -62,7 +68,7 @@ img {
 	// Set the `color` property so that alternative
 	// text uses the correct colour.
 
-	color: var(--textColour);
+	color: var(--highlightColour);
 }
 
 ul {

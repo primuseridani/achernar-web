@@ -1,8 +1,14 @@
 <svg height="64" width="64" xmlns="http://www.w3.org/2000/svg">
 	<mask id="glyph">
-		<polyline fill="none" points="4,12 4,4 60,4 20.970562748,60" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
-		<polyline fill="none" points="60,52 60,60 4,60 43.029437252,4" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
+		<rect fill="white" height="24" width="32" x="0" y="8" />
+		<circle cx="32" cy="32" fill="black" r="16" />
+
+		<polygon fill="white" points="4,0 60,0 64,4 64,64 0,64 48,16 0,16 0,4" />
+		<circle cx="4" cy="4" fill="white" r="4" />
+		<circle cx="60" cy="4" fill="white" r="4" />
+
+		<circle cx="64" cy="64" fill="black" r="16" />
 	</mask>
 
-	<rect fill="#B4202D" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
+	<rect fill="#FFFFFF" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
 </svg>

@@ -126,7 +126,7 @@
 		</div>
 
 		<footer id="footer">
-			<div id="romanisation" title="&#1570;&#1582;&#1616;&#1585; &#1575;&#1614;&#1604;&#1618;&#1606;&#1614;&#1607;&#1585;&#1616;"></div>
+			<div id="arabic" title="&#1570;&#1582;&#1616;&#1585; &#1575;&#1614;&#1604;&#1618;&#1606;&#1614;&#1607;&#1618;&#1585;&#1616;"></div>
 
 			<p id="starDescription">&ldquo;ACHERNAR &mdash; type B star; primary component of ALPHA ERIDANI, i.e. ALPHA ERIDANI A; approx. (6) solar masses, (15) kilokelvin at surface; c. (3 668) light-seconds from sibling ALPHA ERIDANI B; no native lifeforms discovered on children, human life on terraformed ACHERNAR IV, a.k.a. CONVERSION.&rdquo;</p>
 
