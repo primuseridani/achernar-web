@@ -1,5 +1,10 @@
 # Changelog
 
+## 11.16
+
+* Elaborate pages
+* Fix bzipper Docs.rs link
+
 ## 11.15
 
 * Update font styling
