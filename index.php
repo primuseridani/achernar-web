@@ -139,10 +139,11 @@
 			<div class="center" id="emailAddress" title="Obfuscated email address."></div>
 			<br>
 			<div id="socials">
+				<a class="bluesky" href="https://bsky.app/profile/achernar.io/" title="Bluesky: @achernar.io"></a>
 				<a class="instagram" href="https://www.instagram.com/primuseridani/" title="Instagram: primuseridani"></a>
 				<a class="linktree" href="https://linktr.ee/PrimusEridani/" title="Linktree: @PrimusEridani"></a>
-				<a class="threads" href="https://www.threads.net/@primuseridani/" title="Threads: @primuseridani"></a>
-				<a class="x" href="https://x.com/PrimusEridani/" title="X: @PrimusEridani"></a>
+				<a class="mastodon" href="https://mastodon.social/@primuseridani/" title="Mastodon: @PrimusEridani@mastodon.social"></a>
+				<a class="reddit" href="https://www.reddit.com/user/PrimusEridani/" title="Reddit: @PrimusEridani"></a>
 				<a class="youTube" href="https://youtube.com/@primuseridani/" title="YouTube: @PrimusEridani"></a>
 			</div>
 		</footer>

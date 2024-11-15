@@ -1,0 +1,15 @@
+<svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
+	<mask id="px">
+		<polygon fill="white" points="16,16 71,16 71,34 32,34 32,16 32,40 16,40" />
+		<circle cx="71" cy="25" fill="white" r="9" />
+
+		<polygon fill="black" points="32,22 61,22 61,28 32,28" />
+		<circle cx="61" cy="25" fill="black" r="3" />
+
+		<polygon fill="white" points="16,56 32,56 80,80 64,80" />
+		<polygon fill="white" points="64,56 80,56 32,80 16,80" />
+	</mask>
+
+	<rect fill="#4D4084" height="100%" width="100%" x="0" y="0" />
+	<rect fill="#FFFFFF" height="100%" mask="url(#px)" width="100%" x="0" y="0" />
+</svg>

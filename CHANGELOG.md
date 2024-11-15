@@ -1,5 +1,10 @@
 # Changelog
 
+## 11.17
+
+* Add small Pollex logo (not glyph)
+* Update socials links
+
 ## 11.16
 
 * Elaborate pages
