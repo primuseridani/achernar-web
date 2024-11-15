@@ -1,5 +1,9 @@
 # Changelog
 
+## 11.18
+
+* Update readme
+
 ## 11.17
 
 * Add small Pollex logo (not glyph)
