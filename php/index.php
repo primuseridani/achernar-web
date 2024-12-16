@@ -89,5 +89,5 @@
 	ob_end_clean();
 
 	echo $page_buffer;
-	#dump_cache($cache_addr, $page_buffer);
+	dump_cache($cache_addr, $page_buffer);
 ?>

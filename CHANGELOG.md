@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.2
+
+* Fix cache being disabled
+
 ## 12.1
 
 * Fix capital letters in *Site Credits* section
