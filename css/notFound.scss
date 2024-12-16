@@ -27,5 +27,11 @@ body {
 	mask-position:    center;
 	mask-repeat:      no-repeat;
 	mask-size:        contain;
-	width:            50vmin;
+	object-fit:       contain;
+	pointer-events:   none;
+	width:            $glyphWidth;
+
+	@media not (prefers-reduced-motion) {
+		mask-image: url("/image/notFoundAnimated.webp");
+	}
 }

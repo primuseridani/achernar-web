@@ -19,8 +19,9 @@ header {
 		mask-position:    center;
 		mask-repeat:      no-repeat;
 		mask-size:        contain;
+		object-fit:       contain;
 		pointer-events:   none;
-		width:            calc(100vmin / 3);
+		width:            $glyphWidth;
 	}
 
 	#scrollNote {

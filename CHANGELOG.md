@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.3
+
+* Update 404 screen
+
 ## 12.2
 
 * Fix cache being disabled
