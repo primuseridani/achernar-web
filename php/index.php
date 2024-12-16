@@ -61,7 +61,7 @@
 			<section>
 				<?php add_heading("site credits", "side-credits") ?>
 
-				<p>Thanks to Carrois Apostrophe for the <a href="https://fonts.google.com/specimen/Fira+Mono/"><em>fira mono</em></a> font family.</p>
+				<p>thanks to carrois apostrophe for the <a href="https://fonts.google.com/specimen/Fira+Mono/"><em>fira mono</em></a> font family.</p>
 			</section>
 
 			<!-- <div id="arabic"></div> -->

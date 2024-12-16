@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.1
+
+* Fix capital letters in *Site Credits* section
+
 ## 12.0
 
 * Rewrite entire site
