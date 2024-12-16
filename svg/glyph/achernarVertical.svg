@@ -31,5 +31,5 @@
 		<polygon fill="black" points="96,152 128,152 128,160 96,160" />
 	</mask>
 
-	<rect fill="#FFFFFF" mask="url(#wordmark)" height="100%" width="100%" x="0" y="0" />
+	<rect fill="white" mask="url(#wordmark)" height="100%" width="100%" x="0" y="0" />
 </svg>

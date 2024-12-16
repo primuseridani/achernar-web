@@ -1,0 +1,50 @@
+@use "sass:list";
+
+@use "../base" as *;
+
+main {
+	line-height: 2em;
+	min-height:  100vh;
+	padding:     $gap;
+	padding:     $gap;
+	position:    relative;
+
+	section {
+		& + section {
+			margin-top: $gap;
+		}
+
+		@media (orientation: landscape) {
+			width: 50%;
+
+			&:nth-of-type(odd) {
+				padding-right: calc($gap / 2);
+			}
+
+			&:nth-of-type(even) {
+				margin-left:  auto;
+				padding-left: calc($gap / 2);
+			}
+		}
+
+		h1 {
+			font-size: 2em;
+			width:     fit-content;
+
+			&::after {
+				$width: 0.125rem;
+
+				background-color: $textColour;
+				content:          "";
+				display:          block;
+				height:           $width;
+				margin:           $width 0;
+				width:            100%;
+			}
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}

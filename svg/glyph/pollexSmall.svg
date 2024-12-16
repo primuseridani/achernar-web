@@ -10,5 +10,5 @@
 		<polygon fill="white" points="48,40 64,40 16,64 0,64" />
 	</mask>
 
-	<rect fill="#FFFFFF" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
+	<rect fill="white" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
 </svg>

@@ -1,5 +1,22 @@
 # Changelog
 
+## 12.0
+
+* Rewrite entire site
+* Remove themes
+* Restructure stylesheets
+* Remove pages
+* Require monochrome glyphs
+* Update Bowshock logo
+* Rename `include` directory to `php`
+* Update Librum logo
+* Update socials
+* Add small Benoit logo
+* Update fonts
+* Update 404 page
+* Move `index.php` into `php`
+* Update keywords
+
 ## 11.18
 
 * Update readme

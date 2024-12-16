@@ -30,5 +30,5 @@
 		<polygon fill="black" points="256,56 288,56 288,64 256,64" />
 	</mask>
 
-	<rect fill="#FFFFFF" mask="url(#glyph)" height="100%" width="100%" x="0" y="0" />
+	<rect fill="white" mask="url(#glyph)" height="100%" width="100%" x="0" y="0" />
 </svg>

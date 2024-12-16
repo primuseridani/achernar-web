@@ -1,63 +1,41 @@
-/// <reference path="theme.ts" />
-
 namespace Ach {
 	export async function init(): Promise<void> {
-		Ach.loadTheme();
-
 		let glyph = Ach.getOnlyElementIn(document, "glyph");
-		let page  = glyph.getAttribute("alt");
 
-		if (!page) {
-			throw new Error('glyph does not specify page in "alt" attribute');
-		}
+		let updateGlyph = (): void => {
+			let isPortrait       = matchMedia("(orientation: portrait)").matches;
+			let isReducedMotion = matchMedia("(prefers-reduced-motion)").matches;
 
-		let portrait      = matchMedia("(orientation: portrait)");
-		let reducedMotion = matchMedia("(prefers-reduced-motion)");
-
-		let updateDynamicGlyph = (): void => {
 			console.log("updating dynamic glyph");
-			console.log(`note: configuration is { page: "${page}", portrait: ${portrait.matches}, reducedMotion: ${reducedMotion.matches} }`);
+			console.log(`note: configuration is { is_portrait: ${isPortrait}, isReducedMotion: ${isReducedMotion} }`);
 
 			let newGlyphAddr: string | undefined = undefined;
-			switch (page) {
-			case "achernar":
-				switch (true) {
-				case portrait.matches && reducedMotion.matches:
-					newGlyphAddr = "/svg/glyph/achernarVertical.svg";
-					break;
-
-				case portrait.matches && !reducedMotion.matches:
-					newGlyphAddr = "/image/achernarVerticalAnimated.webp";
-					break;
-
-				case !portrait.matches && reducedMotion.matches:
-					newGlyphAddr = "/svg/glyph/achernar.svg";
-					break;
-
-				case !portrait.matches && !reducedMotion.matches:
-					newGlyphAddr = "/image/achernarAnimated.webp";
-					break;
-				}
-
+			switch (true) {
+			case isPortrait && isReducedMotion:
+				newGlyphAddr = "/svg/glyph/achernarVertical.svg";
 				break;
 
-			default:
+			case isPortrait && !isReducedMotion:
+				newGlyphAddr = "/image/achernarVerticalAnimated.webp";
+				break;
+
+			case !isPortrait && isReducedMotion:
+				newGlyphAddr = "/svg/glyph/achernar.svg";
+				break;
+
+			case !isPortrait && !isReducedMotion:
+				newGlyphAddr = "/image/achernarAnimated.webp";
 				break;
 			}
 
-			if (newGlyphAddr) {
-				console.log(`note: new glyph is at "${newGlyphAddr}"`);
-
-				glyph.setAttribute("src", newGlyphAddr);
-			} else {
-				console.log("note: no new glyph was found suitable");
-			}
+			console.log(`note: new glyph is at "${newGlyphAddr}"`);
+			glyph.setAttribute("style", `mask-image: url("${newGlyphAddr}");`);
 		};
 
-		updateDynamicGlyph();
+		updateGlyph();
 
-		portrait     .addEventListener("change", updateDynamicGlyph);
-		reducedMotion.addEventListener("change", updateDynamicGlyph);
+		matchMedia("(orientation: portrait)").addEventListener( "change", updateGlyph);
+		matchMedia("(prefers-reduced-motion)").addEventListener("change", updateGlyph);
 	}
 
 	export function getFirstElementIn(dom: Document, tag: string): Element {
@@ -80,3 +58,5 @@ namespace Ach {
 		return element;
 	}
 }
+
+Ach.init();

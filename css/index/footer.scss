@@ -1,0 +1,80 @@
+@use "../base" as *;
+
+footer {
+	padding:     $gap;
+	padding-top: 0;
+
+	#socials {
+		$gap: 1rem;
+
+		align-items:     center;
+		display:         flex;
+		gap:             $gap;
+		justify-content: center;
+
+		a {
+			aspect-ratio:     1;
+			background-color: $textColour;
+			display:          block;
+			image-rendering:  pixelated;
+			mask-size:        cover;
+			width:            2rem;
+
+			&[id = "s.bluesky"] {
+				mask-image: url("data:image/png;base64,UklGRkIAAABXRUJQVlA4TDUAAAAvD8ADEA8w//M///Mf8FATyVbT0WIg2aDiW0HID5YpczYR0f9QyRcYXxYz85IBWQ9YwowxGAA");
+			}
+
+			&[id = "s.facebook"] {
+				mask-image: url("data:image/png;base64,UklGRjIAAABXRUJQVlA4TCYAAAAvD8ADEA8w//M///Mf8DDTMI00pGGZ/YR+0xDR/5iBI5QqCn2ZAQ");
+			}
+
+			&[id = "s.gitHub"] {
+				mask-image: url("data:image/png;base64,UklGRkgAAABXRUJQVlA4TDsAAAAvD8ADEA8w//M///Mf8GATAGCSuQMF9CKCWxl+fs26CLvwkxAR/Q/Lr+QbjikbA8ftP3Dznq+mLcOUAAA");
+			}
+
+			&[id = "s.gitLab"] {
+				mask-image: url("data:image/png;base64,UklGRjwAAABXRUJQVlA4TDAAAAAvD8ADEA8w//M///Mf8FAS26o0KCQWRxG6QVQiIFHLX0JE9H8C+NZv2zPftpKkQAc");
+			}
+
+			&[id = "s.instagram"] {
+				mask-image: url("data:image/png;base64,UklGRkIAAABXRUJQVlA4TDUAAAAvD8ADEA8w+ZM/+fMf8FBU20p0Pg2MQBKI5qzLqYxberE0RET/w4UUC88u1zB/rlYQEUldAAA");
+			}
+
+			&[id = "s.linkedIn"] {
+				mask-image: url("data:image/png;base64,UklGRjwAAABXRUJQVlA4TDAAAAAvD8ADEA8w//M///Mf8FDUtpEEbeAExlDde//7Hm1oRPQ/Kn7q9ao8GovD4aj+rAA");
+			}
+
+			&[id = "s.linktree"] {
+				mask-image: url("data:image/png;base64,UklGRkYAAABXRUJQVlA4TDoAAAAvD8ADEA8w//M///Mf8EBT20rOn9i0gIZgk1ZG+AGIQBDjEMEGv0ZE/4Mg0ive/rNNktruOKsinSAA");
+			}
+
+			&[id = "s.mastodon"] {
+				mask-image: url("data:image/png;base64,UklGRkQAAABXRUJQVlA4TDcAAAAvD8ADEA8w//M///Mf8FATyWpFR4kDkIIcZCAl7nhtyn9iI6L/Mez4yzalR0UBwM/v34SUDg8GAA");
+			}
+
+			&[id = "s.pinterest"] {
+				mask-image: url("data:image/png;base64,UklGRk4AAABXRUJQVlA4TEEAAAAvD8ADEA8w//M///Mf8GAU21abJR0JIKKXuMFAip/IyWQFFth9AalSIvofA/16muR8VICrb21rpgfYq5r5dOqBAAA");
+			}
+
+			&[id = "s.reddit"] {
+				mask-image: url("data:image/png;base64,UklGRkoAAABXRUJQVlA4TD4AAAAvD8ADEA8w//M///Mf8GATAGCSSYDdrkGWxYAKnMQgjpOHAJMaEf2Pn9TQlx5HHZ3ucMtf/vDhny+rdYRBAA");
+			}
+
+			&[id = "s.threads"] {
+				mask-image: url("data:image/png;base64,UklGRkoAAABXRUJQVlA4TD0AAAAvD8ADEA8w+ZM/+fMf8GAV2XaT9C7g/aUhAAkdHQQtGXx1HZEV0f9oEsD1Yr/ncuKK6+VLF5dj+2c3QGgeAA");
+			}
+
+			&[id = "s.tikTok"] {
+				mask-image: url("data:image/png;base64,UklGRkIAAABXRUJQVlA4TDUAAAAvD8ADEA8w//M///Mf8GAUyVYjMkcU4DRnExR20IGMtHtCRET/w8EHO+6Ek231WWF8BvyBAgA");
+			}
+
+			&[id = "s.x"] {
+				mask-image: url("data:image/png;base64,UklGRkgAAABXRUJQVlA4TDwAAAAvD8ADEA8w+ZM/+fMf8FAUSVJDzvwPF0kAVu51mpCBBAQgAiEIieh/zENI9cLKy1aJBs1Jr+wCI5Eh+QE");
+			}
+
+			&[id = "s.youTube"] {
+				mask-image: url("data:image/png;base64,UklGRjgAAABXRUJQVlA4TCsAAAAvD8ADEA8w//M///Mf8DDINhLCkA7tEV/lAS4/jYj+R/OjuiLlOIqr6k8DAA");
+			}
+		}
+	}
+}

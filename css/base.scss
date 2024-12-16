@@ -1,0 +1,31 @@
+$mainFont: "Fira Mono", "monospace";
+
+$gap: 4rem;
+
+$backgroundColour: oklch(25% 0.065200 128.720);
+$textColour:       oklch(75% 0.198000 128.720);
+
+:root {
+	background-color: $backgroundColour;
+	color:            $textColour;
+	font-family:      $mainFont;
+}
+
+* {
+	margin:  0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+body {
+	a, a:visited {
+		color:  $textColour;
+		cursor: pointer;
+	}
+
+	em {
+		font-style:  normal;
+		font-weight: bold;
+	}
+}

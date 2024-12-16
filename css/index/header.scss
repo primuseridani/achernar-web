@@ -1,0 +1,69 @@
+@use "../base" as *;
+
+header {
+	$gap: 1rem;
+
+	align-items:     center;
+	display:         flex;
+	height:          100vh;
+	justify-content: center;
+	position:        relative;
+	width:           100%;
+
+	#glyph {
+		aspect-ratio:     1/1;
+		background-color: $textColour;
+		display:          block;
+		image-rendering:  pixelated;
+		mask-image:       url("/svg/glyph/achernar.svg");
+		mask-position:    center;
+		mask-repeat:      no-repeat;
+		mask-size:        contain;
+		pointer-events:   none;
+		width:            calc(100vmin / 3);
+	}
+
+	#scrollNote {
+		bottom:      1em;
+		font-size:   0.75em;
+		font-weight: bold;
+		left:        50%;
+		position:    absolute;
+		transform:   translateX(-50%);
+
+		span {
+			$characterCount: 24;
+			$duration:       2s;
+
+			display: inline-block;
+
+			@media not (prefers-reduced-motion) {
+				animation-delay:           calc($duration / $characterCount * var(--n));
+				animation-duration:        $duration;
+				animation-iteration-count: infinite;
+				animation-name:            scrollNote;
+				animation-timing-function: steps(1);
+			}
+		}
+	}
+}
+
+@keyframes scrollNote {
+	$distance: 0.125em;
+
+	from {
+		transform: translateY(0);
+	}
+
+	25% {
+		transform: translateY(-$distance);
+	}
+
+	50% {
+		transform: translateY(0);
+	}
+
+	75% {
+		transform: translateY($distance);
+	}
+}

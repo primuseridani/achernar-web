@@ -1,9 +1,4 @@
 <svg height="176" width="176" xmlns="http://www.w3.org/2000/svg">
-	<linearGradient id="foregroundColour" x1="0" x2="1" y1="0" y2="1">
-		<stop offset="0%" stop-color="#05f8d4" />
-		<stop offset="100%" stop-color="#20ff75" />
-	</linearGradient>
-
 	<clipPath id="semicircle-horizontal-high">
 		<rect height="50%" width="100%" x="0" y="0" />
 	</clipPath>
@@ -55,6 +50,6 @@
 		<circle cx="172" cy="88" fill="white" r="4" />
 	</mask>
 
-	<rect fill="#FFFFFF" height="100%" mask="url(#inner)" width="100%" x="0" y="0" />
-	<rect fill="url(#foregroundColour)" height="100%" mask="url(#spiral)" width="100%" x="0" y="0" />
+	<rect fill="white" height="100%" mask="url(#inner)" width="100%" x="0" y="0" />
+	<rect fill="white" height="100%" mask="url(#spiral)" width="100%" x="0" y="0" />
 </svg>

@@ -1,6 +1,35 @@
-<svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
+<svg height="112" width="112" xmlns="http://www.w3.org/2000/svg">
+	<!--
+		Image description:
+		Two intertwined circles, the upper black and go-
+		ing behind the secondary to the left, and the
+		lower white and going behind the primary to the
+		right, charged on a red field.
+
+		Red:   oklch(50%     0.188300 19.760)
+		Black: oklch(25%     0         0)
+		White: oklch(96.875% 0.019500 63.560)
+	-->
+
+	<clipPath id="primaryClip">
+		<rect height="100%" width="50%" x="0" y="0" />
+	</clipPath>
+
+	<mask id="secondary">
+		<circle cx="56" cy="64" fill="none" r="24" stroke="white" stroke-width="16" />
+
+		<!-- Fix seams: -->
+		<circle cx="56" cy="56" fill="none" r="24" stroke="white" stroke-width="1" />
+	</mask>
+
+	<mask id="primary">
+		<circle cx="56" cy="48" fill="none" r="24" stroke="white" stroke-width="16" />
+
+		<circle clip-path="url(#primaryClip)" cx="56" cy="64" fill="none" r="24" stroke="black" stroke-width="16" />
+	</mask>
+
 	<rect fill="#B61833" height="100%" width="100%" x="0" y="0" />
 
-	<circle cx="48" cy="54" fill="none" r="24" stroke="#FFEEE0" stroke-width="12" />
-	<circle cx="48" cy="42" fill="none" r="24" stroke="#0F0F0F" stroke-width="12" />
+	<rect fill="#FFF2E8" height="100%" mask="url(#secondary)" width="100%" x="0" y="0" />
+	<rect fill="#222222" height="100%" mask="url(#primary)" width="100%" x="0" y="0" />
 </svg>

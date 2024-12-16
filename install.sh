@@ -18,13 +18,12 @@ mkdir -p "${DESTINATION}"
 
 cp "apple-touch-icon.png" "${DESTINATION}"
 cp "favicon.ico" "${DESTINATION}"
-cp "index.php" "${DESTINATION}"
 cp "robots.txt" "${DESTINATION}"
 
 cp -r "font" "${DESTINATION}"
 cp -r "html" "${DESTINATION}"
 cp -r "image" "${DESTINATION}"
-cp -r "include" "${DESTINATION}"
+cp -r "php" "${DESTINATION}"
 cp -r "svg" "${DESTINATION}"
 
 mkdir -p "${DESTINATION}/cache"

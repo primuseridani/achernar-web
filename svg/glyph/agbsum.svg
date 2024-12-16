@@ -7,5 +7,5 @@
 		<polygon fill="white" points="36,32 48,32 52,36 48,40 48,40 48,64 44,68 40,64 40,40 36,40" />
 	</mask>
 
-	<rect fill="#FFFFFF" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
+	<rect fill="white" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
 </svg>

@@ -4,5 +4,5 @@
 		<polygon fill="black" points="48,44 34.143593539,68 61.856406461,68" />
 	</mask>
 
-	<rect fill="#FFFFFF" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
+	<rect fill="white" height="100%" mask="url(#glyph)" width="100%" x="0" y="0" />
 </svg>

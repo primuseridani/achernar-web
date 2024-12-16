@@ -1,0 +1,31 @@
+@use "base" as *;
+
+* {
+	margin:  0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+body {
+	align-items:      center;
+	background-color: $backgroundColour;
+	color:            $textColour;
+	display:          flex;
+	flex-direction:   column;
+	height:           100vh;
+	justify-content:  center;
+	user-select:      none;
+	width:            100vw;
+}
+
+#glyph {
+	aspect-ratio:     1/1;
+	background-color: $textColour;
+	image-rendering:  pixelated;
+	mask-image:       url("/image/notFound.webp");
+	mask-position:    center;
+	mask-repeat:      no-repeat;
+	mask-size:        contain;
+	width:            50vmin;
+}

@@ -1,0 +1,12 @@
+<svg height="96" width="96" xmlns="http://www.w3.org/2000/svg">
+	<mask id="eye">
+		<ellipse cx="48" cy="48" fill="white" rx="36" ry="24" />
+		<ellipse cx="48" cy="48" fill="black" rx="30" ry="18" />
+
+		<ellipse cx="48" cy="48" fill="white" rx="24" wry="24" />
+		<ellipse cx="48" cy="48" fill="black" rx="18" ry="18" />
+	</mask>
+
+	<rect fill="#BA0035" height="100%" width="100%" x="0" y="0" /> <!-- oklch(50% 0.199 17.860) "red" -->
+	<rect fill="#FFFFFF" mask="url(#eye)" height="100%" width="100%" x="0" y="0" />
+</svg>

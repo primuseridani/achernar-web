@@ -10,5 +10,5 @@
 		<ellipse cx="36" cy="36" fill="black" rx="21" ry="21" />
 	</mask>
 
-	<rect fill="#FFFFFF" mask="url(#glyph)" height="100%" width="100%" x="0" y="0" />
+	<rect fill="white" mask="url(#glyph)" height="100%" width="100%" x="0" y="0" />
 </svg>

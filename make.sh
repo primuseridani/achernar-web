@@ -59,7 +59,7 @@ then
 fi
 
 make_stylesheet "font"
-make_stylesheet "main"
-make_stylesheet "noScript"
+make_stylesheet "index"
+make_stylesheet "notFound"
 
 make_script "main"
