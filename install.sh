@@ -19,6 +19,7 @@ mkdir -p "${DESTINATION}"
 cp "apple-touch-icon.png" "${DESTINATION}"
 cp "favicon.ico" "${DESTINATION}"
 cp "robots.txt" "${DESTINATION}"
+cp "security.txt" "${DESTINATION}"
 
 cp -r "font" "${DESTINATION}"
 cp -r "html" "${DESTINATION}"

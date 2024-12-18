@@ -18,8 +18,8 @@
 	}
 
 	function add_image($image, $alt) {
-		$source_addr    = "/image/source/" . $image . ".webp";
-		$thumbnail_addr = "/image/thumbnail/" . $image . ".avif";
+		$source_addr    = "/image/source/${image}.webp";
+		$thumbnail_addr = "/image/thumbnail/${image}.avif";
 
 		echo <<<HTML
 			<div class="image">

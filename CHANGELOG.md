@@ -1,5 +1,12 @@
 # Changelog
 
+## 12.6
+
+* Update gitignore
+* Install `security.txt`
+* Do not embed images
+* Rework glyph styling
+
 ## 12.5
 
 * Fix cache
