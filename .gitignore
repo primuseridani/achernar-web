@@ -2,6 +2,12 @@
 /favicon.ico
 *.avif
 *.css
+*.jpep
+*.jpg
+*.jxl
 *.js
+*.otf
 *.ttf
 *.webp
+*.woff
+*.woff2

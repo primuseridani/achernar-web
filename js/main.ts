@@ -9,7 +9,7 @@ namespace Ach {
 			console.log("updating dynamic glyph");
 			console.log(`note: configuration is { is_portrait: ${isPortrait}, isReducedMotion: ${isReducedMotion} }`);
 
-			let newGlyphAddr: string | undefined = undefined;
+			let newGlyphAddr: string;
 			switch (true) {
 			case isPortrait && isReducedMotion:
 				newGlyphAddr = "/svg/glyph/achernarVertical.svg";
@@ -19,12 +19,12 @@ namespace Ach {
 				newGlyphAddr = "/image/achernarVerticalAnimated.webp";
 				break;
 
-			case !isPortrait && isReducedMotion:
-				newGlyphAddr = "/svg/glyph/achernar.svg";
-				break;
-
 			case !isPortrait && !isReducedMotion:
 				newGlyphAddr = "/image/achernarAnimated.webp";
+				break;
+
+			default:
+				newGlyphAddr = "/svg/glyph/achernar.svg";
 				break;
 			}
 

@@ -38,7 +38,7 @@
 
 	<body>
 		<header>
-			<img id="glyph" />
+			<img alt="Achernar" id="glyph" />
 
 			<p id="scrollNote"><span style="--n: 0;">&#8595;</span><span style="--n: 1;">&nbsp;</span><span style="--n: 2;">s</span><span style="--n: 3;">c</span><span style="--n: 4;">r</span><span style="--n: 5;">o</span><span style="--n: 6;">l</span><span style="--n: 7;">l</span><span style="--n: 8;">&nbsp;</span><span style="--n: 9;">d</span><span style="--n: 10;">o</span><span style="--n: 10;">w</span><span style="--n: 11;">n</span><span style="--n: 12;">&nbsp;</span><span style="--n: 13;">f</span><span style="--n: 14;">o</span><span style="--n: 15;">r</span><span style="--n: 16;">&nbsp;</span><span style="--n: 17;">m</span><span style="--n: 18;">o</span><span style="--n: 19;">r</span><span style="--n: 20;">e</span><span style="--n: 21;">&nbsp;</span><span style="--n: 22;">&#8595;</span></p>
 		</header>
@@ -61,7 +61,7 @@
 			<section>
 				<?php add_heading("site credits", "side-credits") ?>
 
-				<p>thanks to carrois apostrophe for the <a href="https://fonts.google.com/specimen/Fira+Mono/"><em>fira mono</em></a> font family.</p>
+				<p>thanks to carrois apostrophe for the <a href="https://bboxtype.com/typefaces/FiraMono/"><em>fira mono</em></a> font family.</p>
 			</section>
 
 			<!-- <div id="arabic"></div> -->

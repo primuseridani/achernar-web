@@ -1,5 +1,12 @@
 # Changelog
 
+## 12.4
+
+* Refactor glyph updater
+* Add alternate text to glyph
+* Update fonts
+* Update gitignore
+
 ## 12.3
 
 * Update 404 screen
