@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.5
+
+* Fix cache
+
 ## 12.4
 
 * Refactor glyph updater

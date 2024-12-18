@@ -1,11 +1,11 @@
 <?php
 	namespace ach;
 
-	require "prelude.php";
+	require("prelude.php");
 
 	// Set up cache now.
 
-	$cache_addr = "cache/index.html";
+	$cache_addr = "../cache/index.html";
 	use_cache($cache_addr);
 
 	ob_start();
