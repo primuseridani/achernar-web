@@ -23,7 +23,7 @@ body {
 	aspect-ratio:     1/1;
 	background-color: $textColour;
 	image-rendering:  pixelated;
-	mask-image:       url("/image/notFound.webp");
+	mask-image:       url("/image/glyph/notFound.webp");
 	mask-position:    center;
 	mask-repeat:      no-repeat;
 	mask-size:        contain;
@@ -32,6 +32,6 @@ body {
 	width:            $glyphWidth;
 
 	@media not (prefers-reduced-motion) {
-		mask-image: url("/image/notFoundAnimated.webp");
+		mask-image: url("/image/glyph/notFoundAnimated.webp");
 	}
 }

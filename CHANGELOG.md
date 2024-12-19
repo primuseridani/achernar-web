@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.7
+
+* Rework scroll note
+
 ## 12.6
 
 * Update gitignore

@@ -37,46 +37,28 @@ header {
 	}
 
 	#scrollNote {
-		bottom:      1em;
-		font-size:   0.75em;
-		font-weight: bold;
-		left:        50%;
-		position:    absolute;
-		transform:   translateX(-50%);
+		$width:  167;
+		$height: 8;
 
-		span {
-			$characterCount: 24;
-			$duration:       2s;
+		$unit: calc(1rem / $height);
 
-			display: inline-block;
+		background-color: $textColour;
+		bottom:           calc($unit * $height - $unit);
+		height:           calc($unit * $height + $unit * 2);
+		image-rendering:  pixelated;
+		left:             50%;
+		mask-image:       url("/image/glyph/scrollNote.webp");
+		mask-position:    center;
+		mask-repeat:      no-repeat;
+		mask-size:        contain;
+		object-fit:       contain;
+		pointer-events:   none;
+		position:         absolute;
+		transform:        translateX(-50%);
+		width:            calc($unit * $width);
 
-			@media not (prefers-reduced-motion) {
-				animation-delay:           calc($duration / $characterCount * var(--n));
-				animation-duration:        $duration;
-				animation-iteration-count: infinite;
-				animation-name:            scrollNote;
-				animation-timing-function: steps(1);
-			}
+		@media not (prefers-reduced-motion) {
+			mask-image: url("/image/glyph/scrollNoteAnimated4.webp");
 		}
-	}
-}
-
-@keyframes scrollNote {
-	$distance: 0.125em;
-
-	from {
-		transform: translateY(0);
-	}
-
-	25% {
-		transform: translateY(-$distance);
-	}
-
-	50% {
-		transform: translateY(0);
-	}
-
-	75% {
-		transform: translateY($distance);
 	}
 }
