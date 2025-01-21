@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.8
+
+* Remove Instagram link
+
 ## 12.7
 
 * Rework scroll note

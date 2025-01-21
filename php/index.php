@@ -70,14 +70,13 @@
 		<footer>
 			<div id="socials">
 				<?php
-					add_social("bluesky",   "https://bsky.app/profile/achernar.io/",      "Bluesky",   "@achernar.io");
-					add_social("gitHub",    "https://github.com/primuseridani/",          "GitHub",    "@primuseridani");
-					add_social("gitLab",    "https://gitlab.com/primuseridani/",          "GitLab",    "primuseridani");
-					add_social("instagram", "https://www.instagram.com/primuseridani/",   "Instagram", "@primuseridani");
-					add_social("linktree",  "https://linktr.ee/PrimusEridani/",           "Linktree",  "PrimusEridani");
-					add_social("mastodon",  "https://mastodon.social/@primuseridani/",    "Mastodon",  "@primuseridani@mastodon.social");
-					add_social("reddit",    "https://www.reddit.com/user/PrimusEridani/", "Reddit",    "u/PrimusEridani");
-					add_social("youTube",   "https://youtube.com/@primuseridani/",        "YouTube",   "@primuseridani");
+					add_social("bluesky",  "https://bsky.app/profile/achernar.io/",      "Bluesky",  "@achernar.io");
+					add_social("gitHub",   "https://github.com/primuseridani/",          "GitHub",   "@primuseridani");
+					add_social("gitLab",   "https://gitlab.com/primuseridani/",          "GitLab",   "primuseridani");
+					add_social("linktree", "https://linktr.ee/PrimusEridani/",           "Linktree", "PrimusEridani");
+					add_social("mastodon", "https://mastodon.social/@primuseridani/",    "Mastodon", "@primuseridani@mastodon.social");
+					add_social("reddit",   "https://www.reddit.com/user/PrimusEridani/", "Reddit",   "u/PrimusEridani");
+					add_social("youTube",  "https://youtube.com/@primuseridani/",        "YouTube",  "@primuseridani");
 				?>
 			</div>
 		</footer>
